@@ -5,6 +5,5 @@
    //   \\         || ||         ||    ||       ||  ||  ||  || ||===’  '=.   // ._   <br/>
  .//     \\_. ((___// \\____./  _||_  _||_      \\__||  \\__/L \\___. .__))  \\__))  <br/>
                                                     ||<br>
-                                
-                                                    |L.                             </code></pre> 
+                                                    |L.                            </code></pre> 
 Text-based (and ascii-based) adventure web game made with Godot
