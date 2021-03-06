@@ -1,0 +1,94 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Generic_bg.tscn" type="PackedScene" id=2]
+
+[node name="Generic_bg" instance=ExtResource( 2 )]
+
+[node name="Text" parent="." index="1"]
+text = " Where do you want to go?"
+
+[node name="Image" parent="." index="2"]
+text = "
+                     \\ | /
+                    --(_)--
+  _._                / | \\
+     )                       
+      )            __
+  _._)            ( ')
+   Y               _T_
+  .!............. /\\_|\\ ....
+                  '/_\\ '  
+   _   -   _   -  /_  \\/ "
+
+[node name="Forest" type="Button" parent="." index="3"]
+margin_left = 36.0
+margin_top = 413.0
+margin_right = 411.0
+margin_bottom = 439.0
+custom_fonts/font = ExtResource( 1 )
+text = "To the forest              (+10m)"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tavern" type="Button" parent="." index="4"]
+margin_left = 36.0
+margin_top = 436.0
+margin_right = 411.0
+margin_bottom = 462.0
+custom_fonts/font = ExtResource( 1 )
+text = "To the tavern              (+10m)"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Castle" type="Button" parent="." index="5"]
+margin_left = 36.0
+margin_top = 459.0
+margin_right = 411.0
+margin_bottom = 485.0
+custom_fonts/font = ExtResource( 1 )
+text = "To the castle              (+10m)"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Park" type="Button" parent="." index="6"]
+margin_left = 36.0
+margin_top = 482.0
+margin_right = 411.0
+margin_bottom = 508.0
+custom_fonts/font = ExtResource( 1 )
+text = "To the park                (+10m)"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lab" type="Button" parent="." index="7"]
+margin_left = 36.0
+margin_top = 505.0
+margin_right = 411.0
+margin_bottom = 531.0
+custom_fonts/font = ExtResource( 1 )
+text = "To the magician's lab      (+10m)"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Undo" type="Button" parent="." index="8"]
+margin_left = 36.0
+margin_top = 528.0
+margin_right = 344.0
+margin_bottom = 554.0
+custom_fonts/font = ExtResource( 1 )
+text = "Never mind, let's stay here"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

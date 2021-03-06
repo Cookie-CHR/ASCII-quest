@@ -1,0 +1,59 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Generic_bg.tscn" type="PackedScene" id=3]
+
+[node name="Generic_bg" instance=ExtResource( 3 )]
+
+[node name="Text" parent="." index="1"]
+text = "The local forest is actually quite small, but sometimes you can still get some decent harvests, if you are good at it.
+Hunting season is on, and hopefully everybody will be at the Park right now; might as well give it a try..."
+
+[node name="Image" parent="." index="2"]
+text = "
+     /\\
+	    /  \\
+	    /  \\      _.---._        /\\
+ /\\/    \\   _(       )_     /\\
+/  /    \\  (           )    / \\
+/ /      \\(             )   /  
+	  /      \\ (_         _)   /
+	 /________\\  (_______)     /__
+.....||........\\ V /.....__....
+             ..|)-_\\.   (~(_
+_.--._      __ (_/      _) ~)
+ c  . )_    \\_\\(      _S~ ~ (_
+   (    )    ...)..  / ~~ ~ ~ )"
+
+[node name="Hunt" type="Button" parent="." index="3"]
+margin_left = 36.0
+margin_top = 413.0
+margin_right = 400.0
+margin_bottom = 439.0
+custom_fonts/font = ExtResource( 1 )
+text = "Hunt                       (+1h)"
+flat = true
+
+[node name="Wait" type="Button" parent="." index="4"]
+margin_left = 36.0
+margin_top = 436.0
+margin_right = 411.0
+margin_bottom = 462.0
+custom_fonts/font = ExtResource( 1 )
+text = "Stay here for a while      (+10m)"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Go" type="Button" parent="." index="5"]
+margin_left = 36.0
+margin_top = 459.0
+margin_right = 12.0
+margin_bottom = 20.0
+custom_fonts/font = ExtResource( 1 )
+text = "I've finished here, let's go somewhere else"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

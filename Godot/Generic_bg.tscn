@@ -1,0 +1,67 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=1]
+
+[node name="Generic_bg" type="Panel"]
+margin_right = 1024.0
+margin_bottom = 600.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="Label" parent="."]
+margin_left = 20.0
+margin_top = 25.0
+margin_right = 1004.0
+margin_bottom = 572.0
+custom_fonts/font = ExtResource( 1 )
+text = "0====================================================0 0================================0
+|                                                    | |                                |
+|                                                    | |                                |
+|                                                    | |                                |
+|                                                    | |                                |
+|                                                    | |                                |
+|                                                    | |                                |
+|                                                    | |                                |
+|                                                    | |                                |
+|                                                    | |                                |
+|                                                    | |                                |
+|                                                    | |                                |
+|                                                    | |                                |
+|                                                    | |                                |
+|                                                    | |                                |
+0====================================================0 0================================0
+0=======================================================================================0
+|                                                                                       |
+|                                                                                       |
+|                                                                                       |
+|                                                                                       |
+|                                                                                       |
+|                                                                                       |
+0=======================================================================================0"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Text" type="Label" parent="."]
+margin_left = 42.0
+margin_top = 48.0
+margin_right = 590.0
+margin_bottom = 365.0
+custom_fonts/font = ExtResource( 1 )
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Image" type="Label" parent="."]
+margin_left = 635.0
+margin_top = 48.0
+margin_right = 988.0
+margin_bottom = 365.0
+custom_fonts/font = ExtResource( 1 )
+text = "  "
+__meta__ = {
+"_edit_use_anchors_": false
+}

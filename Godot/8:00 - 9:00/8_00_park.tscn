@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Generic_bg.tscn" type="PackedScene" id=2]
+
+[node name="Generic_bg" instance=ExtResource( 2 )]
+
+[node name="Text" parent="." index="1"]
+text = "It's 8 o'clock in the morning. The sun is shining upon Txtland, on what seems like an average tuesday. That is, until the voice of the Queen strucks magically through the entire village:
+\"All the subjects are convocated in the main park in half an hour for an important announcement!\" she proclaims, silencing the whole village with her vibrant voice.
+You turn around and take a look: you are in the park already, and a little crowd is starting to form near the main building."
+
+[node name="Image" parent="." index="2"]
+margin_left = 643.0
+margin_right = 983.0
+text = "
+
+ _   _   _   _           
+|_|_|_|_|_|_|_|           
+__|___|___|___|           
+|___|___|___|_|           
+__|___|___|___|___        
+|___|___|___|_(   )_  __
+__|___|___|__(      ) \\_\\/7
+!...!...!...(________)...)...."
+
+[node name="Wait" type="Button" parent="." index="3"]
+margin_left = 35.0
+margin_top = 413.0
+margin_right = 344.0
+margin_bottom = 436.0
+custom_fonts/font = ExtResource( 1 )
+text = "Wait here and listen (+30m)"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Go" type="Button" parent="." index="4"]
+margin_left = 35.0
+margin_top = 436.0
+margin_right = 12.0
+margin_bottom = 20.0
+custom_fonts/font = ExtResource( 1 )
+text = "Boring, let's go somewhere else!"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
