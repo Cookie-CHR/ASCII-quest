@@ -6,9 +6,7 @@
 [node name="Generic_bg" instance=ExtResource( 2 )]
 
 [node name="Text" parent="." index="1"]
-text = "It's 8 o'clock in the morning. The sun is shining upon Txtland, on what seems like an average tuesday. That is, until the voice of the Queen strucks magically through the entire village:
-\"All the subjects are convocated in the main park in half an hour for an important announcement!\" she proclaims, silencing the whole village with her vibrant voice.
-You turn around and take a look: you are in the park already, and a little crowd is starting to form near the main building."
+text = "You come back to the garden. The crowd has gotten bigger, almost evrybody in town has come. Will you stay?"
 
 [node name="Image" parent="." index="2"]
 margin_left = 643.0
@@ -30,7 +28,7 @@ margin_top = 413.0
 margin_right = 410.0
 margin_bottom = 439.0
 custom_fonts/font = ExtResource( 1 )
-text = "Wait here and listen       (+30m)"
+text = "Wait here and listen       (+10m)"
 flat = true
 __meta__ = {
 "_edit_use_anchors_": false
