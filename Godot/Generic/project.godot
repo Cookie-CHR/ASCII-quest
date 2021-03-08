@@ -16,13 +16,8 @@ _global_script_class_icons={
 [application]
 
 config/name="Ascii quest"
-run/main_scene="res://Title.tscn"
+run/main_scene="res://Panel.tscn"
 config/icon="res://icon.png"
-
-[autoload]
-
-Time="*res://time.gd"
-General="*res://general.gd"
 
 [rendering]
 

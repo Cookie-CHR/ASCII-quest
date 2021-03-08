@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Generic_bg.tscn" type="PackedScene" id=2]
+[ext_resource path="res://8:00 - 9:00/8_00_park.gd" type="Script" id=3]
 
 [node name="Generic_bg" instance=ExtResource( 2 )]
+script = ExtResource( 3 )
 
 [node name="Text" parent="." index="1"]
 text = "It's 8 o'clock in the morning. The sun is shining upon Txtland, on what seems like an average tuesday. That is, until the voice of the Queen strucks magically through the entire village:
