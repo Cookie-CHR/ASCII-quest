@@ -1,10 +1,25 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Generic_bg.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=2]
+[ext_resource path="res://8:00 - 9:00/8_30_park_4.gd" type="Script" id=3]
 
 [node name="Generic_bg" instance=ExtResource( 1 )]
+script = ExtResource( 3 )
 
 [node name="Text" parent="." index="1"]
 text = "\"As one last advice, we have to monitor this plague, keep track of its expansion. Thus, if you find any symptoms of the not-translatable curse in the nearby area, pass this information to the castle and you will be rewarded with five gold pieces. I have spoken.\"
 
 The queen congedes with a final bow, and the crowd disperds, going back to their businesses."
+
+[node name="Continue" type="Button" parent="." index="4"]
+margin_left = 36.0
+margin_top = 413.0
+margin_right = 12.0
+margin_bottom = 20.0
+custom_fonts/font = ExtResource( 2 )
+text = "Continue"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

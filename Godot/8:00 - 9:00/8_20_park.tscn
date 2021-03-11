@@ -8,7 +8,7 @@
 script = ExtResource( 3 )
 
 [node name="Text" parent="." index="1"]
-text = "You come back to the garden. The crowd has gotten bigger, almost evrybody in town has come. Will you stay?"
+text = "You come back to the garden. The crowd has gotten bigger, almost everybody in town has come. Will you stay?"
 
 [node name="Image" parent="." index="2"]
 margin_left = 643.0

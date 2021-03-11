@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Generic_bg.tscn" type="PackedScene" id=2]
+[ext_resource path="res://8:00 - 9:00/8_10_tavern.gd" type="Script" id=3]
+
+[node name="Generic_bg" instance=ExtResource( 2 )]
+script = ExtResource( 3 )
+
+[node name="Text" parent="." index="1"]
+text = "The Lab is closed, and nobody is in.
+Everyone must have gone listening to the Queen's speech.
+
+(Man this lab is ugly, gotta redraw it one day or another)"
+
+[node name="Image" parent="." index="2"]
+text = "
+
+          ____________
+      ___/            \\___    
+   __/  /   _.----._   \\  \\__
+  / /   |  /        \\  |   \\ \\
+  | |   |  |        |  |   | |
+  | |   |  | ______ |  |   | |
+  | |   |  ||CLOSED||  |   | |
+  | |   |  |        |  |   | |
+  |_|___|__|________|__|___|_|"
+
+[node name="Go" type="Button" parent="." index="4"]
+margin_left = 36.0
+margin_top = 413.0
+margin_right = 12.0
+margin_bottom = 20.0
+custom_fonts/font = ExtResource( 1 )
+text = "Nothing to do here, let's move"
+flat = true
