@@ -20,3 +20,18 @@ func time_print(separator):
 
 func path():
 	return "res://"+ str(h)+":00 - "+str(h+1)+":00/"
+
+func findClosest(dest_array):
+	var closest_h = 8
+	var closest_m = 0
+	
+	for instance in dest_array:
+		var instance_h = int(instance[0])*10+int(instance[1])
+		var instance_m = int(instance[3])*10+int(instance[4])
+	
+		if Time.h*60 + Time.m < instance_h*60 + instance_m:
+			break;
+		elif instance_h*60 + instance_m > closest_h*60 + closest_m:
+			closest_h = instance_h
+			closest_m = instance_m
+	return [closest_h, closest_m]

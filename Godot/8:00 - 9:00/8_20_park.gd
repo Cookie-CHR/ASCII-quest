@@ -6,7 +6,7 @@ func _ready():
 	get_node("Wait").connect("pressed", self, "wait", [10])
 
 func change_scn(dest):
-	General.prev_scn = get_tree()
+	General.update_prev("Park")
 	General.change_scn(dest)
 
 func wait(minutes):

@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Generic_bg.tscn" type="PackedScene" id=2]
+[ext_resource path="res://8:00 - 9:00/8_10_forest_2.gd" type="Script" id=3]
+
+[node name="Generic_bg" instance=ExtResource( 2 )]
+script = ExtResource( 3 )
+
+[node name="Text" parent="." index="1"]
+text = "You make and set up a small trap, hide in a bush and wait there.
+After a while, you hear the trap trigger. You quickly get out of your hiding place, look where your trap was and find...A cat. A stupid cat that is playing with your trap like it was a toy.
+
+You look in the depths of the forest in anger, and suddently you notice a swarm of not-translatable characters growing out of some trees. What is happening?
+You take up the cat and run away. He starts to purr. Dumb cat."
+
+[node name="Image" parent="." index="2"]
+text = "
+     /\\       _.---._   /\\
+    / 􏿾\\     ( 􏿾     ) /  \\
+    /  \\    (􏿾        􏿾/  \\
+   /    􏿾   (    􏿾    /    \\
+   /   􏿾\\    􏿾_______)/    \\ 
+_ /______\\     \\ V 􏿾 /      \\ 
+ )---||-----􏿾--!__􏿾\\-/      \\---
+  )                 /________\\ 
+  )                     ||
+_)          .__. __(  
+            ('')'_ )'
+             /'// \\\\ "
+
+[node name="Go" type="Button" parent="." index="4"]
+margin_left = 42.0
+margin_top = 413.0
+margin_right = 12.0
+margin_bottom = 20.0
+custom_fonts/font = ExtResource( 1 )
+text = "Run!"
+flat = true
