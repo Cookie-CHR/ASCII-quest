@@ -1,11 +1,11 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Generic_bg.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Generic_travel.gd" type="Script" id=3]
+[ext_resource path="res://Buttons/Travel_to.gd" type="Script" id=3]
+[ext_resource path="res://Buttons/Undo.gd" type="Script" id=4]
 
-[node name="Generic_bg" instance=ExtResource( 2 )]
-script = ExtResource( 3 )
+[node name="Travel" instance=ExtResource( 2 )]
 
 [node name="Text" parent="." index="1"]
 text = " Where do you want to go?"
@@ -31,6 +31,7 @@ margin_bottom = 439.0
 custom_fonts/font = ExtResource( 1 )
 text = "To the forest              (+10m)"
 flat = true
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -43,6 +44,7 @@ margin_bottom = 462.0
 custom_fonts/font = ExtResource( 1 )
 text = "To the tavern              (+10m)"
 flat = true
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -55,6 +57,7 @@ margin_bottom = 485.0
 custom_fonts/font = ExtResource( 1 )
 text = "To the castle              (+10m)"
 flat = true
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -67,6 +70,7 @@ margin_bottom = 508.0
 custom_fonts/font = ExtResource( 1 )
 text = "To the park                (+10m)"
 flat = true
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -79,6 +83,7 @@ margin_bottom = 531.0
 custom_fonts/font = ExtResource( 1 )
 text = "To the magician's lab      (+10m)"
 flat = true
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -91,6 +96,7 @@ margin_bottom = 554.0
 custom_fonts/font = ExtResource( 1 )
 text = "Never mind, let's stay here"
 flat = true
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

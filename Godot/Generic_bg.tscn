@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=1]
 [ext_resource path="res://curr_time.gd" type="Script" id=2]
+[ext_resource path="res://script.gd" type="Script" id=3]
 
 [node name="Generic_bg" type="Panel"]
 margin_right = 1024.0
 margin_bottom = 600.0
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

@@ -1,12 +1,15 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Title.gd" type="Script" id=1]
+[ext_resource path="res://Buttons/Play.gd" type="Script" id=1]
 [ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Buttons/Credits.gd" type="Script" id=3]
+[ext_resource path="res://script.gd" type="Script" id=4]
+[ext_resource path="res://Buttons/Instructions.gd" type="Script" id=5]
 
-[node name="Title_bg" type="Panel"]
+[node name="Title" type="Panel"]
 margin_right = 1024.0
 margin_bottom = 600.0
-script = ExtResource( 1 )
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -53,6 +56,7 @@ margin_bottom = 20.0
 custom_fonts/font = ExtResource( 2 )
 text = "Play"
 flat = true
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -65,6 +69,7 @@ margin_bottom = 20.0
 custom_fonts/font = ExtResource( 2 )
 text = "Instructions"
 flat = true
+script = ExtResource( 5 )
 
 [node name="Credits" type="Button" parent="."]
 margin_left = 42.0
@@ -74,6 +79,7 @@ margin_bottom = 20.0
 custom_fonts/font = ExtResource( 2 )
 text = "Credits"
 flat = true
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

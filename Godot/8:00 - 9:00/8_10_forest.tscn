@@ -1,11 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=1]
-[ext_resource path="res://8:00 - 9:00/8_10_forest.gd" type="Script" id=2]
 [ext_resource path="res://Generic_bg.tscn" type="PackedScene" id=3]
 
-[node name="Generic_bg" instance=ExtResource( 3 )]
-script = ExtResource( 2 )
+[node name="Forest" instance=ExtResource( 3 )]
 
 [node name="Text" parent="." index="1"]
 text = "The local forest is actually quite small, but sometimes you can still get some decent harvests, if you are good at it.

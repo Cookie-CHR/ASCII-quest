@@ -2,13 +2,9 @@ extends Panel
 
 func _ready():
 	
-	get_node("Go").connect("pressed", self, "change_scn", ["Generic/Generic_travel"])
-	get_node("Wait").connect("pressed", self, "wait", [30])
+	get_node("Go").connect("pressed", self, "change_scn", ["Generic_travel", 0])
+	get_node("Wait").connect("pressed", self, "change_scn", [str(self.name), 30])
 
-func change_scn(dest):
+func change_scn(dest, minutes):
 	General.update_prev("Park")
-	General.change_scn(dest)
-
-func wait(minutes):
-	Time.time_sum(minutes);
-	General.change_scn(Time.path()+Time.time_print("_")+"_park")
+	General.change_scn(dest, minutes)
