@@ -29,7 +29,7 @@ func findClosest(dest_array):
 		var instance_h = int(instance[0])*10+int(instance[1])
 		var instance_m = int(instance[3])*10+int(instance[4])
 	
-		if Time.h*60 + Time.m < instance_h*60 + instance_m:
+		if h*60 + m < instance_h*60 + instance_m:
 			break;
 		elif instance_h*60 + instance_m > closest_h*60 + closest_m:
 			closest_h = instance_h
