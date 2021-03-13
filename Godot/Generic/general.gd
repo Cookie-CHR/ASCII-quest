@@ -4,11 +4,14 @@ var prev_sc = "Null"
 var curr_sc = "Null"
 
 func update_prevs():
+	print("Updating...")
 	prev_sc = curr_sc
 	curr_sc = get_tree().get_current_scene().get_name()
+	print(prev_sc," ", curr_sc)
 
 func change_scn(dest, minutes):
 	Time.time_sum(minutes);
+	print("changing scene to... ",dest,".tscn")
 	return get_tree().change_scene(dest+".tscn")
 
 var forest_times = ["08:10", "09:10"]
@@ -18,9 +21,8 @@ var castle_times = []
 var lab_times = []
 
 func guess_scn(dest, minutes):
-	print ("AAAAA")
-	print (dest)
-	print (minutes)
+	print("guessing...")
+	print (dest, " ",minutes)
 	# Find the right scene for the current time (useful for long scenes)	
 	var dest_array = []
 	if dest == "forest":
@@ -35,4 +37,4 @@ func guess_scn(dest, minutes):
 		dest_array = lab_times
 	
 	var closest_time = Time.findClosest(dest_array, minutes)
-	return str(closest_time[0])+":00 - "+str(closest_time[0]+1)+":00/"+str(closest_time[0])+"_"+str(closest_time[1])+"_"+dest
+	return "%02d - %02d/%02d_%02d_%s" % [closest_time[0], closest_time[0]+1, closest_time[0], closest_time[1], dest]

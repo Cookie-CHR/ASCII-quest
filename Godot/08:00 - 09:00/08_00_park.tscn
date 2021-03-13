@@ -3,7 +3,7 @@
 [ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Generic_bg.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Buttons/Go.gd" type="Script" id=3]
-[ext_resource path="res://8:00 - 9:00/Wait.gd" type="Script" id=4]
+[ext_resource path="res://Buttons/Wait.gd" type="Script" id=4]
 
 [node name="Park" instance=ExtResource( 2 )]
 

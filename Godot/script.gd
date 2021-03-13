@@ -4,6 +4,7 @@ extends Panel
 func _ready():
 	General.update_prevs()
 	call_deferred ("main")
+	print("_____")
 	
 func main():
 	for child in get_children():
