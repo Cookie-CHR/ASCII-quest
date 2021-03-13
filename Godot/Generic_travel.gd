@@ -2,10 +2,12 @@ extends Panel
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	General.update_prevs()
 	place_buttons()
 	
 	for child in get_children():
 		if child is Button:
+			print(child.name)
 			get_node(child.name).connect("pressed", self, "guess_scn", [child.name, 10])
 
 func place_buttons():
@@ -24,7 +26,7 @@ func place_buttons():
 		return
 	get_node("Tavern").set_position(Vector2(36,413))
 	
-func guess_scn(dest, minutes):
+func guess_scn(dest, minutes=0):
 	dest = General.guess_scn(dest, minutes)
 	General.change_scn(dest, 0)
 
