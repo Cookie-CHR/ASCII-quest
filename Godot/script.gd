@@ -5,6 +5,7 @@ func _ready():
 	General.update_prevs()
 	for child in get_children():
 		if child is Button:
+			child.re_init()
 			get_node(child.name).connect("pressed", self, "change_scn", [child.dest, child.minutes])
 	print("__________")
 

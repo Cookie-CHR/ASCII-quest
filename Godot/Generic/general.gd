@@ -20,7 +20,6 @@ var castle_times = ["08:10"]
 var lab_times = ["08:10"]
 
 func guess_scn(dest, minutes):
-	General.update_prevs()
 	# Find the right scene for the current time (useful for long scenes)	
 	var dest_array = []
 	if dest == "Forest":
@@ -35,5 +34,4 @@ func guess_scn(dest, minutes):
 		dest_array = lab_times
 	
 	var closest_time = Time.findClosest(dest_array, minutes)
-	print("%02d:00 - %02d:00/%02d_%02d_%s" % [closest_time[0], closest_time[0]+1, closest_time[0], closest_time[1], dest])
 	return "%02d:00 - %02d:00/%02d_%02d_%s" % [closest_time[0], closest_time[0]+1, closest_time[0], closest_time[1], dest]
