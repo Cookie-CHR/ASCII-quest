@@ -1,24 +1,25 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=1]
-[ext_resource path="res://script.gd" type="Script" id=2]
+[ext_resource path="res://script.gd" type="Script" id=1]
+[ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=2]
 [ext_resource path="res://Buttons/To_Title.gd" type="Script" id=3]
 [ext_resource path="res://Improved_button.tscn" type="PackedScene" id=4]
 
-[node name="Credits" type="Panel"]
+[node name="Panel" type="Panel"]
 margin_right = 1024.0
 margin_bottom = 600.0
-script = ExtResource( 2 )
+rect_pivot_offset = Vector2( 85.029, -286.098 )
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Background" type="Label" parent="."]
+[node name="Label" type="Label" parent="."]
 margin_left = 20.0
 margin_top = 25.0
-margin_right = 999.0
-margin_bottom = 574.0
-custom_fonts/font = ExtResource( 1 )
+margin_right = 40.0
+margin_bottom = 14.0
+custom_fonts/font = ExtResource( 2 )
 text = "0=======================================================================================0
 |                                                                                       |
 |                                                                                       |
@@ -43,37 +44,30 @@ text = "0=======================================================================
 |                                                                                       |
 |                                                                                       |
 0=======================================================================================0"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Text" type="Label" parent="."]
 margin_left = 42.0
 margin_top = 48.0
 margin_right = 981.0
 margin_bottom = 415.0
-custom_fonts/font = ExtResource( 1 )
-text = "Idea by Cookie
-ASCII arts by Cookie
-Coded by Cookie with GDScript
-Tested by:                        Musics by Kevin MacLeod (incompetech.com):
-                                      Castle..................Angevin B
-                                      Forest..................Midnight Tale
-                                      Magician's lab..........Kramus Workshop
-                                      Park....................The Forest and the Trees
-                                      Tavern..................Thatched Villagers
-                                      Mouse in the tavern.....Galway
-                                      Infected land...........Dragon and Toast
-                                      Suspence scenes.........Heartbreaking
-                                      Final scene.............Hidden Past
-                                      Title & main menu.......Suonatore di Liuto
-                                      Epilogue................Ascending the Vale"
+custom_fonts/font = ExtResource( 2 )
+text = "Let's say you got in this situation:
+---
+You have three potions in front of you: one of them is harmless and tastes like hot chocolate, the others will make you faint for several hours. What do you do?
+
+Drink potion 1             (+10m)
+Drink potion 2             (+several hours)
+Drink potion 3             (+several hours)
+---
+You (the player) know potion 1 is the safe one, because of those time labels. This is \"guessing the outcome\" and, while making the game easier, it's also rather anticlimatic. For that reason, in the game, potions 2 and 3 won't have \"+ several hours\" in their label, but \"+10m\", like potion 1, even if they WILL actually take several hours."
+autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="To_Title" parent="." instance=ExtResource( 4 )]
-margin_left = 42.0
+margin_left = 36.0
 margin_top = 462.0
-text = "Back to title"
+margin_bottom = 26.0
+text = "Got it, back to title"
 script = ExtResource( 3 )

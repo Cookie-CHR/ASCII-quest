@@ -13,17 +13,19 @@ Everyone must have gone listening to the Queen's speech.
 (Man this lab is ugly, gotta redraw it one day or another)"
 
 [node name="Image" parent="." index="2"]
-text = "
-
-          ____________
-      ___/            \\___    
-   __/  /   _.----._   \\  \\__
-  / /   |  /        \\  |   \\ \\
-  | |   |  |        |  |   | |
-  | |   |  | ______ |  |   | |
-  | |   |  ||CLOSED||  |   | |
-  | |   |  |        |  |   | |
-  |_|___|__|________|__|___|_|"
+text = "           .------------. 
+          /          .   \\
+         /            V_  \\
+        /              \\'-.\\  
+       /________________\\
+ _____/__________________\\_____
+/______________________________\\
+    |       _.----._       |
+    |      /        \\      |
+    |      | ______ |      |
+    |      ||CLOSED||      |
+    |      |        |      |
+    |______|________|______|"
 
 [node name="Go" parent="." index="4" instance=ExtResource( 3 )]
 margin_left = 36.0

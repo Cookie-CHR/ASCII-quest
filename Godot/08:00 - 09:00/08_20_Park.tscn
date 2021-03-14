@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Buttons/Wait_10.gd" type="Script" id=1]
 [ext_resource path="res://Generic_bg.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Improved_button.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Buttons/Go.gd" type="Script" id=4]
 
 [node name="Park" instance=ExtResource( 2 )]
 
@@ -33,3 +34,4 @@ script = ExtResource( 1 )
 margin_left = 36.0
 margin_top = 436.0
 text = "Boring, let's go somewhere else!"
+script = ExtResource( 4 )
