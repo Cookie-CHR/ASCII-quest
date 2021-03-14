@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Improved_button.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Generic_bg.tscn" type="PackedScene" id=2]
 
 [node name="Park" instance=ExtResource( 2 )]
@@ -25,14 +25,7 @@ text = "              ____􏿾􏿾___􏿾
      /  \\        \\􏿾\\(   
 	   _􏿾    \\􏿾      __􏿾_􏿾􏿾__􏿾"
 
-[node name="Listen" type="Button" parent="." index="3"]
+[node name="Continue" parent="." index="4" instance=ExtResource( 1 )]
 margin_left = 36.0
 margin_top = 413.0
-margin_right = 554.0
-margin_bottom = 439.0
-custom_fonts/font = ExtResource( 1 )
 text = "Stop the train of thoughts and listen already!"
-flat = true
-__meta__ = {
-"_edit_use_anchors_": false
-}

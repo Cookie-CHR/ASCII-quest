@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Buttons/Go.gd" type="Script" id=1]
+[ext_resource path="res://Improved_button.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Generic_bg.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Buttons/Wait_10.gd" type="Script" id=4]
+[ext_resource path="res://Buttons/Hunt.gd" type="Script" id=5]
 
 [node name="Forest" instance=ExtResource( 3 )]
 
@@ -25,35 +28,20 @@ _.--._      __ (_/      _) ~)
  c  . )_    \\_\\(      _S~ ~ (_
    (    )    ...)..  / ~~ ~ ~ )"
 
-[node name="Hunt" type="Button" parent="." index="3"]
+[node name="Hunt" parent="." index="4" instance=ExtResource( 2 )]
 margin_left = 36.0
 margin_top = 413.0
-margin_right = 400.0
-margin_bottom = 439.0
-custom_fonts/font = ExtResource( 1 )
 text = "Hunt                       (+1h)"
-flat = true
+script = ExtResource( 5 )
 
-[node name="Wait" type="Button" parent="." index="4"]
+[node name="Wait_10" parent="." index="5" instance=ExtResource( 2 )]
 margin_left = 36.0
 margin_top = 436.0
-margin_right = 411.0
-margin_bottom = 462.0
-custom_fonts/font = ExtResource( 1 )
 text = "Stay here for a while      (+10m)"
-flat = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
+script = ExtResource( 4 )
 
-[node name="Go" type="Button" parent="." index="5"]
+[node name="Go" parent="." index="6" instance=ExtResource( 2 )]
 margin_left = 36.0
 margin_top = 459.0
-margin_right = 12.0
-margin_bottom = 20.0
-custom_fonts/font = ExtResource( 1 )
 text = "I've finished here, let's go somewhere else"
-flat = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
+script = ExtResource( 1 )

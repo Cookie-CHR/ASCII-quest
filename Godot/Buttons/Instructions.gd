@@ -1,10 +1,6 @@
-extends Button
-
-var dest = "Instructions"
-var minutes = 0
+extends "Improved_Button.gd"
 
 func re_init():
 	# Re-initialize the variables
 	# Useful for destinations that require an updated curr_sc, or the button's name
-	dest = "Instructions"
-	minutes = 0
+	self.dest = "Instructions"

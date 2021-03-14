@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Improved_button.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Generic_bg.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Buttons/Go.gd" type="Script" id=3]
-[ext_resource path="res://Buttons/Wait.gd" type="Script" id=4]
+[ext_resource path="res://Buttons/Wait_30.gd" type="Script" id=4]
 
 [node name="Park" instance=ExtResource( 2 )]
 
@@ -26,28 +26,14 @@ __|___|___|___|___
 __|___|___|__(      ) \\_\\/7
 !...!...!...(________)...)...."
 
-[node name="Wait" type="Button" parent="." index="3"]
-margin_left = 35.0
+[node name="Wait_30" parent="." index="4" instance=ExtResource( 1 )]
+margin_left = 36.0
 margin_top = 413.0
-margin_right = 410.0
-margin_bottom = 439.0
-custom_fonts/font = ExtResource( 1 )
 text = "Wait here and listen       (+30m)"
-flat = true
 script = ExtResource( 4 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="Go" type="Button" parent="." index="4"]
-margin_left = 35.0
+[node name="Go" parent="." index="5" instance=ExtResource( 1 )]
+margin_left = 36.0
 margin_top = 436.0
-margin_right = 12.0
-margin_bottom = 20.0
-custom_fonts/font = ExtResource( 1 )
 text = "Boring, let's go somewhere else!"
-flat = true
 script = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
