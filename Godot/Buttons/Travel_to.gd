@@ -6,6 +6,10 @@ func re_init():
 	self.dest = General.guess_scn(self.name, 10)
 	self.minutes = 10
 	
+	
+	if self.name == General.prev_sc:
+		hide()
+	
 	if self.name == "Forest":
 		self.music = "res://Music/Forest/Midnight Tale.ogg"
 	elif self.name == "Tavern":
@@ -16,6 +20,3 @@ func re_init():
 		self.music = "res://Music/Castle/Angevin B.ogg"
 	elif self.name == "Lab":
 		self.music = "res://Music/Wizard lab/Krampus Workshop.ogg"
-
-func set_pos(num):
-	self.position = [36, 413+(23*num)]

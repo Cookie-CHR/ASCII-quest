@@ -24,6 +24,7 @@ config/icon="res://icon.png"
 General="*res://Generic/general.gd"
 Time="*res://Generic/time.gd"
 MusicPlayer="*res://Generic/MusicPlayer.tscn"
+Inventory="*res://Generic/inventory.gd"
 
 [rendering]
 

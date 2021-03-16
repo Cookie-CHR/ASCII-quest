@@ -5,7 +5,7 @@
 [ext_resource path="res://Improved_button.tscn" type="PackedScene" id=3]
 [ext_resource path="res://script.gd" type="Script" id=4]
 
-[node name="Panel" type="Panel"]
+[node name="Instructions" type="Panel"]
 margin_right = 1024.0
 margin_bottom = 600.0
 rect_pivot_offset = Vector2( 85.029, -286.098 )
