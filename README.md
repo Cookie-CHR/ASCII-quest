@@ -17,12 +17,46 @@ The Queen is sure that the non-translatable pest is caused by somebody, an infec
 In all this, you are just a common villager. Will you spend the day hunting and completing random side quests? Or will you help and find the infector? (Actually, is there an infector at all? Is there a plague at all? Will this random object be useful for some quest?)
 
 <pre><code>
-      /\      <br>
-     /()\     <br>
-  |\/    \/|  <br>
- _|/ |^^| \|_ <br>
- \|  ('')  |/ <br>
-  |  \--/  |  <br>
- _|_/ )( \_|_ <br>
-|@@|_(/\)_|@@|<br>
-|  | /__\ |  |</code></pre> 
+                   /\      <br>
+                  /()\     <br>
+               |\/    \/|  <br>
+     _        _|/ |^^| \|_ <br>
+*?\/(*        \|  ('')  |/          *) _     <br>
+ ('’)          |  \--/  |         *?Y V(*    <br>
+ >||< 'o,     _|_/ )( \_|_         ('o')  'o,<br>
+( /\ \%      |@@|_(/\)_|@@|        >/Y\<__%  <br>
+  |\ /     __|__|_/__\_|__|__     (/___\ /   <br>
+._|/_.  _-'------------------'-_  ._\|/_.    </code></pre> 
+
+# The gameplay
+ASCII Quest is basically a text adventure, where you click on an option to perform an action, but there's also a time factor: in fact, the game world reacts to the game time, as any real word would (for example, if in the game it's 12:30, most places will be closed for lunch). 
+
+Some actions will require time to be completed. The time taken by an action is usually displayed near the option, like that:
+
+<pre><code>
+Do option 1                (+10m)<br>
+Do option 2 instead        (+30m)</code></pre> 
+
+In this example, option 1 would take 10 minutes to be completed, while option 2 would take 30.
+ 
+**IMPORTANT: certain actions may lie about the time they take, so that you won't be able to assume their outcome.**
+
+In fact, Let's say you got in this situation:
+<pre><code>
+You have three potions in front of you: one of them is harmless and tastes like hot chocolate, the others will make you faint for several hours. What do you do?<br><br>
+
+Drink potion 1             (+10m)<br>
+Drink potion 2             (+several hours)<br>
+Drink potion 3             (+several hours)</code></pre> 
+You (the player) know potion 1 is the safe one, because of those time labels. This is "guessing the outcome" and, while making the game easier, it's also rather anticlimatic. For that reason, in the game, potions 2 and 3 won't have "+ several hours" in their label, but "+10m", like potion 1, even if they WILL actually take several hours.
+
+<pre><code>
+             _.---._                     /\     <br>
+           _(       )_                  /  \    <br>
+   /\     (           )                 /  \    <br>
+  /  \   (             )               /    \   <br>
+  /  \   (             )               /    \   <br>
+ /    \   (_         _)   ___         /      \  <br>
+ /    \     (_______)   _(   )        /      \  <br>
+/______\      \ V /    (      )      /________\ <br>
+___||_________|___\___(________)_________||____</code></pre> 
