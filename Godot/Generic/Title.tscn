@@ -2,12 +2,14 @@
 
 [ext_resource path="res://Buttons/Play.gd" type="Script" id=1]
 [ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=2]
-[ext_resource path="res://Buttons/Credits.gd" type="Script" id=3]
-[ext_resource path="res://script.gd" type="Script" id=4]
-[ext_resource path="res://Buttons/Instructions.gd" type="Script" id=5]
-[ext_resource path="res://Improved_button.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Buttons/To_Credits.gd" type="Script" id=3]
+[ext_resource path="res://Generic/script.gd" type="Script" id=4]
+[ext_resource path="res://Buttons/To_Instructions.gd" type="Script" id=5]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=6]
 
-[node name="Title" type="Panel"]
+[node name="Title" type="Panel" groups=[
+"Big_Screen_Scene",
+]]
 margin_right = 1024.0
 margin_bottom = 600.0
 script = ExtResource( 4 )

@@ -1,14 +1,17 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=1]
-[ext_resource path="res://script.gd" type="Script" id=2]
+[ext_resource path="res://Buttons/Continue.gd" type="Script" id=1]
+[ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=2]
 [ext_resource path="res://Buttons/To_Title.gd" type="Script" id=3]
-[ext_resource path="res://Improved_button.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Generic/script.gd" type="Script" id=5]
 
-[node name="Credits" type="Panel"]
+[node name="Instructions" type="Panel" groups=[
+"Big_Screen_Scene",
+]]
 margin_right = 1024.0
 margin_bottom = 600.0
-script = ExtResource( 2 )
+script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -16,9 +19,9 @@ __meta__ = {
 [node name="Background" type="Label" parent="."]
 margin_left = 20.0
 margin_top = 25.0
-margin_right = 999.0
+margin_right = 1004.0
 margin_bottom = 574.0
-custom_fonts/font = ExtResource( 1 )
+custom_fonts/font = ExtResource( 2 )
 text = "0=======================================================================================0
 |                                                                                       |
 |                                                                                       |
@@ -52,28 +55,31 @@ margin_left = 42.0
 margin_top = 48.0
 margin_right = 981.0
 margin_bottom = 415.0
-custom_fonts/font = ExtResource( 1 )
-text = "Idea by Cookie
-ASCII arts by Cookie
-Coded by Cookie with GDScript
-Tested by:                        Musics by Kevin MacLeod (incompetech.com):
-                                      Castle..................Angevin B
-                                      Forest..................Midnight Tale
-                                      Magician's lab..........Kramus Workshop
-                                      Park....................The Forest and the Trees
-                                      Tavern..................Thatched Villagers
-                                      Mouse in the tavern.....Galway
-                                      Infected land...........Dragon and Toast
-                                      Suspence scenes.........Heartbreaking
-                                      Final scene.............Hidden Past
-                                      Title & main menu.......Suonatore di Liuto
-                                      Epilogue................Ascending the Vale"
+custom_fonts/font = ExtResource( 2 )
+text = "ASCII Quest is basically a text adventure, where you click on an option to perform an action, but there's also a time factor: in fact, the game world reacts to the game time, as any real word would (for example, if in the game it's 12:30, most places will be closed for lunch). 
+Some actions will require time to be completed. The time taken by an action is usually displayed near the option, like that:
+
+Do option 1                (+10m)
+Do option 2 instead        (+30m)
+
+In this example, option 1 would take 10 minutes to be completed, while option 2 would take 30.
+ 
+IMPORTANT: certain actions may lie about the time they take, so that you won't be able to assume their outcome."
+autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="To_Title" parent="." instance=ExtResource( 4 )]
-margin_left = 42.0
+margin_left = 36.0
 margin_top = 462.0
+margin_right = 191.0
+margin_bottom = 488.0
 text = "Back to title"
 script = ExtResource( 3 )
+
+[node name="Continue" parent="." instance=ExtResource( 4 )]
+margin_left = 36.0
+margin_top = 485.0
+text = "Wait wait wait, what does that last part mean?"
+script = ExtResource( 1 )

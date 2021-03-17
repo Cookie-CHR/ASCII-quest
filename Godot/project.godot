@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Ascii quest"
-run/main_scene="res://Title.tscn"
+run/main_scene="res://Generic/Title.tscn"
 config/icon="res://icon.png"
 
 [autoload]

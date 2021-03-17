@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Generic_bg.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Improved_button.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Buttons/Wait_30.gd" type="Script" id=3]
 
 [node name="Park" instance=ExtResource( 1 )]
@@ -10,6 +10,9 @@
 text = "\"As one last advice, we have to monitor this plague, keep track of its expansion. Thus, if you find any symptoms of the not-translatable curse in the nearby area, pass this information to the castle and you will be rewarded with five gold pieces. I have spoken.\"
 
 The queen congedes with a final bow, and the crowd disperds, going back to their businesses."
+
+[node name="Image" parent="." index="2"]
+text = ""
 
 [node name="Wait_30" parent="." index="4" instance=ExtResource( 2 )]
 margin_left = 36.0

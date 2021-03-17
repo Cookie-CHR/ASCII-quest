@@ -14,9 +14,7 @@ func manage(button, i):
 	
 	print(General.curr_sc)
 	var base_y
-	if General.curr_sc == "Title" or \
-	   General.curr_sc == "Credits" or \
-	   General.curr_sc == "Instructions":
+	if get_tree().get_current_scene().is_in_group("Big_Screen_Scene"):
 		base_y = 462
 	else:
 		base_y = 413
