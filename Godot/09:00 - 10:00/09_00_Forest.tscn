@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Buttons/Go.gd" type="Script" id=1]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Generic/Suspence.gd" type="Script" id=4]
+
+[node name="Forest" instance=ExtResource( 3 )]
+
+[node name="Text" parent="." index="1"]
+text = "The plague has got to the forest! Run for your life, every man for himself!"
+
+[node name="Image" parent="." index="2"]
+text = "
+     /􏿾
+    􏿾􏿾 \\
+	    / 􏿾\\      􏿾.􏿾􏿾-.􏿾        /\\
+ 􏿾\\/ 􏿾  􏿾   _􏿾    􏿾  )􏿾     􏿾􏿾 
+/􏿾􏿾/􏿾 􏿾􏿾\\  (􏿾 􏿾􏿾   􏿾 􏿾 )    / 􏿾
+􏿾 /  􏿾   \\(  􏿾     􏿾  􏿾 )  /􏿾 􏿾
+ 􏿾/ 􏿾  􏿾􏿾\\ (_􏿾􏿾  􏿾  􏿾 _)   / 􏿾
+	 /􏿾__􏿾_􏿾__􏿾  (_􏿾􏿾__􏿾_)    /􏿾__􏿾
+.􏿾􏿾..||..􏿾.􏿾..􏿾\\ V􏿾/.􏿾...􏿾_􏿾.􏿾|.
+       􏿾    􏿾..􏿾)-_􏿾.   􏿾~(_  􏿾
+_􏿾-􏿾._􏿾  􏿾  􏿾_ (_􏿾     􏿾_) 􏿾)
+􏿾 􏿾 .􏿾)_ 􏿾  \\􏿾\\(   􏿾  _S~􏿾~ 􏿾_
+ 􏿾 (􏿾  􏿾)  􏿾 􏿾􏿾.).􏿾  / 􏿾~ 􏿾 ~􏿾􏿾"
+
+[node name="Go" parent="." index="4" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 413.0
+margin_right = 367.0
+margin_bottom = 439.0
+text = "Let's get out of here, quick!"
+script = ExtResource( 1 )
+
+[node name="Infected" type="Node2D" parent="." index="6"]
+script = ExtResource( 4 )

@@ -13,16 +13,18 @@ text = "The local forest is actually quite small, but sometimes you can still ge
 Hunting season is on, and hopefully everybody will be at the Park right now; might as well give it a try..."
 
 [node name="Image" parent="." index="2"]
+margin_right = 987.0
+margin_bottom = 367.0
 text = "
      /\\
 	    /  \\
 	    /  \\      _.---._        /\\
- /\\/    \\   _(       )_     /\\
-/  /    \\  (           )    / \\
-/ /      \\(             )   /  
+ /\\/    \\   _(       )_     /  
+/  /    \\  (           )    / 
+/ /      \\(             )  /  
 	  /      \\ (_         _)   /
-	 /________\\  (_______)     /__
-.....||........\\ V /.....__....
+	 /________\\  (_______)    /____
+.....||........\\ V /.....__..||.
              ..|)-_\\.   (~(_
 _.--._      __ (_/      _) ~)
  c  . )_    \\_\\(      _S~ ~ (_

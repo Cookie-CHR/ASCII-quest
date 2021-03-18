@@ -80,3 +80,14 @@ script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Label" type="Label" parent="."]
+margin_left = 647.0
+margin_top = 439.0
+margin_right = 980.0
+margin_bottom = 14.0
+custom_fonts/font = ExtResource( 1 )
+text = "Money: 0 gp"
+__meta__ = {
+"_edit_use_anchors_": false
+}
