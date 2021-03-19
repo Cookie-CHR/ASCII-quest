@@ -12,7 +12,20 @@ text = "\"As one last advice, we have to monitor this plague, keep track of its 
 The queen congedes with a final bow, and the crowd disperds, going back to their businesses."
 
 [node name="Image" parent="." index="2"]
-text = ""
+text = "
+
+ _   _   _   _       __--. 
+| |_| |_| |_| |    _(  .~ ). 
+______________|   (_.C___.__) 
+______________/      
+____         |           
+__  |        | ___        
+||\\ |________|(   )_       () 
+||| |_|___|()(      )      (\\
+!!!.!...!../\\........)().../\\.
+     ()    |\\         /\\   
+   o_/)               |\\
+  'A /\\ "
 
 [node name="Wait_30" parent="." index="4" instance=ExtResource( 2 )]
 margin_left = 36.0
