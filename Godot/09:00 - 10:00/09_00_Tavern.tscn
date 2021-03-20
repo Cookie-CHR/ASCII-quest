@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Buttons/Go.gd" type="Script" id=1]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=3]
+
+[node name="Generic_bg" instance=ExtResource( 3 )]
+
+[node name="Text" parent="." index="1"]
+text = "\"Mouse! MOUSEEEE!\"
+A big, fat rodent is zig-zagging around the room, desperately trying to find a place to cover. Mary the innkeeper, armed with her toughest pan, is chasing it with fury, while some costumer is standing on a table screaming in panic. The tavern is in complete havoc."
+
+[node name="Image" parent="." index="2"]
+text = "
+
+   __
+   \\ \\ 
+    \\ \\     
+     \\/   .~ 
+      \\_ ()’) 
+       '\\“/ 
+  	       /_)    
+      /\\/_\\         ___ 
+          /_      ~( c.\\
+
+"
+
+[node name="-Cat" parent="." index="5" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "Free the cat               (+30m)"
+
+[node name="Wait_120" parent="." index="6" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 436.0
+text = "Steal some wine            (+30m)"
+
+[node name="Go" parent="." index="7" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 459.0
+text = "Get the hell out of here"
+script = ExtResource( 1 )
