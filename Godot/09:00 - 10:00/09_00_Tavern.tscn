@@ -1,10 +1,12 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Buttons/Go.gd" type="Script" id=1]
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Buttons/Give_Cat.gd" type="Script" id=4]
+[ext_resource path="res://Buttons/Steal.gd" type="Script" id=5]
 
-[node name="Generic_bg" instance=ExtResource( 3 )]
+[node name="Tavern" instance=ExtResource( 3 )]
 
 [node name="Text" parent="." index="1"]
 text = "\"Mouse! MOUSEEEE!\"
@@ -13,27 +15,29 @@ A big, fat rodent is zig-zagging around the room, desperately trying to find a p
 [node name="Image" parent="." index="2"]
 text = "
 
-   __
-   \\ \\ 
-    \\ \\     
-     \\/   .~ 
-      \\_ ()’) 
-       '\\“/ 
-  	       /_)    
-      /\\/_\\         ___ 
-          /_      ~( c.\\
+     __
+     \\ \\ 
+      \\ \\     
+       \\/   .~ 
+        \\_ ()') 
+         '\\“/ 
+   - -- ---/_)--------- -- -
+        /\\/_\\         ___ 
+            /_      ~( c.\\
 
 "
 
-[node name="-Cat" parent="." index="5" instance=ExtResource( 2 )]
+[node name="Give_Cat" parent="." index="5" instance=ExtResource( 2 )]
 margin_left = 36.0
 margin_top = 413.0
 text = "Free the cat               (+30m)"
+script = ExtResource( 4 )
 
-[node name="Wait_120" parent="." index="6" instance=ExtResource( 2 )]
+[node name="Steal" parent="." index="6" instance=ExtResource( 2 )]
 margin_left = 36.0
 margin_top = 436.0
-text = "Steal some wine            (+30m)"
+text = "Steal some wine            (+10m)"
+script = ExtResource( 5 )
 
 [node name="Go" parent="." index="7" instance=ExtResource( 2 )]
 margin_left = 36.0

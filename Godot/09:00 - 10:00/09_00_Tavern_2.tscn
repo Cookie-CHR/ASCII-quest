@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Buttons/Go.gd" type="Script" id=1]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=3]
+
+[node name="Generic_bg" instance=ExtResource( 3 )]
+
+[node name="Text" parent="." index="1"]
+text = "You try to take advntage of the chaos to sneak behind the counter and grab some bottles of wine. You almost got to the bottles, when suddently the weight of a ton of iron lands on your head with a huge SDENG sound.
+
+When you wake up, you are on the outside of the tavern, two hours have passed, and Mary's pan has a dent on it that just like your backhead."
+
+[node name="Image" parent="." index="2"]
+text = "
+
+ . . /\\
+  / / /
+   /_/
+  /     __
+ X     ( ')    _  _  _
+        /____  H  H  H 
+      <//     /~\\/~\\/~\\
+      (_>.   _|_||_||_|_
+    _._| /_ |___________|"
+
+[node name="Go" parent="." index="5" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "I'm not welcome here anymore"
+script = ExtResource( 1 )
