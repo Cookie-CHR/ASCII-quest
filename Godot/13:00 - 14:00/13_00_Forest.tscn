@@ -1,0 +1,57 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Buttons/Go.gd" type="Script" id=1]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Buttons/Hunt_N.gd" type="Script" id=3]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Buttons/Search_1.gd" type="Script" id=5]
+[ext_resource path="res://Buttons/Guard.gd" type="Script" id=6]
+
+[node name="Generic_bg" instance=ExtResource( 2 )]
+
+[node name="Text" parent="." index="1"]
+text = "Ruuun! The curse has- wait, wasn't there a plague here?
+A guard stands in the center of the area, too dumb to be surprised."
+
+[node name="Image" parent="." index="2"]
+text = "  
+     /\\
+	    /  \\
+	    /  \\      _.---._        /\\
+ /\\/    \\   _(       )_     /  
+/  /    \\  (           )    / 
+/ /      \\(             )  /  
+	  /      \\ (_...      _)   /
+	 /________\\  (\")_ A _)    /____
+.....||......_T_ vY/.....__..||.
+            /|_|\\_|\\.   (~(_
+_.--._      '/_\\  |     _) ~)
+ c  . )_    _/ \\_ |   _S~ ~ (_
+   (    )            / ~~ ~ ~ )"
+
+[node name="Search" parent="." index="5" instance=ExtResource( 4 )]
+margin_left = 36.0
+margin_top = 413.0
+margin_bottom = 26.0
+text = "Search for clues          (+30m)"
+script = ExtResource( 5 )
+
+[node name="Guard" parent="." index="6" instance=ExtResource( 4 )]
+margin_left = 36.0
+margin_top = 436.0
+margin_right = 400.0
+margin_bottom = 462.0
+text = "Talk to the guard         (+30m)"
+script = ExtResource( 6 )
+
+[node name="Hunt" parent="." index="7" instance=ExtResource( 4 )]
+margin_left = 36.0
+margin_top = 459.0
+text = "Hunt                       (+1h)"
+script = ExtResource( 3 )
+
+[node name="Go" parent="." index="8" instance=ExtResource( 4 )]
+margin_left = 36.0
+margin_top = 482.0
+text = "This place freaks me out, let's go away"
+script = ExtResource( 1 )

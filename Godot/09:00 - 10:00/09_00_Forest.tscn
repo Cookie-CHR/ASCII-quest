@@ -8,7 +8,7 @@
 [node name="Forest" instance=ExtResource( 3 )]
 
 [node name="Text" parent="." index="1"]
-text = "The plague has got to the forest! Run for your life, every man for himself!"
+text = "Ruuun! The curse has got to the forest! Run for your life, every man for himself!"
 
 [node name="Image" parent="." index="2"]
 text = "
