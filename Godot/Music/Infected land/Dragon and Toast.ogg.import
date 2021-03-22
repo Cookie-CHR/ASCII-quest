@@ -2,11 +2,13 @@
 
 importer="ogg_vorbis"
 type="AudioStreamOGGVorbis"
-valid=false
+path="res://.import/Dragon and Toast.ogg-4e3656ba2b4a6340a557a3f3592a3f89.oggstr"
 
 [deps]
 
 source_file="res://Music/Infected land/Dragon and Toast.ogg"
+dest_files=[ "res://.import/Dragon and Toast.ogg-4e3656ba2b4a6340a557a3f3592a3f89.oggstr" ]
+
 [params]
 
 loop=true

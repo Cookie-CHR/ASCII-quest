@@ -6,4 +6,3 @@ func re_init():
 	self.dest = Time.path()+"08_10_Forest_2"
 	self.minutes = 60
 	self.inv_get = "cat"
-	self.music = "res://Music/Forest/Midnight Tale.ogg"

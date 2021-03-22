@@ -81,7 +81,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="."]
+[node name="curr_money" type="Label" parent="."]
 margin_left = 647.0
 margin_top = 439.0
 margin_right = 980.0

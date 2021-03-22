@@ -12,7 +12,6 @@ func _ready():
 func manage(button, i):
 	button.re_init()
 	
-	print(General.curr_sc)
 	var base_y
 	if get_tree().get_current_scene().is_in_group("Big_Screen_Scene"):
 		base_y = 462
@@ -27,7 +26,6 @@ func manage(button, i):
 
 
 func change_scn(button):
-	MusicPlayer.change_music(button.music)
 	Time.time_sum(button.minutes);
 	var error = get_tree().change_scene(button.dest+".tscn")
 	if error:

@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Buttons/Wait_30.gd" type="Script" id=3]
+[ext_resource path="res://Generic/Music_Changer.gd" type="Script" id=4]
 
 [node name="Park" instance=ExtResource( 1 )]
 
@@ -32,3 +33,6 @@ margin_left = 36.0
 margin_top = 413.0
 text = "Back to your business      (+30m)"
 script = ExtResource( 3 )
+
+[node name="Suspence" type="Node2D" parent="." index="6"]
+script = ExtResource( 4 )

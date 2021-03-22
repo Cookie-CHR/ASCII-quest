@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Buttons/To_Title.gd" type="Script" id=2]
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Generic/script.gd" type="Script" id=4]
+[ext_resource path="res://Generic/Music_Changer.gd" type="Script" id=5]
 
 [node name="Instructions" type="Panel" groups=[
 "Big_Screen_Scene",
@@ -73,3 +74,6 @@ margin_top = 462.0
 margin_bottom = 26.0
 text = "Got it, back to title"
 script = ExtResource( 2 )
+
+[node name="Menu" type="Node2D" parent="."]
+script = ExtResource( 5 )

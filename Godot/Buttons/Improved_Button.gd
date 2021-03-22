@@ -6,7 +6,6 @@ var money = 0
 var inv_get = []
 var inv_lose = []
 var inv_required = []
-var music = ""
 
 func re_init():
 	# Re-initialize the variables

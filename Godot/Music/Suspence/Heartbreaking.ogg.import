@@ -2,11 +2,13 @@
 
 importer="ogg_vorbis"
 type="AudioStreamOGGVorbis"
-valid=false
+path="res://.import/Heartbreaking.ogg-807944b2273aaa88a9691ddce64ba15d.oggstr"
 
 [deps]
 
 source_file="res://Music/Suspence/Heartbreaking.ogg"
+dest_files=[ "res://.import/Heartbreaking.ogg-807944b2273aaa88a9691ddce64ba15d.oggstr" ]
+
 [params]
 
 loop=true

@@ -9,14 +9,3 @@ func re_init():
 	
 	if self.name == General.prev_sc:
 		hide()
-	
-	if self.name == "Forest":
-		self.music = "res://Music/Forest/Midnight Tale.ogg"
-	elif self.name == "Tavern":
-		self.music = "res://Music/Tavern/Thatched Villagers.ogg"
-	elif self.name == "Park":
-		self.music = "res://Music/Park/The Forest and the Trees.ogg"
-	elif self.name == "Castle":
-		self.music = "res://Music/Castle/Angevin B.ogg"
-	elif self.name == "Lab":
-		self.music = "res://Music/Wizard lab/Krampus Workshop.ogg"
