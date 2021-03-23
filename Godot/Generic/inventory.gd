@@ -14,6 +14,9 @@ func inv_print():
 		print(obj)
 
 func inv_find(object):
+	if object == "":
+		return true
+	
 	var found = false
 	for obj in inv:
 		if obj == object:

@@ -3,9 +3,9 @@ extends Button
 var dest = ""
 var minutes = 0
 var money = 0
-var inv_get = []
-var inv_lose = []
-var inv_required = []
+var inv_get = ""
+var inv_lose = ""
+var inv_required = ""
 
 func re_init():
 	# Re-initialize the variables
