@@ -1,0 +1,76 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Buttons/Play.gd" type="Script" id=1]
+[ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Buttons/To_Credits.gd" type="Script" id=3]
+[ext_resource path="res://Generic/script.gd" type="Script" id=4]
+[ext_resource path="res://Buttons/To_Instructions.gd" type="Script" id=5]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Generic/Music_Changer.gd" type="Script" id=7]
+
+[node name="Title" type="Panel" groups=[
+"Big_Screen_Scene",
+]]
+margin_right = 1024.0
+margin_bottom = 600.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="Label" parent="."]
+margin_left = 20.0
+margin_top = 25.0
+margin_right = 999.0
+margin_bottom = 574.0
+custom_fonts/font = ExtResource( 2 )
+text = "0=======================================================================================0
+|                                                                                       |
+|                                                                                       |
+|                                                                                       |
+|                                                                                       |
+|        ____    _____    _____   ____  ____                                            |
+|       //|/’   //   ))  //   \\\\  '||'  '||'                                      //    |
+|      // ||    ||   '  //    //   ||    ||        _____ __        ___   ___   __//_.   |
+|     //==||     '===.  ||    '    ||    ||       //  |7 '||  ||  //  ))((  ' ' //      |
+|    //   \\\\         || ||         ||    ||       ||  ||  ||  || ||===’  '=.   // ._    |
+|  .//     \\\\_. ((___// \\\\____./  _||_  _||_      \\\\__||  \\\\__/L \\\\___. .__))  \\\\__))   |
+|                                                     ||                                |
+|                                                     |L.                               |
+|                                                                                       |
+|                                                                                       |
+|                                                                                       |
+|                                                                                       |
+0=======================================================================================0
+0=======================================================================================0
+|                                                                                       |
+|                                                                                       |
+|                                                                                       |
+|                                                                                       |
+0=======================================================================================0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Play" parent="." instance=ExtResource( 6 )]
+margin_left = 42.0
+margin_top = 462.0
+margin_right = 0.0
+margin_bottom = 0.0
+text = "Play"
+script = ExtResource( 1 )
+
+[node name="Instructions" parent="." instance=ExtResource( 6 )]
+margin_left = 42.0
+margin_top = 485.0
+text = "Instructions"
+script = ExtResource( 5 )
+
+[node name="Credits" parent="." instance=ExtResource( 6 )]
+margin_left = 42.0
+margin_top = 508.0
+text = "Credits"
+script = ExtResource( 3 )
+
+[node name="Menu" type="Node2D" parent="."]
+script = ExtResource( 7 )

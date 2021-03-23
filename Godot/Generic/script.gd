@@ -12,13 +12,20 @@ func _ready():
 func manage(button, i):
 	button.re_init()
 	
+	#Adjust position
 	var base_y
 	if get_tree().get_current_scene().is_in_group("Big_Screen_Scene"):
 		base_y = 462
 	else:
 		base_y = 413
 	button.set_position(Vector2(36, base_y+(23*i)))
-	if button.visible == true:
+	
+	# Hidden/Shown button
+	# If the player doesn't have the requirements, the button doesn't appear
+	# Otherwise, the button stays visible and the button counter increases
+	if not Inventory.inv.find(button.inv_required):
+		hide()
+	else:
 		i += 1
 	
 	get_node(button.name).connect("pressed", self, "change_scn", [button])

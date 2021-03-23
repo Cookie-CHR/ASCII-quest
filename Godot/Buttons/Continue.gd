@@ -1,9 +1,6 @@
 extends "Improved_Button.gd"
 
 func re_init():
-	# Re-initialize the variables
-	# Useful for destinations that require an updated curr_sc, or the button's name
-	
 	# First, we have to find out the current scene and its index
 	var scene = get_tree().current_scene.filename
 	scene = str(scene.replace(".tscn", ""))
