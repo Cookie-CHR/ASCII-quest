@@ -1,9 +1,12 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Buttons/Undo.gd" type="Script" id=1]
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Generic/Music_Changer.gd" type="Script" id=4]
+[ext_resource path="res://Buttons/To_Seed_Q.gd" type="Script" id=5]
+[ext_resource path="res://Buttons/To_Cat_Q.gd" type="Script" id=6]
+[ext_resource path="res://Buttons/To_Clean_Q.gd" type="Script" id=7]
 
 [node name="Park" instance=ExtResource( 3 )]
 
@@ -40,12 +43,14 @@ margin_top = 413.0
 margin_right = 257.0
 margin_bottom = 439.0
 text = "I'll plant the seed"
+script = ExtResource( 5 )
 
 [node name="Cat_Q" parent="." index="6" instance=ExtResource( 2 )]
 margin_left = 36.0
 margin_top = 436.0
 margin_bottom = 26.0
 text = "Hey, I've got the cat!"
+script = ExtResource( 6 )
 
 [node name="Clean_Q" parent="." index="7" instance=ExtResource( 2 )]
 margin_left = 36.0
@@ -53,6 +58,7 @@ margin_top = 459.0
 margin_right = 257.0
 margin_bottom = 485.0
 text = "I'll clean the park"
+script = ExtResource( 7 )
 
 [node name="Undo" parent="." index="8" instance=ExtResource( 2 )]
 margin_left = 36.0
