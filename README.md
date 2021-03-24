@@ -42,21 +42,21 @@ In this example, option 1 would take 10 minutes to be completed, while option 2 
 
 In fact, Let's say you got in this situation:
 <pre><code>You have three potions in front of you:<br>
-one of them is harmless and tastes like hot chocolate, the others will make you faint for several hours.<br>
+one of them is harmless and tastes like chocolate, the others will make you faint for several hours.<br>
 What do you do?<br><br>
 
 Drink potion 1             (+10m)<br>
 Drink potion 2             (+several hours)<br>
 Drink potion 3             (+several hours)</code></pre> 
-You (the player) know potion 1 is the safe one, because of those time labels. This is "guessing the outcome" and, while making the game easier, it's also rather anticlimatic. For that reason, in the game, potions 2 and 3 won't have "+ several hours" in their label, but "+10m", like potion 1, even if they WILL actually take several hours.
+You (the player) know potion 1 is the safe one, because of those time labels. This is "guessing the outcome" and, while making the game easier, it's also rather anticlimatic. For that reason, in the game, potions 2 and 3 won't have "+ several hours" in their label, but "+10m", like potion 1, even if they WILL actually use several hours.
 
 <pre><code>
-                  _.---._                     /\     <br>
-                _(       )_                  /  \    <br>
-        /\     (           )                 /  \    <br>
-       /  \   (             )               /    \   <br>
-       /  \   (             )               /    \   <br>
-      /    \   (_         _)   ___         /      \  <br>
-      /    \     (_______)   _(   )        /      \  <br>
-     /______\      \ V /    (      )      /________\ <br>
-________||_________|___\___(________)_________||_________</code></pre> 
+                         _.---._                        /\     <br>
+                       _(       )_                     /  \    <br>
+        /\            (           )                    /  \    <br>
+       /  \          (             )                  /    \   <br>
+       /  \          (             )                  /    \   <br>
+      /    \    .__.  (_         _)   ___            /      \  <br>
+      /    \    ('')    (_______)   _(   )  __       /      \  <br>
+     /______\   /  \      \ V /    (      ) \_\/7   /________\ <br>
+________||_____( || )_____|___\___(________)___)________||_________</code></pre> 
