@@ -3,24 +3,28 @@ extends Node
 var money = 0
 var inv = []
 
-func inv_add(object):
-	inv.append(object)
+func inv_add(array):
+	for object in array:
+		inv.append(object)
 
-func inv_remove(object):
-	inv.erase(object)
+func inv_remove(array):
+	for object in array:
+		inv.erase(object)
 
 func inv_print():
 	for obj in inv:
 		print(obj)
 
-func inv_find(object):
-	if object == "":
+func inv_find(array):
+	if array == []:
 		return true
 	
 	var found = false
-	for obj in inv:
-		if obj == object:
+	for object in array:
+		if object in inv:
 			found = true
+		if not found:
+			return false
 	return found
 
 func money_manage(new):
