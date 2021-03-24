@@ -1,0 +1,64 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Buttons/Undo.gd" type="Script" id=1]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Generic/Music_Changer.gd" type="Script" id=4]
+
+[node name="Park" instance=ExtResource( 3 )]
+
+[node name="Text" parent="." index="1"]
+text = "You ask the quest guy what can be done today:
+
+\"There's one by those weird echology adepts: this seed here needs to be planted, and if it grows a fruit you'll get 4 gp. Not a bad deal, if you ask me.
+
+Also, the jesters have lost their cat. If you find it, bring it to the castle for 2 gp.
+
+Plus, you know, the park still needs cleaning. They even rose the pay to 3 gp, since nobody was answering.\""
+
+[node name="Image" parent="." index="2"]
+margin_right = 986.0
+margin_bottom = 367.0
+text = " 
+  __         .__.     \\
+  \\_\\/7      ('')      \\
+ ....)....   /  \\(     _\\_   .
+    ,Q.     ( || ))  __)))):'._
+
+        ______________ 
+        |            |
+        |   QUESTS   |
+        |____________|
+         ||  ('')  || 
+        _||__/__\\__||_
+        |  |,,,,,,|  |
+        |____________|"
+
+[node name="Seed_Q" parent="." index="5" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 413.0
+margin_right = 257.0
+margin_bottom = 439.0
+text = "I'll plant the seed"
+
+[node name="Cat_Q" parent="." index="6" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 436.0
+margin_bottom = 26.0
+text = "Hey, I've got the cat!"
+
+[node name="Clean_Q" parent="." index="7" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 459.0
+margin_right = 257.0
+margin_bottom = 485.0
+text = "I'll clean the park"
+
+[node name="Undo" parent="." index="8" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 482.0
+text = "Ok, I'll be back, thanks for the information"
+script = ExtResource( 1 )
+
+[node name="Park" type="Node2D" parent="." index="9"]
+script = ExtResource( 4 )
