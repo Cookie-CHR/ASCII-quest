@@ -4,7 +4,7 @@
 [ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Buttons/Go.gd" type="Script" id=3]
 [ext_resource path="res://Buttons/Wait_30.gd" type="Script" id=4]
-[ext_resource path="res://Generic/Music_Changer.gd" type="Script" id=5]
+[ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=5]
 
 [node name="Park" instance=ExtResource( 2 )]
 
@@ -43,5 +43,4 @@ margin_top = 436.0
 text = "Boring, let's go somewhere else!"
 script = ExtResource( 3 )
 
-[node name="Park" type="Node2D" parent="." index="7"]
-script = ExtResource( 5 )
+[node name="Park" parent="." index="7" instance=ExtResource( 5 )]

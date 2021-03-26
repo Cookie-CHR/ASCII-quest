@@ -85,5 +85,5 @@ margin_top = 485.0
 text = "Wait wait wait, what does that last part mean?"
 script = ExtResource( 1 )
 
-[node name="Menu" type="Node2D" parent="."]
+[node name="Menu" type="AudioStreamPlayer" parent="."]
 script = ExtResource( 6 )

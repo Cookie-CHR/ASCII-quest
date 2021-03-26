@@ -1,4 +1,4 @@
-extends Node2D
+extends AudioStreamPlayer
 
 func _ready():
 	# I usually change the musics at the pressing of the button, but sometimes it is not possible

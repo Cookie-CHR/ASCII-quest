@@ -75,5 +75,5 @@ margin_bottom = 26.0
 text = "Got it, back to title"
 script = ExtResource( 2 )
 
-[node name="Menu" type="Node2D" parent="."]
+[node name="Menu" type="AudioStreamPlayer" parent="."]
 script = ExtResource( 5 )

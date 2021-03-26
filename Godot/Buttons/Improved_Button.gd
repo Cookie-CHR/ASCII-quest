@@ -6,6 +6,7 @@ var money = 0
 var inv_get = []
 var inv_remove = []
 var inv_required = []
+var sc_required = []
 
 func re_init():
 	# Re-initialize the variables

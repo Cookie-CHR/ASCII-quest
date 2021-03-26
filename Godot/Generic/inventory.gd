@@ -32,4 +32,4 @@ func money_manage(new):
 	money += new
 
 func money_print():
-	print(money)
+	return(money)
