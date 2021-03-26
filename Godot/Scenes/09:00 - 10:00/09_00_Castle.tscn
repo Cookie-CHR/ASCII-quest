@@ -1,0 +1,50 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Buttons/Give_Cat.gd" type="Script" id=1]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Buttons/Inform_Forest.gd" type="Script" id=4]
+[ext_resource path="res://Buttons/Go.gd" type="Script" id=5]
+
+[node name="Castle" instance=ExtResource( 3 )]
+
+[node name="Text" parent="." index="1"]
+text = "The Queen can now receive you.
+
+You get admitted to the throne room. The queen, as protocol, is sitting on the royal throne, and is signaling you to speak.
+
+Her trusty jesters are stnding by, eager to lift her spirits and earn their pay."
+
+[node name="Image" parent="." index="2"]
+text = "              /\\      
+             /()\\     
+          |\\/    \\/|  
+         _|/ |^^| \\|_ 
+         \\|  ('')  |/ 
+     _    |  \\--/  |
+ *?\\/(*  _|_/ )( \\_|_   *) _
+  ('’)  |@@|_(/\\)_|@@|*?Y V(*
+  >||< 'o,_|_/__\\_|__| ('o’)  'o
+ ( /\\ \\%               >/Y\\<__%
+   |\\ /               (/___\\ /
+ ._|/_.               ._\\|/_."
+
+[node name="Plague_Forest" parent="." index="5" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "Inform about the forest   (+50m)"
+script = ExtResource( 4 )
+
+[node name="Give_Cat" parent="." index="6" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 436.0
+margin_right = 344.0
+margin_bottom = 439.0
+text = "Give back the cat         (+30m)"
+script = ExtResource( 1 )
+
+[node name="Go" parent="." index="7" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 459.0
+text = "Farewell and go away"
+script = ExtResource( 5 )

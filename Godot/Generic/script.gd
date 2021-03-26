@@ -13,7 +13,8 @@ func manage(button, i):
 	button.re_init()	# Hidden/Shown button
 	# If the player doesn't have the requirements, the button doesn't appear
 	if Inventory.inv_find(button.inv_required) == false \
-	   or General.sc_find(button.sc_required) == false:
+	   or General.sc_find(button.sc_required) == false \
+	   or General.sc_find(button.sc_forbidden) == true:
 		button.hide()
 	
 	#Adjust position
