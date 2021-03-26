@@ -8,7 +8,7 @@ extends Label
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	text = "Money: " + Inventory.money_print() + " gp"
+	text = "Money: " + str(Inventory.money_print()) + " gp"
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

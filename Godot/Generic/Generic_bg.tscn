@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Generic/curr_time.gd" type="Script" id=2]
 [ext_resource path="res://Generic/script.gd" type="Script" id=3]
+[ext_resource path="res://Generic/curr_money.gd" type="Script" id=4]
 
 [node name="Generic_bg" type="Panel"]
 margin_right = 1024.0
@@ -88,6 +89,7 @@ margin_right = 980.0
 margin_bottom = 14.0
 custom_fonts/font = ExtResource( 1 )
 text = "Money: 0 gp"
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
