@@ -2,6 +2,23 @@ extends Node
 
 var prev_sc = "Null"
 var curr_sc = "Null"
+var visited_sc = []
+
+func sc_add(array):
+	for scene in array:
+		visited_sc.append(scene)
+
+func sc_find(array):
+	if array == []:
+		return true
+	
+	var found = false
+	for scene in array:
+		if scene in visited_sc:
+			found = true
+		if not found:
+			return false
+	return found
 
 func update_prevs():
 	prev_sc = curr_sc
