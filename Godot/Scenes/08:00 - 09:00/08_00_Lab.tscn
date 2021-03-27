@@ -14,12 +14,12 @@ Everyone must have gone listening to the Queen's speech.
 (Man this lab is ugly, gotta redraw it one day or another)"
 
 [node name="Image" parent="." index="2"]
-text = "           .------------. 
-          /          .   \\
-         /            V_  \\
-        /              \\'-.\\  
-       /________________\\
- _____/__________________\\_____
+text = "   C_   3  .------------. 
+     S )  /          .   \\
+     ('  /            V_  \\
+    .--./              \\'-.\\  
+    |  Y________________\\
+ ___|_/__________________\\_____
 /______________________________\\
     |       _.----._       |
     |      /        \\      |
