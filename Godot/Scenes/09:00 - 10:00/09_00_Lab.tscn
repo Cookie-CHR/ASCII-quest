@@ -15,15 +15,15 @@ Little Timmy, the artisan's son, is standing there patiently, while the magician
 
 [node name="Image" parent="." index="2"]
 text = " _  H   _  __ ||
- H / \\  H  /( ||               _
-(_(___)[_](__)||           _   H
-''''''''''''''||           H  /
---_ ===  .----||         _(_)(__
-||\\\\||||//|||||'         '''''''
+ H / \\  H  /( ||              _
+(_(___)[_](__)||          _   H
+--------------||          H  / \\
+--_ ===  .----||        _(_)(___
+||\\\\||||//|||||'        --------
 --------------'/\\  
 H   __ /(  H _/__\\_    o   '
  )_/__\\_ )[ ] (--)    .  '  o 
-..“('’)”...../\\  /\\__ _______
+--“('’)”-----/\\  /\\__ _______
 -  .++.  --. )|\\(|   (.-----.)
 | /(__)\\ ||\\\\ /  \\   /       \\
 --_/--\\_-----/____\\--'._____.'--"
@@ -38,14 +38,14 @@ text = "Talk to Timmy"
 margin_left = 36.0
 margin_top = 436.0
 margin_bottom = 26.0
-text = "Wait for a while"
+text = "Wait for a while           (+10m)"
 script = ExtResource( 2 )
 
 [node name="Search" parent="." index="7" instance=ExtResource( 3 )]
 margin_left = 36.0
 margin_top = 459.0
 margin_bottom = 26.0
-text = "Have a look around"
+text = "Have a look around         (+30m)"
 
 [node name="Go" parent="." index="8" instance=ExtResource( 3 )]
 margin_left = 36.0
