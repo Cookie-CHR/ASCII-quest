@@ -13,9 +13,6 @@ func time_sum (new_m):
 func time_print(separator):
 	return "%02d%s%02d" % [h, separator, m]
 
-func path():
-	return "res://%02d:00 - %02d:00/" % [h, h+1]
-
 func findClosest(dest_array, minutes):
 	var closest_h = 8
 	var closest_m = 0
