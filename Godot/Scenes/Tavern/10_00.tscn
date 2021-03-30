@@ -1,0 +1,64 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Buttons/Go.gd" type="Script" id=1]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Buttons/Apologize.gd" type="Script" id=5]
+[ext_resource path="res://Buttons/Where_Cat.gd" type="Script" id=6]
+
+[node name="Tavern" instance=ExtResource( 3 )]
+
+[node name="Text" parent="." index="1"]
+text = "The tavern is the local place for reunions and good food. Mary's family has run the business for three generations, and plans to continue for a long time.
+
+You consult today's menu:
+  Bread           1 gp
+  Roast chicken   3 gp
+  Onion soup      2 gp
+  Green Salad     2 gp
+  Tea             1 gp
+  Beer            2 gp
+  Wine            3 gp"
+
+[node name="Image" parent="." index="2"]
+margin_right = 987.0
+text = "
+   _     _____  
+   X    |MENU |         )( 
+ _(_)_  |::. :|   _____(__)__
+ '''''  |::  :|   '''''''''''
+  _._   |:.. '.~   SsS      
+ _|_|_  '--- ()’) \\~~~/        
+ '''''       “ \\___/’          
+ ______  |    <|_)    |  ______
+ ------| |    _/_\\    | |------
+ --- .=|=| ---\\-|_--- |=|=. ---
+     | | |            | | |   "
+
+[node name="Tavern" parent="." index="5" instance=ExtResource( 4 )]
+
+[node name="Order" parent="." index="6" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "Order something            (+30m)"
+
+[node name="Apologize" parent="." index="7" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 436.0
+margin_bottom = 26.0
+text = "Apologize                  (+10m)"
+script = ExtResource( 5 )
+
+[node name="Cat" parent="." index="8" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 459.0
+margin_bottom = 26.0
+text = "What about the cat?"
+script = ExtResource( 6 )
+
+[node name="Go" parent="." index="9" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 482.0
+text = "Go away"
+script = ExtResource( 1 )

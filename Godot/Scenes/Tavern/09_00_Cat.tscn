@@ -34,3 +34,5 @@ margin_top = 413.0
 text = "Yay, money!"
 
 [node name="Tavern" parent="." index="6" instance=ExtResource( 3 )]
+
+[node name="Cat_Tavern" type="Node2D" parent="." index="7"]

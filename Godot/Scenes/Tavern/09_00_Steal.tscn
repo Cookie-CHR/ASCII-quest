@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Buttons/Go.gd" type="Script" id=1]
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Generic/sc_adder.gd" type="Script" id=5]
 
 [node name="Generic_bg" instance=ExtResource( 3 )]
 
@@ -32,3 +33,6 @@ text = "I'm not welcome here anymore"
 script = ExtResource( 1 )
 
 [node name="Chase" parent="." index="6" instance=ExtResource( 4 )]
+
+[node name="Busted" type="Node2D" parent="." index="7"]
+script = ExtResource( 5 )
