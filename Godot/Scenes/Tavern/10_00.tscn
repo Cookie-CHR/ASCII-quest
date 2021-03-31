@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Buttons/Go.gd" type="Script" id=1]
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=2]
@@ -6,20 +6,14 @@
 [ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Buttons/Apologize.gd" type="Script" id=5]
 [ext_resource path="res://Buttons/Where_Cat.gd" type="Script" id=6]
+[ext_resource path="res://Buttons/Order_Menu.gd" type="Script" id=7]
 
 [node name="Tavern" instance=ExtResource( 3 )]
 
 [node name="Text" parent="." index="1"]
 text = "The tavern is the local place for reunions and good food. Mary's family has run the business for three generations, and plans to continue for a long time.
 
-You consult today's menu:
-  Bread           1 gp
-  Roast chicken   3 gp
-  Onion soup      2 gp
-  Green Salad     2 gp
-  Tea             1 gp
-  Beer            2 gp
-  Wine            3 gp"
+You give a quick look at the menu: the dish of the day is a homecooked onion soup; there's also roasted chicken, bread or salad, and of course drinks and alcohol."
 
 [node name="Image" parent="." index="2"]
 margin_right = 987.0
@@ -42,6 +36,7 @@ text = "
 margin_left = 36.0
 margin_top = 413.0
 text = "Order something            (+30m)"
+script = ExtResource( 7 )
 
 [node name="Apologize" parent="." index="7" instance=ExtResource( 2 )]
 margin_left = 36.0

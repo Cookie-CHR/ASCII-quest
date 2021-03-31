@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Buttons/Go.gd" type="Script" id=1]
+[ext_resource path="res://Buttons/Order_Menu.gd" type="Script" id=2]
+[ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=5]
+
+[node name="Tavern" instance=ExtResource( 5 )]
+
+[node name="Text" parent="." index="1"]
+text = "It's lunch time! The tavern is crowded with costumers, the smell of onion soup fills the room and Mary and the waiters are running between the tables, delivering food as fast as they can.
+No time to chit-chat, just order what you want or leave already!"
+
+[node name="Image" parent="." index="2"]
+text = "
+   _     _____  
+   X    |MENU |         )( 
+ _(_)_  |::. :|   _____(__)__
+ '''''  |::  :|   '''''''''''
+  _._ .__'..  .~  SsS  __.    
+ _|_| ('\\) - ()')\\~~~/(c')      
+ '''' . T^   “ \\___/’  /   _ 
+ \\~~~/_\\/)|   </_)   |(\\_C|_|__
+ ------|_\\| /\\/_\\    |/_|------
+ ---- ||==| ----/_-- |==|) ---
+     _||  |          |  ||\\/   "
+
+[node name="Tavern" parent="." index="5" instance=ExtResource( 3 )]
+
+[node name="Order" parent="." index="6" instance=ExtResource( 4 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "Order something            (+30m)"
+script = ExtResource( 2 )
+
+[node name="Go" parent="." index="7" instance=ExtResource( 4 )]
+margin_left = 36.0
+margin_top = 436.0
+text = "Go away"
+script = ExtResource( 1 )
