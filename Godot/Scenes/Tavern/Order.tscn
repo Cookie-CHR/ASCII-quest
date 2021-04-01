@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Buttons/Undo.gd" type="Script" id=1]
 [ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Buttons/Order_Choice.gd" type="Script" id=4]
+[ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=5]
 
 [node name="Tavern" instance=ExtResource( 2 )]
 
@@ -17,7 +18,7 @@ text = "You consult today's menu:
   Beer            2 gp
   Wine            3 gp
 
-You are not really in the mood for chicken or salad (besides, the game developer couldn't make a decent ASCII art of them, and the buttons menu is already full). What will you order?"
+You are not really in the mood for bread or salad (besides, the game developer couldn't make a decent ASCII art of them, and the buttons menu is already full). What will you order?"
 
 [node name="Image" parent="." index="2"]
 text = "
@@ -33,15 +34,17 @@ text = "
     - -- -----------_\\.|-- - 
 "
 
-[node name="Bread" parent="." index="5" instance=ExtResource( 3 )]
+[node name="Tavern" parent="." index="5" instance=ExtResource( 5 )]
+
+[node name="Chicken" parent="." index="6" instance=ExtResource( 3 )]
 margin_left = 36.0
 margin_top = 413.0
-margin_right = 213.0
+margin_right = 235.0
 margin_bottom = 439.0
-text = "Just some bread"
+text = "The roast chicken"
 script = ExtResource( 4 )
 
-[node name="Soup" parent="." index="6" instance=ExtResource( 3 )]
+[node name="Soup" parent="." index="7" instance=ExtResource( 3 )]
 margin_left = 36.0
 margin_top = 436.0
 margin_right = 202.0
@@ -49,13 +52,13 @@ margin_bottom = 462.0
 text = "The onion soup"
 script = ExtResource( 4 )
 
-[node name="Tea" parent="." index="7" instance=ExtResource( 3 )]
+[node name="Tea" parent="." index="8" instance=ExtResource( 3 )]
 margin_left = 36.0
 margin_top = 459.0
 text = "A nice cup of tea"
 script = ExtResource( 4 )
 
-[node name="Beer" parent="." index="8" instance=ExtResource( 3 )]
+[node name="Beer" parent="." index="9" instance=ExtResource( 3 )]
 margin_left = 36.0
 margin_top = 482.0
 margin_right = 202.0
@@ -63,13 +66,13 @@ margin_bottom = 508.0
 text = "A pint of beer"
 script = ExtResource( 4 )
 
-[node name="Wine" parent="." index="9" instance=ExtResource( 3 )]
+[node name="Wine" parent="." index="10" instance=ExtResource( 3 )]
 margin_left = 36.0
 margin_top = 508.0
 text = "A bottle of wine"
 script = ExtResource( 4 )
 
-[node name="Undo" parent="." index="10" instance=ExtResource( 3 )]
+[node name="Undo" parent="." index="11" instance=ExtResource( 3 )]
 margin_left = 36.0
 margin_top = 531.0
 text = "Never mind, I don't think I'll order anything"
