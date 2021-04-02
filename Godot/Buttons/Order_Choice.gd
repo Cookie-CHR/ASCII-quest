@@ -2,7 +2,7 @@ extends "Improved_Button.gd"
 
 func re_init():
 	# Associate each item with its price with a dictionary
-	var items = {"Chicken":0,\
+	var items = {"Chicken":3,\
 				 "Soup":2,\
 				 "Tea":1,\
 				 "Beer":2,\
