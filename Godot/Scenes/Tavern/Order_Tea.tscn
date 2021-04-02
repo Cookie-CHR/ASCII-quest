@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Buttons/Undo.gd" type="Script" id=1]
+[ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=4]
+
+[node name="Tavern" instance=ExtResource( 3 )]
+
+[node name="Text" parent="." index="1"]
+text = "You order some tea.
+
+You fell very bri'ish all of a sudden.
+
+Anyway, Mary serves your tea and you put it in your inventory because you think it is best served cold."
+
+[node name="Image" parent="." index="2"]
+text = " 
+                    _   _
+                 _C|_|C|_|_
+                 ''''''''''
+   .~                __
+  ()')              (' )
+  “_\\_    __ s       _T_
+  /|_)\\_C(__)7_\\_/2_/|_/\\
+  _________________| |_\\'
+  '''''''''''''''''|-|-\\-- --
+  _________________|-' /"
+
+[node name="Tavern" parent="." index="5" instance=ExtResource( 2 )]
+
+[node name="Undo" parent="." index="6" instance=ExtResource( 4 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "I'll drink it later"
+script = ExtResource( 1 )

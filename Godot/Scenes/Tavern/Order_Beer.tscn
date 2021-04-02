@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Buttons/Undo.gd" type="Script" id=1]
+[ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=4]
+
+[node name="Tavern" instance=ExtResource( 3 )]
+
+[node name="Text" parent="." index="1"]
+text = "You order a pint of beer.
+
+Mary says it's best tasted cold, but nevertheless you decide to bring it with you and drink it later. You never know, it might be useful."
+
+[node name="Image" parent="." index="2"]
+margin_right = 987.0
+text = " 
+                    _   _
+                 _C|_|C|_|_
+                 ''''''''''
+       .~            __
+      ()')    .--.  (' )
+      “ \\___/||~~|   _T_
+  _____/|_)__'|__|__/|_/>
+  _________________| |_\\
+  '''''''''''''''''|-|-\\--- --
+  _________________|-' /"
+
+[node name="Tavern" parent="." index="5" instance=ExtResource( 2 )]
+
+[node name="Undo" parent="." index="6" instance=ExtResource( 4 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "I'll save it for later then"
+script = ExtResource( 1 )
