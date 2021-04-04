@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Buttons/Continue.gd" type="Script" id=1]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=4]
+
+[node name="Forest" instance=ExtResource( 2 )]
+
+[node name="Text" parent="." index="1"]
+text = "You search around for a while, and find nothing, maybe because this place is giving you the creeps and you keep getting distracted.
+
+The guard is looking at you, probably wondering what on earth are you doing."
+
+[node name="Image" parent="." index="2"]
+text = "             /\\
+_._ 	        /  \\
+   )        /  \\      _.---._
+    )   /\\ /    \\   _(       )_
+    3  /  \\/    \\  (           )
+    )  /  /      \\(             
+._.'  / 	  /      \\ (_...      _)
+ Y   __ 	 /________\\  (\")_ A _)
+.|..( -).....||......_T_ vY/....
+     /              /|_|\\_|\\.
+   <//\\_  _.--._    '/_\\  |
+   (_>.  ( c  . )_  _/ \\_ |
+ _._| /_C    (    )"
+
+[node name="Forest" parent="." index="5" instance=ExtResource( 4 )]
+
+[node name="Search" parent="." index="6" instance=ExtResource( 3 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "Search again              (+30m)"
+script = ExtResource( 1 )
+
+[node name="Undo" parent="." index="7" instance=ExtResource( 3 )]
+margin_left = 36.0
+margin_top = 436.0
+text = "Nothing here, let's try something else"
