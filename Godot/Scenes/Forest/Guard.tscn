@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Generic/sc_adder.gd" type="Script" id=1]
+[ext_resource path="res://Buttons/Undo.gd" type="Script" id=2]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=5]
+
+[node name="Forest" instance=ExtResource( 3 )]
+
+[node name="Text" parent="." index="1"]
+text = "\"Yeah, I was sent by the queen some hours ago, you kow, to check the border and make sure nobody goes into the forest. I was standing right here, and suddently - puff! The curse was gone, like, all those little characters disappeared.\"
+
+You ask him if he noticed anything suspicious:
+
+\"Nah, nothing at all. Aside from the wizard, who just came around to gather some herbs - you know, wizards stuff - aside from him, nobody passed by, not even some animal.\""
+
+[node name="Image" parent="." index="2"]
+text = "
+
+
+
+              ...
+              (\")  A
+              _T_  Y
+             /|_|\\_|
+       - ----'/_\\--|---- -
+     		        _/ \\_ |"
+
+[node name="Forest" parent="." index="5" instance=ExtResource( 4 )]
+
+[node name="Undo" parent="." index="6" instance=ExtResource( 5 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "So the wizard passed by, mh? Interesting..."
+script = ExtResource( 2 )
+
+[node name="Guard_Heard" type="Node2D" parent="." index="7"]
+script = ExtResource( 1 )
