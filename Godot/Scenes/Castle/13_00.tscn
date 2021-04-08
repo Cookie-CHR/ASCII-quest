@@ -1,0 +1,59 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Buttons/Go.gd" type="Script" id=1]
+[ext_resource path="res://Buttons/Give_Cat.gd" type="Script" id=2]
+[ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Buttons/Arrest.gd" type="Script" id=4]
+[ext_resource path="res://Buttons/Chat_W_Jesters.gd" type="Script" id=5]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=7]
+
+[node name="Castle" instance=ExtResource( 7 )]
+
+[node name="Text" parent="." index="1"]
+text = "The queen cannot be received, she is probably having lunch right now, but you do have access to some of the castle rooms anyway.
+
+The atmosphere in the castle is rather calm and quiet. you spot the jesters in a corner, chatting with a high guard."
+
+[node name="Image" parent="." index="2"]
+margin_left = 634.0
+margin_right = 987.0
+text = " ______/          \\________/
+ ====/              \\====/
+ ||||                ||||
+ ||||                ||||
+ |''  _              ||||
+ |*?\\/(*    *) _     ||||
+ |.( \")   *?Y V(*    |'....  A
+ | >||< 'o,('o')     | (\" ) ^Y^
+ '( /\\ \\%  >/Y\\< 'o, |'_TT_  | 
+ ===|\\-/--(/___\\\\%--/=/|@@|\\-|-
+  ._|/_.  ._\\|/_/     '/__\\ '|
+                       _\\|_  |"
+
+[node name="Castle" parent="." index="5" instance=ExtResource( 3 )]
+
+[node name="Chat" parent="." index="6" instance=ExtResource( 6 )]
+margin_left = 36.0
+margin_top = 413.0
+margin_bottom = 26.0
+text = "Chat with them            (+30m)"
+script = ExtResource( 5 )
+
+[node name="Give_Cat" parent="." index="7" instance=ExtResource( 6 )]
+margin_left = 36.0
+margin_top = 436.0
+text = "Give back the cat         (+30m)"
+script = ExtResource( 2 )
+
+[node name="Arrest" parent="." index="8" instance=ExtResource( 6 )]
+margin_left = 36.0
+margin_top = 459.0
+text = "Offer some alcohol        (+30m)"
+script = ExtResource( 4 )
+
+[node name="Go" parent="." index="9" instance=ExtResource( 6 )]
+margin_left = 36.0
+margin_top = 482.0
+text = "Go away"
+script = ExtResource( 1 )
