@@ -13,7 +13,7 @@ text = "You make and set up a small trap, hide in a bush and wait there.
 After a while, you hear the trap trigger. You quickly get out of your hiding place, look where your trap was and find...A cat. A stupid cat that is playing with your trap like it was a toy.
 
 You look in the depths of the forest in anger, and suddently you notice a swarm of not-translatable characters growing out of some trees. What is happening?
-You take up the cat and run away. He starts to purr. Dumb cat."
+You take up the cat and run away. It starts to purr. Dumb cat."
 
 [node name="Image" parent="." index="2"]
 text = "
