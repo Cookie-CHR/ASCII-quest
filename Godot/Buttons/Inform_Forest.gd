@@ -6,4 +6,5 @@ func re_init():
 	self.dest = "Scenes/Castle/Inform_Forest"
 	self.minutes = 50
 	self.sc_required = ["Plague_Forest"]
+	self.sc_forbidden = ["Informed_Forest"]
 	self.money = 5
