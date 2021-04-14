@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Generic/sc_adder.gd" type="Script" id=1]
+[ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=4]
+
+[node name="Castle" instance=ExtResource( 3 )]
+
+[node name="Text" parent="." index="1"]
+rect_pivot_offset = Vector2( 274, 114.772 )
+text = "You take the cat out of your backpack, and it immediately jumps to the floor and runs towards its owners.
+
+\"Tinkle!\", one of the jesters exclamates, \"Where have you been, little girl?\"
+
+Tinkle sits between the jesters and purrs, as happy as she can be. The jesters can't stop thanking you for your help, and even the guard nods in approval: \"A very good citizen indeed\"."
+
+[node name="Image" parent="." index="2"]
+text = "
+
+
+        _
+    *?\\/(*          *) _
+     ('')          ?Y V(*
+     >||< 'o,      ('o')  'o,
+    ( /\\ \\% .__.   >/Y\\<__%
+ - ---|\\-/--('')--(/___\\-/--- -
+    ._|/_.  /  \\( ._\\|/_.
+           ( || )'"
+
+[node name="Castle" parent="." index="5" instance=ExtResource( 2 )]
+
+[node name="Wait_0" parent="." index="6" instance=ExtResource( 4 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "It was a pleasure"
+
+[node name="Cat_Castle" type="Node2D" parent="." index="7"]
+script = ExtResource( 1 )
