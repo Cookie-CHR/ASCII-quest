@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Buttons/Undo.gd" type="Script" id=1]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=4]
+
+[node name="Tavern" instance=ExtResource( 2 )]
+
+[node name="Text" parent="." index="1"]
+text = "You would very much like to order something, but you don't have enough money, your pockets are empty.
+
+Go get a job, or something."
+
+[node name="Image" parent="." index="2"]
+text = "
+           _____
+          |MENU |
+          |::. :|
+          |::  :|
+          |:.. :| __ 
+          '-----'(' )
+                  _T_
+                 /|_/\\
+                '</_\\>'
+    - -- --------_\\.|----- - 
+          "
+
+[node name="Tavern" parent="." index="5" instance=ExtResource( 4 )]
+
+[node name="Undo" parent="." index="6" instance=ExtResource( 3 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "This is so sad"
+script = ExtResource( 1 )
