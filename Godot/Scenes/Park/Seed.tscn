@@ -1,0 +1,134 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Generic/curr_money.gd" type="Script" id=1]
+[ext_resource path="res://Buttons/Continue.gd" type="Script" id=2]
+[ext_resource path="res://Generic/curr_time.gd" type="Script" id=3]
+[ext_resource path="res://Generic/sc_adder.gd" type="Script" id=4]
+[ext_resource path="res://Generic/script.gd" type="Script" id=5]
+[ext_resource path="res://Buttons/Undo.gd" type="Script" id=6]
+[ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=7]
+[ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=9]
+
+[node name="Park" type="Panel"]
+margin_right = 1024.0
+margin_bottom = 600.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="Label" parent="."]
+margin_left = 20.0
+margin_top = 25.0
+margin_right = 1004.0
+margin_bottom = 574.0
+custom_fonts/font = ExtResource( 7 )
+text = "0====================================================0 0================================0
+|                                                    | |                                |
+|                                                    | |                                |
+|                                                    | |                                |
+|                                                    | |                                |
+|                                                    | |                                |
+|                                                    | |                                |
+|                                                    | |                                |
+|                                                    | |                                |
+|                                                    | |                                |
+|                                                    | |                                |
+|                                                    | |                                |
+|                                                    | |                                |
+|                                                    | |                                |
+|                                                    | |                                |
+0====================================================0 0================================0
+0====================================================0 0================================0
+|                                                    | |                                |
+|                                                    | |                                |
+|                                                    | |                                |
+|                                                    | |                                |
+|                                                    | |                                |
+|                                                    | |                                |
+0====================================================0 0================================0"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Text" type="Label" parent="."]
+margin_left = 42.0
+margin_top = 48.0
+margin_right = 590.0
+margin_bottom = 365.0
+custom_fonts/font = ExtResource( 7 )
+text = "You wander in the park for a while until you find a good, isolated spot. Convinced, you dig a small hole in the ground and plant the seed.
+
+Nothing happens. No istantaneous growth, no floating popup with remaining time, not even a paywall. Hope the seed wasn't broken.
+
+You should probably check back later to see if something changed."
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Image" type="Label" parent="."]
+margin_left = 635.0
+margin_top = 48.0
+margin_right = 988.0
+margin_bottom = 365.0
+rect_pivot_offset = Vector2( 759.754, 0 )
+custom_fonts/font = ExtResource( 7 )
+text = "
+
+
+          __
+         ( -)
+          /              )-_
+        <//\\__      __  (_/
+        (_>.        \\_\\(
+  ... _._| /_ .-'-......)....
+                o"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="curr_time" type="Label" parent="."]
+margin_left = 647.0
+margin_top = 416.0
+margin_right = 980.0
+margin_bottom = 14.0
+custom_fonts/font = ExtResource( 7 )
+text = "Current time: 0:00"
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="curr_money" type="Label" parent="."]
+margin_left = 647.0
+margin_top = 439.0
+margin_right = 980.0
+margin_bottom = 14.0
+custom_fonts/font = ExtResource( 7 )
+text = "Money: 0 gp"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Park" parent="." instance=ExtResource( 8 )]
+
+[node name="Seed_Planted" type="Node2D" parent="."]
+script = ExtResource( 4 )
+
+[node name="Continue" parent="." instance=ExtResource( 9 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "Stay here and guard       (+30m)"
+script = ExtResource( 2 )
+
+[node name="Undo" parent="." instance=ExtResource( 9 )]
+margin_left = 36.0
+margin_top = 436.0
+margin_right = 125.0
+margin_bottom = 462.0
+text = "Go away"
+script = ExtResource( 6 )
