@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Buttons/Undo.gd" type="Script" id=1]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=4]
+
+[node name="Castle" instance=ExtResource( 3 )]
+
+[node name="Text" parent="." index="1"]
+text = "You try to explain the forest is now free from any plague. Everyone seems confused.
+
+\"That's not possible!\", says the Queen, \"Nothing known can cancel the plague effects, and surely it can't just back up and leave on its own!\"
+
+You try to convince them furthermore, but nothing seems to work. The plague can't retire, and they won't send anyone to check this silly theory, do not even think about that."
+
+[node name="Image" parent="." index="2"]
+text = "
+
+         /\\      
+        /()\\           _
+     |\\/    \\/|    _  ' )  _
+    _|/ |^^| \\|_  ' )  (  ' )
+    \\|  ('')  |/   (   .   (
+     |  \\--/  |    .       .
+    _|_/ )( \\_|_
+   |@@|_(/\\)_|@@|
+   |__|_/__\\_|__| "
+
+[node name="Castle" parent="." index="5" instance=ExtResource( 4 )]
+
+[node name="Undo" parent="." index="6" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 413.0
+margin_right = 246.0
+margin_bottom = 439.0
+text = "Enough time wasted"
+script = ExtResource( 1 )
