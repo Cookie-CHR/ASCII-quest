@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Buttons/Go.gd" type="Script" id=1]
+[ext_resource path="res://Buttons/Search_Lab_1.gd" type="Script" id=2]
+[ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=5]
+
+[node name="Lab" instance=ExtResource( 4 )]
+
+[node name="Text" parent="." index="1"]
+text = "The door is open, but the lab is empty. The wizard must have gone out for lunch, and he left the door open."
+
+[node name="Image" parent="." index="2"]
+text = " _  H   _  __ ||
+ H / \\  H  /( ||              _
+(_(___)[_](__)||          _   H
+--------------||          H  / \\
+--_ ===  .----||        _(_)(___
+||\\\\||||//||||||        --------
+--------------||   
+H H    /(  H  ||       o   '
+ )_\\  (  )[ ] ||      .  '  o 
+--------------||      _______
+-  .---- --.  ||     (.-----.)
+| //|||| ||\\\\ ||     /       \\
+--------------||-----'._____.'--"
+
+[node name="Lab" parent="." index="5" instance=ExtResource( 3 )]
+
+[node name="Search" parent="." index="6" instance=ExtResource( 5 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "Have a look around         (+30m)"
+script = ExtResource( 2 )
+
+[node name="Go" parent="." index="7" instance=ExtResource( 5 )]
+margin_left = 36.0
+margin_top = 436.0
+text = "Go away"
+script = ExtResource( 1 )
