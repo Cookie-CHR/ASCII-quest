@@ -8,6 +8,8 @@ func _ready():
 
 func change_music (new_music):
 	if new_music != "":
+		if new_music == "Silence":
+			stop()
 		if curr_music != new_music:
 			curr_music = new_music
 			stop()
