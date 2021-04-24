@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Buttons/Go.gd" type="Script" id=1]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=4]
+
+[node name="Castle" instance=ExtResource( 2 )]
+
+[node name="Text" parent="." index="1"]
+text = "The castle is closed. That's annoying.
+
+A guard tells you the Queen is having a very important meeting about the plague. He says we might have found our infector!"
+
+[node name="Image" parent="." index="2"]
+text = "   ____       ____     ___|_
+    _|__   _-\\ @@ /-_      |
+         _/ \\_\\--/_/ \\_
+    __  / \\-' |  | '-/ \\   __|_
+   _|_ /\\ /|  ^  |  |\\ /\\  _|___
+  ____|-.| | (O) |  ^ |.-|    |
+   |  |--| |  Y  |  Y |--|
+      |--| |  |  ^  | |--|
+      |--| |  | (O) | |--| __|_
+ __|_ |--| ^  |  Y  | |--|  |
+ _|___|--|(o)_|__|__|_|--|_____  "
+
+[node name="Castle" parent="." index="5" instance=ExtResource( 4 )]
+
+[node name="Go" parent="." index="6" instance=ExtResource( 3 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "Nothing to do here, let's move"
+script = ExtResource( 1 )
