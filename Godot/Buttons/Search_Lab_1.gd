@@ -4,4 +4,5 @@ func re_init():
 	# Re-initialize the variables
 	# Useful for destinations that require an updated curr_sc, or the button's name
 	self.dest = "Scenes/Lab/09_00_Search"
+	self.sc_forbidden = ["AAAA", "BBBB", "CCCC"]
 	self.minutes = 30
