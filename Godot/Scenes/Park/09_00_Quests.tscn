@@ -41,16 +41,16 @@ text = "
 [node name="Seed_Q" parent="." index="5" instance=ExtResource( 2 )]
 margin_left = 36.0
 margin_top = 413.0
-margin_right = 257.0
+margin_right = 256.0
 margin_bottom = 439.0
-text = "I'll plant the seed"
+text = "I'll plant the seed        (+10m)"
 script = ExtResource( 5 )
 
 [node name="Cat_Q" parent="." index="6" instance=ExtResource( 2 )]
 margin_left = 36.0
 margin_top = 436.0
 margin_bottom = 26.0
-text = "Hey, I've got the cat!"
+text = "Hey, I've got the cat!     (+10m)"
 script = ExtResource( 6 )
 
 [node name="Clean_Q" parent="." index="7" instance=ExtResource( 2 )]
@@ -58,7 +58,7 @@ margin_left = 36.0
 margin_top = 459.0
 margin_right = 257.0
 margin_bottom = 485.0
-text = "I'll clean the park"
+text = "I'll clean the park        (+10m)"
 script = ExtResource( 7 )
 
 [node name="Undo" parent="." index="8" instance=ExtResource( 2 )]
