@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Buttons/Win_Or_Lose.gd" type="Script" id=3]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=4]
+
+[node name="Lab" instance=ExtResource( 2 )]
+
+[node name="Text" parent="." index="1"]
+text = "You search the lab further, moving some books and even opening drawers.
+
+After some time, your attention gets caught by a crystal ball on a dark shelf. The ball glows faintly, its fumes dancing in a spiraling motion.
+
+You observe it for a while, almost hypnotized by this dance, and..."
+
+[node name="Image" parent="." index="2"]
+text = "
+           _..----.._
+         .'   ..._   '.
+        /  _.' __ '-.  \\
+       / .' .-'_ '. (   \\
+       | \\ C  6 )  ) \\  |
+       |  ) )  (__S  /  |
+       \\ '._'.__.._-' ' /
+        /.  '-.__ . ' .\\      
+  - ---/  '-..____..-'  \\--- -
+       '.              .'
+         '--..____..--'"
+
+[node name="Silence" parent="." index="5" instance=ExtResource( 1 )]
+
+[node name="Win_or_Lose" parent="." index="6" instance=ExtResource( 4 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "...and?"
+script = ExtResource( 3 )
