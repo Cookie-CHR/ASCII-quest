@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Buttons/Go.gd" type="Script" id=1]
 [ext_resource path="res://Buttons/Search_Lab_1.gd" type="Script" id=2]
 [ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Buttons/To_S_Room.gd" type="Script" id=6]
 
 [node name="Lab" instance=ExtResource( 4 )]
 
@@ -34,8 +35,15 @@ margin_top = 413.0
 text = "Have a look around         (+30m)"
 script = ExtResource( 2 )
 
-[node name="Go" parent="." index="7" instance=ExtResource( 5 )]
+[node name="S-Room" parent="." index="7" instance=ExtResource( 5 )]
 margin_left = 36.0
 margin_top = 436.0
+margin_bottom = 26.0
+text = "Go into the secret room"
+script = ExtResource( 6 )
+
+[node name="Go" parent="." index="8" instance=ExtResource( 5 )]
+margin_left = 36.0
+margin_top = 459.0
 text = "Go away"
 script = ExtResource( 1 )
