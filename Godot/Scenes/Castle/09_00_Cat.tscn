@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Generic/sc_adder.gd" type="Script" id=4]
+[ext_resource path="res://Buttons/Undo.gd" type="Script" id=5]
 
 [node name="Castle" instance=ExtResource( 1 )]
 
@@ -29,10 +30,11 @@ text = "
 
 [node name="Castle" parent="." index="5" instance=ExtResource( 2 )]
 
-[node name="Wait_0" parent="." index="6" instance=ExtResource( 3 )]
+[node name="Undo" parent="." index="6" instance=ExtResource( 3 )]
 margin_left = 36.0
 margin_top = 413.0
 text = "It was a pleasure"
+script = ExtResource( 5 )
 
 [node name="Cat_Castle" type="Node2D" parent="." index="7"]
 script = ExtResource( 4 )
