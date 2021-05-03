@@ -8,7 +8,7 @@
 [node name="Lab" instance=ExtResource( 1 )]
 
 [node name="Text" parent="." index="1"]
-text = "As soon as you step foot into the tunnel, you see a white globe appear in front of you, and then charge in your direction. It must be some sort of anti-intrusion system!
+text = "As soon as you step foot into the tunnel, you hear a high-pitched noise, and a flaming white globe appears in front of you, charging in your direction. It must be some sort of anti-intrusion system!
 
 You don't have much time left before it reaches you, just enough to say..."
 
