@@ -6,7 +6,7 @@ func re_init():
 	self.dest = "Scenes/Castle/Arrest"
 	self.minutes = 120
 	# Need either wine or beer
-	if Inventory.find(["beer"]):
+	if Inventory.inv_find(["beer"]):
 		self.inv_required = ["beer"]
 	else:
 		self.inv_required = ["wine"]
