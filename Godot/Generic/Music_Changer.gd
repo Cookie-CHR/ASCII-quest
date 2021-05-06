@@ -8,7 +8,7 @@ func _ready():
 	elif (self.name == "Park"):
 		MusicPlayer.change_music("res://Music/Park/The Forest and the Trees.ogg")
 	elif (self.name == "Forest"):
-		MusicPlayer.change_music("res://Music/Forest/Midnight Tale.ogg")
+		MusicPlayer.change_music("res://Music/Park/Midnight Tale.ogg")
 	elif (self.name == "Tavern"):
 		MusicPlayer.change_music("res://Music/Tavern/Thatched Villagers.ogg")
 	elif (self.name == "Castle"):
@@ -26,4 +26,6 @@ func _ready():
 		MusicPlayer.change_music("res://Music/Death/Hidden Past.ogg")
 	elif (self.name == "Epilogue"):
 		MusicPlayer.change_music("res://Music/Epilogue/Ascending the Vale.ogg")
-	
+	elif (self.name == "Accuse"):
+		MusicPlayer.change_music("res://Music/Castle/Plans in Motion.ogg")
+

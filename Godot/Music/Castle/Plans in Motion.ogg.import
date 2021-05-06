@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Plans in Motion.ogg-8f9283b69cca28e22bfd5aeebbff045a.oggstr"
+
+[deps]
+
+source_file="res://Music/Castle/Plans in Motion.ogg"
+dest_files=[ "res://.import/Plans in Motion.ogg-8f9283b69cca28e22bfd5aeebbff045a.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
