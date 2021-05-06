@@ -28,7 +28,7 @@ text = "
          |@@|_(/\\)_|@@|
    - ----|__|_/__\\_|__|---- -"
 
-[node name="Castle" parent="." index="5" instance=ExtResource( 4 )]
+[node name="Accuse" parent="." index="5" instance=ExtResource( 4 )]
 
 [node name="Prove_Flask" parent="." index="6" instance=ExtResource( 6 )]
 margin_left = 36.0

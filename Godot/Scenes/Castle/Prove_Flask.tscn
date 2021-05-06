@@ -28,7 +28,7 @@ text = "
          |@@|_(/\\)_|@@|
    - ----|__|_/__\\_|__|---- -"
 
-[node name="Castle" parent="." index="5" instance=ExtResource( 5 )]
+[node name="Accuse" parent="." index="5" instance=ExtResource( 5 )]
 
 [node name="Flask_Proved" type="Node2D" parent="." index="6"]
 script = ExtResource( 2 )
