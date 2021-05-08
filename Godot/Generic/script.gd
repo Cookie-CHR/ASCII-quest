@@ -6,7 +6,11 @@ func _ready():
 	var i = 0
 	
 	for child in get_children():
-		if child is Button:
+		if child.name == "Mute":
+			if (MusicPlayer.mute):
+				child.text = "Off"
+			get_node("Mute").connect("pressed", self, "mute_unmute", [child])
+		elif child is Button:
 			i = manage(child, i)
 
 func manage(button, i):
@@ -32,6 +36,13 @@ func manage(button, i):
 	get_node(button.name).connect("pressed", self, "change_scn", [button])
 	return i
 
+
+func mute_unmute(button):
+	MusicPlayer.mute_unmute()
+	if (MusicPlayer.mute):
+		button.text = "Off"
+	else:
+		button.text = "On"
 
 func change_scn(button):
 	Time.time_sum(button.minutes);

@@ -72,5 +72,29 @@ margin_top = 508.0
 text = "Credits"
 script = ExtResource( 3 )
 
+[node name="Sound" type="Label" parent="."]
+margin_left = 42.0
+margin_top = 534.0
+margin_right = 40.0
+margin_bottom = 14.0
+custom_fonts/font = ExtResource( 2 )
+text = "Sound:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Mute" type="Button" parent="."]
+margin_left = 114.0
+margin_top = 531.0
+margin_right = 12.0
+margin_bottom = 20.0
+custom_fonts/font = ExtResource( 2 )
+text = "On"
+flat = true
+align = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Menu" type="AudioStreamPlayer" parent="."]
 script = ExtResource( 7 )

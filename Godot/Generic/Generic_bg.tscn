@@ -93,3 +93,27 @@ script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Sound" type="Label" parent="."]
+margin_left = 647.0
+margin_top = 528.0
+margin_right = 40.0
+margin_bottom = 14.0
+custom_fonts/font = ExtResource( 1 )
+text = "Sound:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Mute" type="Button" parent="."]
+margin_left = 719.0
+margin_top = 525.0
+margin_right = 767.0
+margin_bottom = 551.0
+custom_fonts/font = ExtResource( 1 )
+text = "On"
+flat = true
+align = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
