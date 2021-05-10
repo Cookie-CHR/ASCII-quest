@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Buttons/Clean.gd" type="Script" id=1]
 [ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Buttons/Wait_10.gd" type="Script" id=7]
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Buttons/Talk_Park_2.gd" type="Script" id=10]
 
 [node name="Park" instance=ExtResource( 9 )]
 
@@ -46,6 +47,7 @@ script = ExtResource( 4 )
 margin_left = 36.0
 margin_top = 436.0
 text = "Talk to mr. Copper"
+script = ExtResource( 10 )
 
 [node name="Clean" parent="." index="10" instance=ExtResource( 8 )]
 margin_left = 36.0
