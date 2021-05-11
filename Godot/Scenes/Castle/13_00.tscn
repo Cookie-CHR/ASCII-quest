@@ -3,7 +3,7 @@
 [ext_resource path="res://Buttons/Go.gd" type="Script" id=1]
 [ext_resource path="res://Buttons/Give_Cat.gd" type="Script" id=2]
 [ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Buttons/Arrest.gd" type="Script" id=4]
+[ext_resource path="res://Buttons/Guard_Alcol.gd" type="Script" id=4]
 [ext_resource path="res://Buttons/Chat_W_Jesters.gd" type="Script" id=5]
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=7]
@@ -46,7 +46,7 @@ margin_top = 436.0
 text = "Give back the cat         (+30m)"
 script = ExtResource( 2 )
 
-[node name="Arrest" parent="." index="8" instance=ExtResource( 6 )]
+[node name="Guard_Alcol" parent="." index="8" instance=ExtResource( 6 )]
 margin_left = 36.0
 margin_top = 459.0
 text = "Offer some alcohol        (+30m)"
