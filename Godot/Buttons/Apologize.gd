@@ -6,3 +6,4 @@ func re_init():
 	self.dest = "Scenes/"+General.curr_sc+"/Apologize"
 	self.minutes = 10
 	self.sc_required = ["Busted"]
+	self.sc_forbidden = ["Forgiven"]
