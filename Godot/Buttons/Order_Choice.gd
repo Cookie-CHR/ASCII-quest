@@ -18,3 +18,4 @@ func re_init():
 	
 	self.minutes = 30
 	self.money = -(items[self.name])
+	self.inv_get = [self.name]

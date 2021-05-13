@@ -4,9 +4,17 @@ func re_init():
 	# Re-initialize the variables
 	# Useful for destinations that require an updated curr_sc, or the button's name
 	self.dest = "Scenes/Castle/Guard_Alcol"
-	self.minutes = 120
-	# Need either wine or beer
-	if Inventory.inv_find(["beer"]):
-		self.inv_required = ["beer"]
+	
+	if Inventory.money >= 3:
+		self.minutes = 10
 	else:
-		self.inv_required = ["wine"]
+		self.minutes = 60
+	
+	# Need either wine or beer
+	if Inventory.inv_find(["Beer"]):
+		self.inv_required = ["Beer"]
+	else:
+		self.inv_required = ["Wine"]
+	# either one will be removed
+	self.inv_remove = self.inv_required
+	

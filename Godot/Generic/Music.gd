@@ -5,7 +5,6 @@ var mute = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	print(mute)
 	if(not mute):
 		play()
 
@@ -27,4 +26,3 @@ func mute_unmute():
 	else:
 		mute = true
 		stop()
-	print(mute)
