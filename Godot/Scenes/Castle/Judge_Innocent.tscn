@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Buttons/Undo.gd" type="Script" id=1]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=4]
+
+[node name="Castle" instance=ExtResource( 2 )]
+
+[node name="Text" parent="." index="1"]
+text = "The queen shakes her head: \"I'm sorry, but you didn't bring eough proofs of the wizard's implication in this. Come back when you have more solid basis.\""
+
+[node name="Image" parent="." index="2"]
+text = "
+
+               /\\      
+              /()\\
+           |\\/    \\/|
+          _|/ |^^| \\|_ 
+          \\|  ('')  |/
+           |  \\--/  |
+          _|_/ )( \\_|_
+         |@@|_(/\\)_|@@|
+   - ----|__|_/__\\_|__|---- -"
+
+[node name="Castle" parent="." index="7" instance=ExtResource( 3 )]
+
+[node name="Undo" parent="." index="8" instance=ExtResource( 4 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "I will, my Queen"
+script = ExtResource( 1 )
