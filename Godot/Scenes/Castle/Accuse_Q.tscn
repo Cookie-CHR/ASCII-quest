@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Buttons/Arrest.gd" type="Script" id=2]
+[ext_resource path="res://Buttons/Continue.gd" type="Script" id=2]
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Buttons/Undo.gd" type="Script" id=4]
 [ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=5]
@@ -37,7 +37,7 @@ margin_top = 413.0
 text = "No, my Queen, I'm sorry, please don't kill me"
 script = ExtResource( 4 )
 
-[node name="Arrest" parent="." index="9" instance=ExtResource( 3 )]
+[node name="Continue" parent="." index="9" instance=ExtResource( 3 )]
 margin_left = 36.0
 margin_top = 436.0
 text = "Indeed I do! You are the infector!"
