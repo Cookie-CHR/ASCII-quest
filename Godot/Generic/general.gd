@@ -14,6 +14,7 @@ func sc_find(array):
 	
 	var found = false
 	for scene in array:
+		found = false
 		if scene in visited_sc:
 			found = true
 		if not found:
