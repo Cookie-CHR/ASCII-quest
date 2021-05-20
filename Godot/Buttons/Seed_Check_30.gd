@@ -7,3 +7,4 @@ func re_init():
 	self.sc_forbidden = ["Fruit_Harvested"]
 	
 	self.dest = "Scenes/Park/Fruit"
+	self.minutes = 30
