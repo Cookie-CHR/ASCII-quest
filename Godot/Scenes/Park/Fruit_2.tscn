@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Generic/sc_adder.gd" type="Script" id=1]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Buttons/Undo.gd" type="Script" id=5]
+
+[node name="Park" instance=ExtResource( 2 )]
+
+[node name="Text" parent="." index="1"]
+text = "Slowly and cautiously, you walk near the plant. Surprisingly, it doesn't attack you. It wasn't as evil as it looked, after all...
+
+You hold up your hand and stroke the Cloeria. It reacts with a slight purr of appreciation.
+
+Between its leaves, you find a round fruit. With the plant's permission, you take it and bring it to the quest guy."
+
+[node name="Image" parent="." index="2"]
+text = "
+
+             .----.
+            /   .  )    .--.
+      __   ^^^^'   .   / (  
+     ( ')  '._____/.'.(   )
+      _T__/      _._\\ \\  /
+     /\\_|       /_  '\\ \\(
+     '/_\\       ' '.__| Y
+  .../_.|_...........-'''-....
+                       o"
+
+[node name="Park" parent="." index="7" instance=ExtResource( 4 )]
+
+[node name="Fruit_Harvested" type="Node2D" parent="." index="8"]
+script = ExtResource( 1 )
+
+[node name="Undo" parent="." index="9" instance=ExtResource( 3 )]
+margin_left = 36.0
+margin_top = 413.0
+margin_right = 587.0
+margin_bottom = 439.0
+text = "This subquest was lame! At least I have the money"
+script = ExtResource( 5 )
