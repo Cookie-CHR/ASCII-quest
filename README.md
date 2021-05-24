@@ -60,3 +60,5 @@ You (the player) know potion 1 is the safe one, because of those time labels. Th
       /    \    ('')    (_______)   _(   )  __       /      \  <br>
      /______\   /  \      \ V /    (      ) \_\/7   /________\ <br>
 ________||_____( || )_____|___\___(________)___)________||_________</code></pre> 
+
+©️ 2021, Chiara Calzolari - All Rights Reserved
