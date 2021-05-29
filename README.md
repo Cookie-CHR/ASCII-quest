@@ -7,7 +7,13 @@
  .//     \\_. ((___// \\____./  _||_  _||_      \\__||  \\__/L \\___. .__))  \\__))  <br/>
                                                     ||<br/>
                                                     |L.                      </code></pre> 
-Text-based (and ascii-based) adventure web game made with Godot
+Text-based (and ascii-based) adventure web game made with Godot.
+
+#### Small notice
+
+I ran into a bit of a plot hole, and I don't know what to do with a couple of characters. Also, the exam season is starting, and I have to study.
+
+I will keep updating ASCII Quest in my free time, but production will noticeably slow down from now on. I'm sorry about that.
 
 # The plot
 The story takes place in a typical medieval-fantasy village called **Txtown**. One morning, the Queen makes an announcemente to all of her subjects: a powerful magic curse is leading to the town, a curse that only ASCII worlds can have: slowly, but inexorably, everything is turning into **not-translatable characters** (Like � or ▭).
