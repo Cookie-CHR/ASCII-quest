@@ -6,11 +6,11 @@ func _ready():
 	rng.randomize()
 	var num = rng.randi_range(1, 3)
 	if num == 1:
-		spell_name("AAAA")
+		spell_name("Zashamez")
 	elif num == 2:
-		spell_name("BBBB")
+		spell_name("Bouborus")
 	else:
-		spell_name("CCCC")
+		spell_name("Kickrix")
 	if not General.sc_find([self.name]):
 		General.sc_add([self.name])
 
