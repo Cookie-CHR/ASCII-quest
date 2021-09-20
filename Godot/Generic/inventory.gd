@@ -21,6 +21,7 @@ func inv_find(array):
 	
 	var found = false
 	for object in array:
+		found = false
 		if object in inv:
 			found = true
 		if not found:
