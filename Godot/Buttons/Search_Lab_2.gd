@@ -9,9 +9,9 @@ func re_init():
 		hide()
 	
 	#Have we found the password?
-	if not ( General.sc_find(["AAAA"]) or \
-			 General.sc_find(["BBBB"]) or \
-			 General.sc_find(["CCCC"]) ):
+	if not ( General.sc_find(["Zashamez"]) or \
+			 General.sc_find(["Bouborus"]) or \
+			 General.sc_find(["Kickrix"]) ):
 		self.dest = "Scenes/Lab/09_00_Search"
 	else:
 		self.dest = "Scenes/Lab/12_00_Search"
