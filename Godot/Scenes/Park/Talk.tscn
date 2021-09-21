@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Buttons/Undo.gd" type="Script" id=1]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=3]
+
+[node name="Talk" instance=ExtResource( 2 )]
+
+[node name="Text" parent="." index="1"]
+text = "You say hi to Timmy and Mr. Copper, and ask what the problem is.
+
+\"This dumb kid handed the wrong supply crate to the wizard\", Mr.Copper tells you, \"And now he is too scared to go back!\"
+
+\"I-I'm not scared!\", replies Timmy, shaking like crazy: \"I's just that... Well, t-the wizard, he hates when you visit without w-warning. A-a-and his lab, everything you do might t-trigger some anti-intrusion spell! I don't want to be turned into a frog!\""
+
+[node name="Image" parent="." index="2"]
+rect_pivot_offset = Vector2( 778.937, 158.5 )
+text = "  
+      
+ TTTTTTTTTTTTT|    
+ -------------/
+       _      |
+ -----| ' __ -|-.         ,-.
+ +++++' _/__\\_'  '__ ....Cc._3.
+        “(--)\"  _/__\\_
+        __/__   '(\" )\"
+       / //  \\   .++.
+ oOoOoOo ) \\  T /(__)\\ oOoOoOoO
+ .Oo... /_ /_ | _/  \\_ ........
+ .....o..O......oO...........o."
+
+[node name="Timmy" parent="." index="7" instance=ExtResource( 3 )]
+margin_left = 36.0
+margin_top = 413.0
+margin_bottom = 26.0
+text = "Offer to go with Timmy"
+
+[node name="Undo" parent="." index="8" instance=ExtResource( 3 )]
+margin_left = 36.0
+margin_top = 436.0
+text = "Let them discuss it by themselves"
+script = ExtResource( 1 )

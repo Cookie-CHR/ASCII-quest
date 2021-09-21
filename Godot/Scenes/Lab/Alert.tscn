@@ -39,13 +39,16 @@ script = ExtResource( 2 )
 margin_left = 36.0
 margin_top = 436.0
 text = "Bouborus!"
+script = ExtResource( 2 )
 
 [node name="Kickrix" parent="." index="8" instance=ExtResource( 4 )]
 margin_left = 36.0
 margin_top = 459.0
 text = "Kickrix!"
+script = ExtResource( 2 )
 
 [node name="Argh" parent="." index="9" instance=ExtResource( 4 )]
 margin_left = 36.0
 margin_top = 482.0
 text = "AAAAAARGH!"
+script = ExtResource( 2 )
