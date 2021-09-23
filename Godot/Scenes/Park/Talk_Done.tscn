@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Buttons/Undo.gd" type="Script" id=1]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=3]
+
+[node name="Talk_Done" instance=ExtResource( 2 )]
+
+[node name="Text" parent="." index="1"]
+text = "They are still arguing about wether Timmy is scared or not, nothing new here.
+
+They remind you your appointment: outside the wizard's lab, at 16:00. Timmy can wait for you for a little while, but not forever."
+
+[node name="Image" parent="." index="2"]
+text = "  
+      
+ TTTTTTTTTTTTT|    
+ -------------/
+       _      |
+ -----| ' __ -|-.         ,-.
+ +++++' _/__\\_'  '__ ....Cc._3.
+        “(--)\"  _/__\\_
+        __/__   '(\" )\"
+       / //  \\   .++.
+ oOoOoOo ) \\  T /(__)\\ oOoOoOoO
+ .Oo... /_ /_ | _/  \\_ ........
+ .....o..O......oO...........o."
+
+[node name="Undo" parent="." index="7" instance=ExtResource( 3 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "Ok, bye"
+script = ExtResource( 1 )
