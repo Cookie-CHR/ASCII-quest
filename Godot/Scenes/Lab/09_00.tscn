@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Buttons/Go.gd" type="Script" id=1]
 [ext_resource path="res://Buttons/Wait_10.gd" type="Script" id=2]
@@ -6,13 +6,14 @@
 [ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Buttons/Search_Lab_1.gd" type="Script" id=6]
+[ext_resource path="res://Buttons/Talk_Lab.gd" type="Script" id=7]
 
 [node name="Lab" instance=ExtResource( 4 )]
 
 [node name="Text" parent="." index="1"]
 text = "Surprisingly, the lab is open now.
 
-Little Timmy, the artisan's son, is standing there patiently, while the magician is... Adding herbs to a cauldron, it seems. You know, magic stuff. Either way, he seems really busy with his work. Better not disturb him."
+Little Timmy, the artisan's son, is nervously standing near a crate, while the magician is... Adding herbs to a cauldron, it seems. You know, magic stuff. Either way, he seems really busy with his work. Better not disturb him."
 
 [node name="Image" parent="." index="2"]
 text = " _  H   _  __ ||
@@ -25,15 +26,16 @@ text = " _  H   _  __ ||
 H   __ /(  H _/__\\_    o   '
  )_/__\\_ )[ ] (--)    .  '  o 
 --“('’)”-----/\\  /\\__ _______
--  .++.  --. )|\\(|   (.-----.)
-| /(__)\\ ||\\\\ /  \\   /       \\
---_/--\\_-----/____\\--'._____.'--"
+-  .++.  -.  )|\\(|   (.-----.)
+| /(__)\\.==.  /  \\   /       \\
+--_/--\\_|__|-/____\\--'._____.'--"
 
-[node name="Timmy" parent="." index="5" instance=ExtResource( 3 )]
+[node name="Talk" parent="." index="5" instance=ExtResource( 3 )]
 margin_left = 36.0
 margin_top = 413.0
 margin_bottom = 26.0
 text = "Talk to Timmy"
+script = ExtResource( 7 )
 
 [node name="Wait_10" parent="." index="6" instance=ExtResource( 3 )]
 margin_left = 36.0
