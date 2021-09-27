@@ -13,9 +13,9 @@ func re_init():
 	# and if the player can afford it
 	if (self.name in items.keys() and Inventory.money >= items[self.name]):
 		self.dest = "Scenes/Tavern/Order_"+self.name
+		self.money = -(items[self.name])
+		self.inv_get = [self.name]
 	else:
 		dest = "Scenes/Tavern/Order_Fail"
 	
 	self.minutes = 30
-	self.money = -(items[self.name])
-	self.inv_get = [self.name]
