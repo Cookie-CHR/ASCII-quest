@@ -70,7 +70,9 @@ script = ExtResource( 5 )
 [node name="Wait_10" parent="." index="13" instance=ExtResource( 8 )]
 margin_left = 36.0
 margin_top = 528.0
-text = "Stay here for a while      (+30m)"
+margin_right = 400.0
+margin_bottom = 554.0
+text = "Stay here for a while      (+10m)"
 script = ExtResource( 7 )
 
 [node name="Go" parent="." index="14" instance=ExtResource( 8 )]
