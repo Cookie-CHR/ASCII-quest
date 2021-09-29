@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Buttons/Undo.gd" type="Script" id=1]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=3]
+
+[node name="Park" instance=ExtResource( 2 )]
+
+[node name="Text" parent="." index="1"]
+text = "Mr.Copper isn't happy to see you:
+
+\"What are you doing here?!\", he shouts, \"It's well past 16, you told my grandson you would have been at the lab!\"
+
+You better go or he'll hit you with his cane."
+
+[node name="Image" parent="." index="2"]
+margin_right = 987.0
+text = "
+
+
+               __
+             _/__\\_
+             “(--)\"
+            \\__/__
+              //  \\
+  oOoOoOoOoOo ) \\  T oOoOoOoOo
+  .....o.... /_ /_ | ...oOo...
+  .o.......o..O......oO.......
+"
+
+[node name="Undo" parent="." index="7" instance=ExtResource( 3 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "Right, I forgot, I'll go right now"
+script = ExtResource( 1 )

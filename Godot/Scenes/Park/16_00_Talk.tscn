@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Buttons/Undo.gd" type="Script" id=1]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=3]
+
+[node name="Park" instance=ExtResource( 2 )]
+
+[node name="Text" parent="." index="1"]
+text = "You greet Mr. Copper and ask what's happening.
+
+\"My grandson handed the wrong supply crate to the wizard\", Mr.Copper tells you. \"So he went back to the lab to fix his mistake.\"
+
+He adjust his position on the walking cane: \"He better hurry, there's still work to be done.\""
+
+[node name="Image" parent="." index="2"]
+text = "
+
+
+               __
+             _/__\\_
+             “(--)\"
+             __/__
+            / //  \\
+  oOoOoOoOoOo ) \\  T oOoOoOoOo
+  .....o.... /_ /_ | ...oOo...
+  .o.......o..O......oO.......
+"
+
+[node name="Undo" parent="." index="7" instance=ExtResource( 3 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "I'm sure he'll be back in a jiffy"
+script = ExtResource( 1 )
