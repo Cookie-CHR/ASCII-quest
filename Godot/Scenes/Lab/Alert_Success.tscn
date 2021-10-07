@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Buttons/To_S_Room.gd" type="Script" id=1]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=3]
+
+[node name="Generic_bg" instance=ExtResource( 3 )]
+
+[node name="Text" parent="." index="1"]
+text = "Phew, it seems the magic word was correct!
+
+The flame bursts into a puffy white cloud and disappears, leaving the stairs free."
+
+[node name="Image" parent="." index="2"]
+text = "
+
+
+         __     .-:-._ .
+        ( ')   ((@>- _:>- '.-
+         _\\_    '::-'   '
+        /\\_|\\ 
+        '/_\\ '
+   _ ___/._ \\/
+           |__
+              |__
+                 |__
+                    '"
+
+[node name="S_Room_Found" type="Node2D" parent="." index="7"]
+
+[node name="To_S_Room" parent="." index="8" instance=ExtResource( 2 )]
+script = ExtResource( 1 )
