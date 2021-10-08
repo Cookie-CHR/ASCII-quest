@@ -29,4 +29,7 @@ text = "
 [node name="Alert_Success" type="Node2D" parent="." index="7"]
 
 [node name="To_S_Room" parent="." index="8" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "Onward!"
 script = ExtResource( 1 )
