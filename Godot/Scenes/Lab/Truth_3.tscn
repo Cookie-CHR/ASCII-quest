@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Buttons/Continue.gd" type="Script" id=1]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=4]
+
+[node name="Silence" instance=ExtResource( 3 )]
+
+[node name="Text" parent="." index="1"]
+text = "The wizard releases a dramatic sigh:
+
+\"Alright, you win, I'll tell you everything.\""
+
+[node name="Image" parent="." index="2"]
+text = "  _. _-'            '--__  . \\
+ 7 _/                    \\_ \\_ 
+  /                     _  \\  Y
+ /_   ._                H   | '
+  H  //H              _(_)__ \\
+ (_)//[_]_  /\\        ------- |
+ ---------_/__\\_    o   '     \\
+           (--)    .  '  o 
+   _      /\\  /\\__ _______
+   H      )|\\(|   (.-----.)
+  / \\ _    /  \\   /       \\
+ (___)_Q--/____\\--'._____.'-oO-
+"
+
+[node name="Silence" parent="." index="7" instance=ExtResource( 4 )]
+
+[node name="Continue" parent="." index="8" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "Listen"
+script = ExtResource( 1 )
