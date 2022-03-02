@@ -11,7 +11,7 @@
 [node name="Text" parent="." index="1"]
 text = "You release the cat. At first it seems to be more concerned by miss Mary's pan than by the mouse, but luckily his priorities get straight soon enough. In more or less half an hour, the cat has the mouse in its paws.
 
-\"This cat is yous, right?\" Mary says you, \"Well, thank you for getting rid of that pesky mouse! Here is 2 gold pieces for your timing, service will be back in a jiffy\""
+\"This cat is yous, right?\" Mary says you, \"Well, thank you for getting rid of that pesky mouse! As a reward, I'll give you a bottle of my best wine. Thank you again, service will be back in a jiffy\""
 
 [node name="Image" parent="." index="2"]
 margin_right = 987.0

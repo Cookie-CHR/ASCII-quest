@@ -11,8 +11,14 @@ func re_init():
 	if General.curr_sc == "Castle":
 		self.sc_required = ["Quests_Heard"]
 	
+	
 	# Some time passes, you get your reward and give away the cat
 	self.minutes = 30
-	self.money = 2
+	
+	if General.curr_sc == "Castle":
+		self.money = 2
+	else:
+		self.inv_add = ["Wine"]
+	
 	self.inv_required = ["cat"]
 	self.inv_remove = ["cat"]
