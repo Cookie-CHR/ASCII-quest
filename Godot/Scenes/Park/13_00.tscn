@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Buttons/Clean.gd" type="Script" id=1]
 [ext_resource path="res://Buttons/Go.gd" type="Script" id=2]
@@ -10,6 +10,8 @@
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=11]
+[ext_resource path="res://Generic/Timmy_Talk.gd" type="Script" id=12]
 
 [node name="Park" instance=ExtResource( 9 )]
 
@@ -18,8 +20,7 @@ rect_pivot_offset = Vector2( 274, 158.5 )
 text = "The park is often used as a city square, because of its central position.
 
 The quest guy is sitting behind its stall, and some passers-by are enjoying a walk in the sun.
-
-Also, you can see little Timmy having a discussion with his grandad, mr. Copper"
+"
 
 [node name="Image" parent="." index="2"]
 text = "  
@@ -28,12 +29,12 @@ TTTTTTTTTT|
 ----------/         ____________
    _      |         |           
 --| '__ --|-.       |   QUESTS  
-++'_/__\\_ C. '_ ....|___________
-   “(--)\"  _/__\\_    ||  ('')  |
-   __/__   '(\" )\"   _||__/__\\__|
-  / //  \\   .++.    |  |,,,,,,| 
-oOo ) \\  T /(__)\\ oO|___________
-			.. /_ /_ | _/  \\_ .............o
+++'_/__\\_ C.    ....|___________
+   “(--)\"            ||  ('')  |
+   __/__            _||__/__\\__|
+  / //  \\           |  |,,,,,,| 
+oOo ) \\  T        oO|___________
+			.. /_ /_ |        .............o
 			.o..O......oO...........o......."
 
 [node name="Park" parent="." index="7" instance=ExtResource( 10 )]
@@ -48,6 +49,7 @@ script = ExtResource( 3 )
 margin_left = 36.0
 margin_top = 436.0
 text = "Talk to Timmy and mr.Copper"
+align = 0
 script = ExtResource( 6 )
 
 [node name="Clean" parent="." index="10" instance=ExtResource( 8 )]
@@ -79,3 +81,39 @@ margin_left = 36.0
 margin_top = 551.0
 text = "Go away"
 script = ExtResource( 2 )
+
+[node name="Timmy_text" type="Label" parent="." index="15"]
+margin_left = 42.0
+margin_top = 186.0
+margin_right = 590.0
+margin_bottom = 365.0
+custom_fonts/font = ExtResource( 11 )
+text = "Also, you can see little Timmy having a discussion with his grandad, mr. Copper"
+autowrap = true
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timmy_image" type="Label" parent="." index="16"]
+margin_left = 635.0
+margin_top = 48.0
+margin_right = 988.0
+margin_bottom = 365.0
+custom_fonts/font = ExtResource( 11 )
+text = "  
+
+
+
+
+  
+             '_ 
+           _/__\\_
+           '(\" )\"
+            .++.
+           /(__)\\
+           _/  \\_"
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

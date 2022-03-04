@@ -10,7 +10,7 @@
 [node name="Text" parent="." index="1"]
 text = "You offer to go with Timmy and watch his back. He looks relieved that someone will be on his side.
 
-You two decide to meet in front of the Wizard's lab at 16. Try not to be late, or he might decide to go by himself!
+Little Timmy will accompany you around until the job is done. Even with your help, he doesn't seem eager to  meet the wizard at all.
 
 Mr. Copper still thinks his grandchild is a wimp."
 
@@ -35,5 +35,7 @@ script = ExtResource( 1 )
 [node name="Undo" parent="." index="8" instance=ExtResource( 4 )]
 margin_left = 36.0
 margin_top = 413.0
-text = "Wizard's lab, 16:00. Got it"
+margin_right = 268.0
+margin_bottom = 439.0
+text = "Wizard's lab, Got it"
 script = ExtResource( 2 )
