@@ -12,8 +12,7 @@ func inv_remove(array):
 		inv.erase(object)
 
 func inv_print():
-	for obj in inv:
-		print(obj)
+		return inv
 
 func inv_find(array):
 	if array == []:

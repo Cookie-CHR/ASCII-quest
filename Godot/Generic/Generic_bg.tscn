@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Generic/curr_time.gd" type="Script" id=2]
 [ext_resource path="res://Generic/script.gd" type="Script" id=3]
 [ext_resource path="res://Generic/curr_money.gd" type="Script" id=4]
+[ext_resource path="res://Generic/curr_inv.gd" type="Script" id=5]
 
 [node name="Generic_bg" type="Panel"]
 margin_right = 1024.0
@@ -42,7 +43,7 @@ text = "0====================================================0 0================
 |                                                    | |                                |
 |                                                    | |                                |
 |                                                    | |                                |
-0====================================================0 0================================0"
+0====================================================0 0==================|           |=0"
 autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -74,7 +75,7 @@ __meta__ = {
 margin_left = 647.0
 margin_top = 416.0
 margin_right = 980.0
-margin_bottom = 14.0
+margin_bottom = 436.0
 custom_fonts/font = ExtResource( 1 )
 text = "Current time: 0:00"
 script = ExtResource( 2 )
@@ -82,11 +83,24 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="curr_money" type="Label" parent="."]
+[node name="curr_inv" type="Label" parent="."]
 margin_left = 647.0
-margin_top = 439.0
+margin_top = 462.0
 margin_right = 980.0
-margin_bottom = 14.0
+margin_bottom = 553.0
+custom_fonts/font = ExtResource( 1 )
+text = "Inventory:"
+autowrap = true
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="curr_money" type="Label" parent="."]
+margin_left = 649.0
+margin_top = 439.0
+margin_right = 986.0
+margin_bottom = 459.0
 custom_fonts/font = ExtResource( 1 )
 text = "Money: 0 gp"
 script = ExtResource( 4 )
@@ -95,10 +109,10 @@ __meta__ = {
 }
 
 [node name="Sound" type="Label" parent="."]
-margin_left = 647.0
-margin_top = 528.0
-margin_right = 40.0
-margin_bottom = 14.0
+margin_left = 856.0
+margin_top = 554.0
+margin_right = 922.0
+margin_bottom = 574.0
 custom_fonts/font = ExtResource( 1 )
 text = "Sound:"
 __meta__ = {
@@ -106,10 +120,10 @@ __meta__ = {
 }
 
 [node name="Mute" type="Button" parent="."]
-margin_left = 719.0
-margin_top = 525.0
-margin_right = 767.0
-margin_bottom = 551.0
+margin_left = 927.0
+margin_top = 551.0
+margin_right = 969.0
+margin_bottom = 577.0
 custom_fonts/font = ExtResource( 1 )
 text = "On"
 flat = true
