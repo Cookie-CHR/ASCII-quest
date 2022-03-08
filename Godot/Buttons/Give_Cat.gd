@@ -18,7 +18,7 @@ func re_init():
 	if General.curr_sc == "Castle":
 		self.money = 2
 	else:
-		self.inv_get = ["Wine"]
+		self.inv_get = ["wine"]
 	
 	self.inv_required = ["cat"]
 	self.inv_remove = ["cat"]
