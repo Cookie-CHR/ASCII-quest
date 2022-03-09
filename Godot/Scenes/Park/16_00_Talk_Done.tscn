@@ -9,9 +9,9 @@
 [node name="Text" parent="." index="1"]
 text = "Mr.Copper isn't happy to see you:
 
-\"What are you doing here?!\", he shouts, \"It's well past 16, you told my grandson you would have been at the lab!\"
+\"What are you doing here?!\", he shouts, \"Always hanging around doing nothing useful! You said you'd accomany my wimpy grandson to the lab!\"
 
-You better go or he'll hit you with his cane."
+You better go, and fast, or he'll hit you with his cane."
 
 [node name="Image" parent="." index="2"]
 margin_right = 987.0
