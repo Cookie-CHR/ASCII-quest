@@ -5,7 +5,7 @@
 [ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=4]
 
-[node name="Silence" instance=ExtResource( 3 )]
+[node name="Lab" instance=ExtResource( 3 )]
 
 [node name="Text" parent="." index="1"]
 text = "The wizard releases a dramatic sigh:

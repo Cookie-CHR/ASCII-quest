@@ -28,4 +28,6 @@ func _ready():
 		MusicPlayer.change_music("res://Music/Epilogue/Ascending the Vale.ogg")
 	elif (self.name == "Accuse"):
 		MusicPlayer.change_music("res://Music/Castle/Plans in Motion.ogg")
+	elif (self.name == "Silence"):
+		MusicPlayer.change_music("Silence")
 
