@@ -9,6 +9,7 @@
 
 [node name="Text" parent="." index="1"]
 text = "\"A curse is being spread upon us, it is called the 'not-translatable': lots of villages already fell under its claw, and this time,it is heading in direction of Txtown.\"
+
 You shiver: you heard stories about the not-translatable: a horrible plague that feeds on the very structure of what it finds on its path, living or inanimate. Its ugly symptoms can grow on every surface, and they slowly, but inexorably, spread until they cover the whole place. And now it was coming here."
 
 [node name="Image" parent="." index="2"]

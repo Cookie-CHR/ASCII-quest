@@ -11,6 +11,7 @@
 [node name="Text" parent="." index="1"]
 text = "It's 8 o'clock in the morning. The sun is shining upon Txtland, on what seems like an average tuesday. That is, until the voice of the Queen strucks magically through the entire village:
 \"All the subjects are convocated in the main park in half an hour for an important announcement!\" she proclaims, silencing the whole village with her vibrant voice.
+
 You turn around and take a look: you are in the park already, and a little crowd is starting to form near the main building."
 
 [node name="Image" parent="." index="2"]
