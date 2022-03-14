@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Generic/Fine_or_Wine.gd" type="Script" id=2]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=3]
+
+[node name="Generic_bg" instance=ExtResource( 3 )]
+
+[node name="Text" parent="." index="1"]
+text = "Carefully, you sneak behind the counter and try to steal a bottle of wine.
+
+You slowly grab the bottle, you pull it out of its container... and find a huge glitch at one millimeter from your finger.
+
+"
+
+[node name="Image" parent="." index="2"]
+text = "
+                     􏿾_
+                      X )􏿾    
+                   􏿾_􏿾_(__)􏿾_
+                   '''􏿾􏿾'''''
+       
+         __
+        ( ')    _  _􏿾 _
+         /____  H􏿾 H  H􏿾 
+       <//     /~\\/~􏿾/~\\
+  􏿾    (_>.   _|_|􏿾_||_􏿾_
+  -- _._| /_ |_􏿾􏿾____􏿾___| -􏿾􏿾-"
+
+[node name="Fine_or_Wine" type="Label" parent="." index="8"]
+margin_right = 40.0
+margin_bottom = 14.0
+custom_fonts/font = ExtResource( 1 )
+script = ExtResource( 2 )
