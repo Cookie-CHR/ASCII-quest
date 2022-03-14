@@ -15,16 +15,17 @@ When you wake up, you are on the outside of the tavern, two hours have passed, a
 
 [node name="Image" parent="." index="2"]
 text = "
-
- . . /\\
-  / / /
-   /_/
-  /     __
- X     ( ')    _  _  _
-        /____  H  H  H 
-      <//     /~\\/~\\/~\\
-      (_>.   _|_||_||_|_
-    _._| /_ |___________|"
+                      _
+                      X )(    
+  . . /\\           __(_(__)__
+   / / /           ''''''''''
+    /_/
+   /     __
+  X     ( ')    _  _  _
+         /____  H  H  H 
+       <//     /~\\/~\\/~\\
+       (_>.   _|_||_||_|_
+  -- _._| /_ |___________| ----"
 
 [node name="Go" parent="." index="5" instance=ExtResource( 2 )]
 margin_left = 36.0
