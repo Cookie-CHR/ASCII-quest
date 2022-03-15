@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Generic/Fine_or_Wine.gd" type="Script" id=2]
 [ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Buttons/Undo.gd" type="Script" id=4]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=5]
 
 [node name="Generic_bg" instance=ExtResource( 3 )]
 
@@ -32,3 +34,9 @@ margin_right = 40.0
 margin_bottom = 14.0
 custom_fonts/font = ExtResource( 1 )
 script = ExtResource( 2 )
+
+[node name="Improved_Button" parent="." index="9" instance=ExtResource( 5 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "That was scary"
+script = ExtResource( 4 )
