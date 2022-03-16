@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Buttons/Continue.gd" type="Script" id=1]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=3]
+
+[node name="Lab" instance=ExtResource( 2 )]
+
+[node name="Text" parent="." index="1"]
+text = "I'm still not sure what went wrong: potions are a complicated and precise science, and errors, even small ones, can lead to dramatic conclusions.
+
+What I know is that, when I added the last ingredient, the potion had an unexpected reaction and, in a big explosion, the not-translatables started forming from my own cauldron.
+
+I was too scared and didn't know what to do, so I just ran away, doing nothing to arginate the problem."
+
+[node name="Image" parent="." index="2"]
+text = "
+       ..''''''''''''''..       
+   .'''                  '''.   
+ .'                  .       '. 
+.'    /(          '  .  '     '.
+'   _/__\\_     ' _|\\/ \\/|_ '   '
+' \\__('')__/  ' _\\       /_ '  '
+'    \\  X    '  '.__􏿾􏿾􏿾__.'  ' '
+'     \\( \\    '. (.-----.) .'  '
+'      /  \\_     /       \\     '
+'.    /____/     '._____.'    .'
+  '.                        .'  
+    '''..              ..'''    
+         ''''''''''''''         "
+
+[node name="Continue" parent="." index="8" instance=ExtResource( 3 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "Keep listening"
+script = ExtResource( 1 )
