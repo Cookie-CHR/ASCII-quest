@@ -8,11 +8,11 @@
 [node name="Lab" instance=ExtResource( 2 )]
 
 [node name="Text" parent="." index="1"]
-text = "Yes, I did create the not-translatable curse, but it was an accident.
+text = "\"Yes, I did create the not-translatable curse, but it was an accident.
 
 It all happened a couple of years ago, while I was at a magic gathering in Docxcity. 
 
-At the time I was working on a potion to alter matter. Many wizards before me had tried to make it, and failed, but I was sure I was on a good track."
+At the time I was working on a potion to alter matter. Many wizards before me had tried to make it, and failed, but I was sure I was on a good track.\""
 
 [node name="Image" parent="." index="2"]
 margin_right = 987.0
