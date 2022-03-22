@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Buttons/To_Q_Heard.gd" type="Script" id=3]
+[ext_resource path="res://Buttons/To_Q_Timmy.gd" type="Script" id=4]
+
+[node name="Lab" instance=ExtResource( 2 )]
+
+[node name="Text" parent="." index="1"]
+text = "\"The last item is the most dangerous and difficult to get, but it's also the most effective of the three: I need a sample of the glitch.\"
+
+The wizard sighs: \"for the previous potions I used a glass container specially designed for handling magical material, but I lost the last one in the forest. You'll have to find another way\""
+
+[node name="Image" parent="." index="2"]
+text = "
+            .-''''-.
+    _      ( 12 ($) )
+    H       '-....-'    ___
+   / \\.--.              >-<
+   | ||~~||            |􏿾􏿾 |
+   |_||__|'    /\\      |__􏿾|
+             _/__\\_
+              (--)
+             /\\  /\\
+             )|\\(|(
+              /  \\
+             /____\\"
+
+[node name="To_Q_Heard" parent="." index="8" instance=ExtResource( 1 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "Ok, got it"
+script = ExtResource( 3 )
+
+[node name="To_Q_Timmy" parent="." index="9" instance=ExtResource( 1 )]
+margin_left = 36.0
+margin_top = 436.0
+margin_right = 444.0
+margin_bottom = 439.0
+text = "Ok - Wait, Timmy, what's the matter?"
+script = ExtResource( 4 )
