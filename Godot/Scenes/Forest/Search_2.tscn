@@ -11,7 +11,7 @@
 [node name="Text" parent="." index="1"]
 text = "You search deeper.
 
-Time passes, and you're just about to give up when you notice a shimmer of light with the corner of your eye. It came from a bush nearby. You go inspecting there, and you find... An empty flask, the kind used by the wizard for its potions. What does it do there?"
+Time passes, and you're just about to give up when you notice a shimmer of light with the corner of your eye. It came from a bush nearby. You go inspecting there, and you find... An empty glass container, the kind used by wizards for their potions. What does it do there?"
 
 [node name="Image" parent="." index="2"]
 text = "               C   _
@@ -19,12 +19,12 @@ text = "               C   _
                 (  c          3
                  (_   C    
                    (___.(__.-._
-        __            \\ \\| //
-       ( ')  _         | ' /
-        /____H   .-._  |   |
-      <//   [_] (  ' 3_|   |
-      (_>.     C  .-.  )   \\
-    _._| /_   (_.c___.__)-..\\"
+       __             \\ \\| //
+      ( ')  __         | ' /
+       /____><   .-._  |   |
+      //\\__|__| (  ' 3_|   |
+     (_>.      C  .-.  )   \\
+   _._| /_    (_.c___.__)-..\\"
 
 [node name="Forest" parent="." index="5" instance=ExtResource( 4 )]
 
