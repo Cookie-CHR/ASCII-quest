@@ -11,9 +11,9 @@
 [node name="Castle" instance=ExtResource( 6 )]
 
 [node name="Text" parent="." index="1"]
-text = "You tell the Queen you have found a flask by the forest, and take it out of your backpack as a proof. The Queen seems reflective.
+text = "You tell the Queen you have found a glass container by the forest, and take it out of your backpack as a proof. The Queen seems reflective.
 
-\"We don't know for sure this flask belongs to the Wizard, but you are right, it is rather strange...\""
+\"We don't know for sure this container belongs to the Wizard, but you are right, it is rather strange...\""
 
 [node name="Image" parent="." index="2"]
 rect_pivot_offset = Vector2( 601.754, 368 )
