@@ -31,9 +31,6 @@ _.--._      __ (_/      _) ~)
  c  . )_    \\_\\(      _S~ ~ (_
    (    )    ...)..  / ~~ ~ ~ )"
 
-[node name="curr_money" parent="." index="4"]
-margin_bottom = 459.0
-
 [node name="Hunt" parent="." index="5" instance=ExtResource( 2 )]
 margin_left = 36.0
 margin_top = 413.0
