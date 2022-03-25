@@ -1,0 +1,51 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Buttons/Continue.gd" type="Script" id=1]
+[ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Generic/sc_adder.gd" type="Script" id=5]
+[ext_resource path="res://Buttons/Undo.gd" type="Script" id=6]
+
+[node name="Lab" instance=ExtResource( 3 )]
+
+[node name="Text" parent="." index="1"]
+text = "Since nothing is happening, you keep searching through the wizard's paperwork.
+
+You are starting to get used to his calligraphy, and after some time your attention gets caught by a lot of notes about the not-translatable curse.
+
+Some of these notes seem oddly... specifical: it seems the wizard knows really well how the plague works and how it propagates. Weird."
+
+[node name="Image" parent="." index="2"]
+text = "
+  _..--'''''-._.-'''''--.._
+ | _..--'''-. | .-'''--.._ |
+ | _..--      | .-'''--.._ |
+ | _..--'''-. | .-'''-  _  |
+ | _..--'''-. | .-'' _.' \\ |
+ | _..--''    | . _.'   _ \\|
+ |            | .'   _-' _ \\
+| _..--'''''-.|.-\\ -' _-'   \\
+ ------------...--\\ -' _-    \\
+  / -_  '-_  /     \\ -'     _.'
+ '._  '-_   /       \\    _.'
+    '._  ' /         \\_.'
+       '._/"
+
+[node name="Lab" parent="." index="5" instance=ExtResource( 2 )]
+
+[node name="Continue" parent="." index="6" instance=ExtResource( 4 )]
+margin_left = 36.0
+margin_top = 413.0
+margin_bottom = 26.0
+text = "Investigate further        (+30m)"
+script = ExtResource( 1 )
+
+[node name="Undo" parent="." index="7" instance=ExtResource( 4 )]
+margin_left = 36.0
+margin_top = 436.0
+text = "I'll keep that in mind"
+script = ExtResource( 6 )
+
+[node name="Notes_Found" type="Node2D" parent="." index="11"]
+script = ExtResource( 5 )
