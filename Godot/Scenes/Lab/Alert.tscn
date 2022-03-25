@@ -32,7 +32,7 @@ text = "
 [node name="Zashamez" parent="." index="6" instance=ExtResource( 4 )]
 margin_left = 36.0
 margin_top = 413.0
-text = "Sashamez!"
+text = "Zashamez!"
 script = ExtResource( 2 )
 
 [node name="Bouborus" parent="." index="7" instance=ExtResource( 4 )]

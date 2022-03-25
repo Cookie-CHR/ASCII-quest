@@ -1,8 +1,18 @@
 extends "Improved_Button.gd"
 
 func re_init():
-	# Re-initialize the variables
-	# Useful for destinations that require an updated curr_sc, or the button's name
-	self.dest = "Scenes/Lab/09_00_Search"
-	self.sc_forbidden = ["AAAA", "BBBB", "CCCC"]
+	
+	#Have we found the password?
+	if not ( General.sc_find(["Zashamez"]) or \
+			 General.sc_find(["Bouborus"]) or \
+			 General.sc_find(["Kickrix"]) ):
+		self.dest = "Scenes/Lab/Search"
+	elif not General.sc_find(["Notes_Found"]) :
+		self.dest = "Scenes/Lab/Search_2"
+		self.text = "Investigate further        (+30m)"
+	else:
+		self.dest = "Scenes/Lab/Search_3"
+		self.text = "Investigate further        (+30m)"
+	
 	self.minutes = 30
+	self.sc_forbidden = ["Secret_Lab_Found"]
