@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Buttons/To_Q_Heard.gd" type="Script" id=3]
 [ext_resource path="res://Buttons/To_Q_Timmy.gd" type="Script" id=4]
+[ext_resource path="res://Buttons/To_Q_Forest.gd" type="Script" id=5]
 
 [node name="Lab" instance=ExtResource( 2 )]
 
@@ -40,3 +41,9 @@ margin_right = 444.0
 margin_bottom = 439.0
 text = "Ok - Wait, Timmy, what's the matter?"
 script = ExtResource( 4 )
+
+[node name="To_Q_Forest" parent="." index="10" instance=ExtResource( 1 )]
+margin_left = 36.0
+margin_top = 459.0
+text = "Could this be the glass?"
+script = ExtResource( 5 )
