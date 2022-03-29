@@ -1,0 +1,59 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=3]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Button
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+"
+
+[node name="Lab" instance=ExtResource( 2 )]
+
+[node name="Text" parent="." index="1"]
+text = "You show the wizard the glass container you found in the forest.
+
+His eyes shine: \"Yes! That's exactly the glass I lost! How did you find it?\"
+
+You start explaining, but soon realize the wizard is not listening anymore, so you just cut it short.
+
+Now you have a way to sample the glitches!
+"
+
+[node name="Image" parent="." index="2"]
+margin_right = 976.0
+text = "  _. _-'            '--__  . \\
+ 7 _/   _                \\_ \\_ 
+  / ._  H                  \\  Y
+ / //H / \\                  | '
+ _//[_]___)_                 \\
+ -----------  __              |
+             ( \")  __         \\
+              _\\_  ><   
+             <\\_|\\|__|   
+              /_\\       _
+      .==.    | |       H _
+ -Oo--|__|-- -' '- ----[_]_Q--"
+
+[node name="Lab" parent="." index="8" instance=ExtResource( 3 )]
+
+[node name="To_Q_Heard" parent="." index="9" instance=ExtResource( 1 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "Great!"
+script = SubResource( 1 )
