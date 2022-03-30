@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Generic/sc_adder.gd" type="Script" id=1]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Buttons/To_Lab_30.gd" type="Script" id=5]
+
+[node name="Lab" instance=ExtResource( 2 )]
+
+[node name="Text" parent="." index="1"]
+text = "\"Now you know everything\", the wizard sighs. \"The curse will reach this area soon, but with the potion, we might be able to neutralize it before it hurts anybody.\"
+
+You promise the wizard you'll give him any ingredient you can find, if it can help save Txtown. He seems relieved, and goes back to caring for his potion.
+
+Suddently, you realize half an hour has passed since you entered the secret lab. You better go, time is of the essence."
+
+[node name="Image" parent="." index="2"]
+text = "  _. _-'            '--__  . \\
+ 7 _/                    \\_ \\_ 
+  /                     _  \\  Y
+ /_   ._                H   | '
+  H  //H              _(_)__ \\
+ (_)//[_]_  /\\        ------- |
+ ---------_/__\\_    o   '     \\
+           (--)    .  '  o 
+   _      /\\  /\\__ _______
+   H      )|\\(|   (.-----.)
+  / \\ _    /  \\   /       \\
+ (___)_Q--/____\\--'._____.'-oO-
+"
+
+[node name="Lab" parent="." index="8" instance=ExtResource( 4 )]
+
+[node name="To_Lab_30" parent="." index="9" instance=ExtResource( 3 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "Onward!"
+script = ExtResource( 5 )
+
+[node name="Truth_Heard" type="Node2D" parent="." index="10"]
+script = ExtResource( 1 )
