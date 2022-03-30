@@ -9,7 +9,8 @@ func _ready():
 		if child.name == "Mute":
 			if (MusicPlayer.mute):
 				child.text = "Off"
-			get_node("Mute").connect("pressed", self, "mute_unmute", [child])
+			if get_node("Mute").connect("pressed", self, "mute_unmute", [child]):
+				print("An error has occurred: could not connect the mute button")
 		elif child is Button:
 			i = manage(child, i)
 
@@ -33,7 +34,8 @@ func manage(button, i):
 	if button.visible == true:
 		i += 1
 	
-	get_node(button.name).connect("pressed", self, "change_scn", [button])
+	if get_node(button.name).connect("pressed", self, "change_scn", [button]):
+		print("An error has occurred: could not connect a button")
 	return i
 
 
