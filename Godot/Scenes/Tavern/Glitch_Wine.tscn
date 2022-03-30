@@ -11,9 +11,7 @@
 [node name="Text" parent="." index="1"]
 text = "Carefully, you sneak behind the counter and try to steal a bottle of wine.
 
-You slowly grab the bottle, you pull it out of its container... and find a huge glitch at one millimeter from your finger.
-
-"
+You slowly grab the bottle, you pull it out of its container... and find a huge glitch at one millimeter from your finger."
 
 [node name="Image" parent="." index="2"]
 text = "
@@ -30,12 +28,16 @@ text = "
   -- _._| /_ |_􏿾􏿾____􏿾___| -􏿾􏿾-"
 
 [node name="Fine_or_Wine" type="Label" parent="." index="8"]
-margin_right = 40.0
-margin_bottom = 14.0
+margin_left = 42.0
+margin_top = 209.0
+margin_right = 590.0
+margin_bottom = 365.0
 custom_fonts/font = ExtResource( 1 )
+text = "You"
+autowrap = true
 script = ExtResource( 2 )
 
-[node name="Improved_Button" parent="." index="9" instance=ExtResource( 5 )]
+[node name="Undo" parent="." index="9" instance=ExtResource( 5 )]
 margin_left = 36.0
 margin_top = 413.0
 text = "That was scary"
