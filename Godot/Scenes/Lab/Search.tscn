@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Generic/Random_Spell.gd" type="Script" id=1]
-[ext_resource path="res://Buttons/Continue.gd" type="Script" id=2]
+[ext_resource path="res://Buttons/Continue_30.gd" type="Script" id=2]
 [ext_resource path="res://Buttons/Undo.gd" type="Script" id=3]
 [ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=4]
 [ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=5]
@@ -57,7 +57,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Continue" parent="." index="7" instance=ExtResource( 6 )]
+[node name="Continue_30" parent="." index="7" instance=ExtResource( 6 )]
 margin_left = 36.0
 margin_top = 413.0
 margin_bottom = 26.0

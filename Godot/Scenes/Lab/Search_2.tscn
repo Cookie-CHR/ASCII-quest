@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Buttons/Continue.gd" type="Script" id=1]
+[ext_resource path="res://Buttons/Continue_30.gd" type="Script" id=1]
 [ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=4]
@@ -34,7 +34,7 @@ text = "
 
 [node name="Lab" parent="." index="5" instance=ExtResource( 2 )]
 
-[node name="Continue" parent="." index="6" instance=ExtResource( 4 )]
+[node name="Continue_30" parent="." index="6" instance=ExtResource( 4 )]
 margin_left = 36.0
 margin_top = 413.0
 margin_bottom = 26.0
