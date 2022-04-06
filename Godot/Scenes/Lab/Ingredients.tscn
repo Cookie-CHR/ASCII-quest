@@ -1,0 +1,75 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Buttons/Undo.gd" type="Script" id=1]
+[ext_resource path="res://Generic/Item_Description.gd" type="Script" id=2]
+[ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=5]
+
+[node name="Lab" instance=ExtResource( 4 )]
+
+[node name="Text" parent="." index="1"]
+rect_pivot_offset = Vector2( -279.038, -23 )
+text = "The first ingredient we need is alcol.
+
+
+The second ingredient is gold, at least 12 gp.
+
+
+The third ingredient is a sample of the glitch.
+"
+
+[node name="Alcol" type="Label" parent="Text" index="0"]
+margin_right = 548.0
+margin_bottom = 46.0
+custom_fonts/font = ExtResource( 3 )
+text = "                                       There may be some in the tavern, any alcoholic will do."
+autowrap = true
+script = ExtResource( 2 )
+
+[node name="Money" type="Label" parent="Text" index="1"]
+margin_top = 72.0
+margin_right = 548.0
+margin_bottom = 46.0
+custom_fonts/font = ExtResource( 3 )
+text = "
+Maybe you can complete quests for that."
+autowrap = true
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Glitch" type="Label" parent="Text" index="2"]
+margin_top = 138.0
+margin_right = 548.0
+margin_bottom = 46.0
+custom_fonts/font = ExtResource( 3 )
+text = "
+It's only safe to touch the glitches with a magic glass container, but I lost mine in the forest."
+autowrap = true
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Image" parent="." index="2"]
+text = "
+            .-''''-.
+    _      ( 12 ($) )
+    H       '-....-'    ___
+   / \\.--.              >-<
+   | ||~~||            |􏿾􏿾 |
+   |_||__|'    /\\      |__􏿾|
+             _/__\\_
+              (--)
+             /\\  /\\
+             )|\\(|(
+              /  \\
+             /____\\"
+
+[node name="Undo" parent="." index="8" instance=ExtResource( 5 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "Ok, got it"
+script = ExtResource( 1 )
