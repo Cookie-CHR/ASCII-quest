@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Hidden Past.mp3-c3416aac89b40757f4f03d93f11aa35c.mp3str"
+
+[deps]
+
+source_file="res://Music/Death/Hidden Past.mp3"
+dest_files=[ "res://.import/Hidden Past.mp3-c3416aac89b40757f4f03d93f11aa35c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

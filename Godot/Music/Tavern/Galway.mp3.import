@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Galway.mp3-b2bf8d9edd3dbaf17abcd0faf44927be.mp3str"
+
+[deps]
+
+source_file="res://Music/Tavern/Galway.mp3"
+dest_files=[ "res://.import/Galway.mp3-b2bf8d9edd3dbaf17abcd0faf44927be.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

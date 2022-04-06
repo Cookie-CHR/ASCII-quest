@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Folk Round.mp3-ba70d495e7a4e8f60a6575ddcf2af946.mp3str"
+
+[deps]
+
+source_file="res://Music/Folk Round.mp3"
+dest_files=[ "res://.import/Folk Round.mp3-ba70d495e7a4e8f60a6575ddcf2af946.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

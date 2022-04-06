@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Angevin B.mp3-8c75316bb5221418a237a6d54fbf8c91.mp3str"
+
+[deps]
+
+source_file="res://Music/Castle/Angevin B.mp3"
+dest_files=[ "res://.import/Angevin B.mp3-8c75316bb5221418a237a6d54fbf8c91.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

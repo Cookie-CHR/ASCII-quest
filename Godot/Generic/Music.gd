@@ -1,6 +1,6 @@
 extends AudioStreamPlayer
 
-var curr_music = "res://Music/Menu/Suonatore di Liuto.ogg"
+var curr_music = "res://Music/Menu/Suonatore di Liuto.mp3"
 var mute = false
 
 # Called when the node enters the scene tree for the first time.

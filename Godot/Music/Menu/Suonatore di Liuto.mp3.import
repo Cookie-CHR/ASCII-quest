@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Suonatore di Liuto.mp3-928064510129975919b83706c9c8f8f4.mp3str"
+
+[deps]
+
+source_file="res://Music/Menu/Suonatore di Liuto.mp3"
+dest_files=[ "res://.import/Suonatore di Liuto.mp3-928064510129975919b83706c9c8f8f4.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Dragon and Toast.mp3-3f4b2b4c5f320d6280f0c9dc4c71ba2d.mp3str"
+
+[deps]
+
+source_file="res://Music/Infected land/Dragon and Toast.mp3"
+dest_files=[ "res://.import/Dragon and Toast.mp3-3f4b2b4c5f320d6280f0c9dc4c71ba2d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

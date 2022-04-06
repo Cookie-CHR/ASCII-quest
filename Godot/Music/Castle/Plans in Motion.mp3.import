@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Plans in Motion.mp3-07743718b7a2fc5b9294fd24c76b3a78.mp3str"
+
+[deps]
+
+source_file="res://Music/Castle/Plans in Motion.mp3"
+dest_files=[ "res://.import/Plans in Motion.mp3-07743718b7a2fc5b9294fd24c76b3a78.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

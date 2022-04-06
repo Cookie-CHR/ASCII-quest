@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Heartbreaking.mp3-1ccfb6e7d40abaf67d1af8aceb419436.mp3str"
+
+[deps]
+
+source_file="res://Music/Suspence/Heartbreaking.mp3"
+dest_files=[ "res://.import/Heartbreaking.mp3-1ccfb6e7d40abaf67d1af8aceb419436.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
