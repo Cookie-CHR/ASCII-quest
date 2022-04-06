@@ -8,9 +8,7 @@
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Generic/Music_Changer.gd" type="Script" id=7]
 
-[node name="Title" type="Panel" groups=[
-"Big_Screen_Scene",
-]]
+[node name="Title" type="Panel" groups=["Big_Screen_Scene"]]
 margin_right = 1024.0
 margin_bottom = 600.0
 script = ExtResource( 4 )

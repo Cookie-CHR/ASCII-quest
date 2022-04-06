@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Music/Menu/Suonatore di Liuto.ogg" type="AudioStream" id=1]
+[ext_resource path="res://Music/Menu/Suonatore di Liuto.mp3" type="AudioStream" id=1]
 [ext_resource path="res://Generic/Music.gd" type="Script" id=2]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer"]
