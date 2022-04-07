@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Buttons/Undo.gd" type="Script" id=1]
+[ext_resource path="res://Buttons/To_S_Room.gd" type="Script" id=1]
 [ext_resource path="res://Generic/Item_Description.gd" type="Script" id=2]
 [ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=3]
 [ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=4]
@@ -68,7 +68,7 @@ text = "
               /  \\
              /____\\"
 
-[node name="Undo" parent="." index="8" instance=ExtResource( 5 )]
+[node name="To_S_Room" parent="." index="8" instance=ExtResource( 5 )]
 margin_left = 36.0
 margin_top = 413.0
 text = "Ok, got it"
