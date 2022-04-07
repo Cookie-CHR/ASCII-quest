@@ -11,8 +11,9 @@ func _ready():
 func change_music (new_music):
 	if new_music != "":
 		if new_music == "Silence":
+			curr_music = new_music
 			stop()
-		if curr_music != new_music:
+		elif curr_music != new_music:
 			curr_music = new_music
 			stop()
 			set_stream(load(new_music))
