@@ -11,7 +11,9 @@ rect_pivot_offset = Vector2( -209.234, -74.3537 )
 [node name="Text" parent="." index="1"]
 text = "You give the wizard the alcol you got from the tavern. At first he smells it dubiously, but then he seems convinced.
 
-\"Good, this one will do just fine.\" He says, putting it on one side."
+\"Good, this one will do just fine.\" He says, putting it on one side.
+
+He then returns looking after his cauldron and ignoring your presence."
 
 [node name="Image" parent="." index="2"]
 text = "  _. _-'            '--__  . \\
