@@ -6,3 +6,4 @@ func re_init():
 	self.dest = "Scenes/Lab/Q_Timmy"
 	self.sc_required = ["T_Group"]
 	self.inv_get = ["empty glass"]
+	self.sc_forbidden = ["Glass_Got"]

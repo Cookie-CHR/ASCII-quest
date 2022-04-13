@@ -32,7 +32,7 @@ text = "  _. _-'            '--__  . \\
 
 [node name="Lab" parent="." index="8" instance=ExtResource( 4 )]
 
-[node name="To_Lab_30" parent="." index="9" instance=ExtResource( 3 )]
+[node name="To_S_Room_30" parent="." index="9" instance=ExtResource( 3 )]
 margin_left = 36.0
 margin_top = 413.0
 text = "Onward!"

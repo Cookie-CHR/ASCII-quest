@@ -3,5 +3,5 @@ extends "Improved_Button.gd"
 func re_init():
 	# Re-initialize the variables
 	# Useful for destinations that require an updated curr_sc, or the button's name
-	self.dest = General.guess_scn("Lab", 30)
+	self.dest = "Scenes/Lab/S_Room"
 	self.minutes = 30

@@ -5,3 +5,4 @@ func re_init():
 	# Useful for destinations that require an updated curr_sc, or the button's name
 	self.dest = "Scenes/Lab/Q_Forest"
 	self.sc_required = ["Flask_Found"]
+	self.sc_forbidden = ["Glass_Got"]
