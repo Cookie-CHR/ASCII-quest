@@ -16,8 +16,12 @@ func _ready():
 		if get_tree().change_scene("res://Scenes/X_Else/Announcement.tscn"):
 			print("An error has occurred: could not change scene")
 	
+	#people waiting for announcement + default ending
 	if General.curr_sc == "Park" and \
-	   not General.sc_find(["Truth_Heard"]) and \
-	   Time.h >= 19:
-		if get_tree().change_scene("res://Scenes/Ending/Default.tscn"):
-			print("An error has occurred: could not change scene")
+	   General.sc_find(["Announced"]):
+		if  Time.h >= 19:
+			if get_tree().change_scene("res://Scenes/Ending/Default.tscn"):
+				print("An error has occurred: could not change scene")
+		else:
+			if get_tree().change_scene("res://Scenes/Park/18_00.tscn"):
+				print("An error has occurred: could not change scene")

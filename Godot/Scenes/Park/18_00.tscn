@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Buttons/Go.gd" type="Script" id=2]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Buttons/To_End_Default.gd" type="Script" id=4]
+
+[node name="Park" instance=ExtResource( 3 )]
+
+[node name="Text" parent="." index="1"]
+text = "You are in the park. The Queen's speech hasn't started yet, but a small crowd of people is already forming around the main building.
+
+Theories are being formed about the motive of the convocation: some say the infector has been caught, others, more cautious, say the village will be evacuated."
+
+[node name="Image" parent="." index="2"]
+text = "
+
+ _   _   _   _       __--. 
+| |_| |_| |_| |    _(  .~ ). 
+______________|   (_.C___.__) 
+______________/      
+____         |           
+__  |        | ___        
+||\\ |__()____|(   )_       () 
+||| |_|/\\_|()(      ()     (\\
+!!!.!../)../\\...()../\\.()../\\.
+     ()    |\\   /\\  /\\ /\\   
+   o_/)         /\\     |\\
+  'A /\\ "
+
+[node name="To_End_Default" parent="." index="8" instance=ExtResource( 1 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "Wait here"
+script = ExtResource( 4 )
+
+[node name="Go" parent="." index="9" instance=ExtResource( 1 )]
+margin_left = 36.0
+margin_top = 436.0
+text = "Go away"
+script = ExtResource( 2 )
