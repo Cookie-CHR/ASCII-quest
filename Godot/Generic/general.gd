@@ -48,5 +48,4 @@ func sc_is_overwritable(s):
 		s = s.substr(6)
 	if".tscn" in s:
 		s.erase(s.length() - 5, 5)
-	print(s)
 	return [General.guess_scn("Park", 0), General.guess_scn("Forest", 0), General.guess_scn("Castle", 0), General.guess_scn("Tavern", 0), General.guess_scn("Lab", 0)].has(s)

@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Buttons/Go.gd" type="Script" id=4]
 
 [node name="Castle" instance=ExtResource( 2 )]
 
@@ -28,3 +29,4 @@ text = "   ____       ____     ___|_
 margin_left = 36.0
 margin_top = 413.0
 text = "Nothing to do here, let's move"
+script = ExtResource( 4 )

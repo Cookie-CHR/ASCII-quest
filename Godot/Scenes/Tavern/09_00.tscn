@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Buttons/Go.gd" type="Script" id=1]
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=2]
@@ -6,7 +6,6 @@
 [ext_resource path="res://Buttons/Give_Cat.gd" type="Script" id=4]
 [ext_resource path="res://Buttons/Steal.gd" type="Script" id=5]
 [ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Generic/time_patch.gd" type="Script" id=7]
 
 [node name="Tavern" instance=ExtResource( 3 )]
 
@@ -48,6 +47,3 @@ text = "Get the hell out of here"
 script = ExtResource( 1 )
 
 [node name="Chase" parent="." index="8" instance=ExtResource( 6 )]
-
-[node name="Node" type="Node" parent="." index="9"]
-script = ExtResource( 7 )

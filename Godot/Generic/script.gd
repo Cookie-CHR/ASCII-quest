@@ -47,10 +47,12 @@ func mute_unmute(button):
 		button.text = "On"
 
 func change_scn(button):
-	Time.time_sum(button.minutes);
-	Inventory.inv_add(button.inv_get)
-	Inventory.inv_remove(button.inv_remove)
-	Inventory.money_manage(button.money)
-	var error = get_tree().change_scene(button.dest+".tscn")
-	if error:
-		General.guess_scn(button.dest, button.minutes)
+	print(Time_Patch.patched())
+	if not Time_Patch.patched():
+		Time.time_sum(button.minutes);
+		Inventory.inv_add(button.inv_get)
+		Inventory.inv_remove(button.inv_remove)
+		Inventory.money_manage(button.money)
+		var error = get_tree().change_scene(button.dest+".tscn")
+		if error:
+			General.guess_scn(button.dest, button.minutes)
