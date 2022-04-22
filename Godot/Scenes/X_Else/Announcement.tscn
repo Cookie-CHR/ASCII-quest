@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Buttons/Go.gd" type="Script" id=1]
+[ext_resource path="res://Generic/sc_adder.gd" type="Script" id=2]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=4]
+
+[node name="Announcement" instance=ExtResource( 3 )]
+
+[node name="Text" parent="." index="1"]
+text = "Suddently, the air is struck by the Queen's voice:
+
+\"All the citizens of txtown are convocated in the main park at 19 o'clock. There is an important announcement to be made, one that touches the interest of every memeber of the kingdom.\"
+
+You wonder what it is about."
+
+[node name="Image" parent="." index="2"]
+text = "
+                     . ' .
+     _._.-._        - (_) -
+   _(   .~  )._      ' . '
+  (__.C___.___ ) 
+              |^^|
+	   		           ('')     
+  	 		           \\--/     
+ __			      ____/ )( \\____      __
+   |====|    |====|    |====|
+   ||||||    ||||||    ||||||
+
+"
+
+[node name="Announced" type="Node2D" parent="." index="8"]
+script = ExtResource( 2 )
+
+[node name="Go" parent="." index="9" instance=ExtResource( 4 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "Go"
+script = ExtResource( 1 )
