@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Buttons/Undo.gd" type="Script" id=1]
 [ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Buttons/Prove_Flask.gd" type="Script" id=5]
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Buttons/Prove_Sus.gd" type="Script" id=7]
+[ext_resource path="res://Buttons/Prove_Notes.gd" type="Script" id=8]
 
 [node name="Castle" instance=ExtResource( 2 )]
 
@@ -44,17 +45,24 @@ margin_bottom = 462.0
 text = "I've got the guard's testimony"
 script = ExtResource( 3 )
 
-[node name="Prove_Sus" parent="." index="8" instance=ExtResource( 6 )]
+[node name="Prove_Notes" parent="." index="8" instance=ExtResource( 6 )]
 margin_left = 36.0
 margin_top = 459.0
+margin_bottom = 26.0
+text = "He wrote weird notes about the plague"
+script = ExtResource( 8 )
+
+[node name="Prove_Sus" parent="." index="9" instance=ExtResource( 6 )]
+margin_left = 36.0
+margin_top = 482.0
 margin_right = 224.0
 margin_bottom = 485.0
 text = "He is suspicious"
 script = ExtResource( 7 )
 
-[node name="Undo" parent="." index="9" instance=ExtResource( 6 )]
+[node name="Undo" parent="." index="10" instance=ExtResource( 6 )]
 margin_left = 36.0
-margin_top = 482.0
+margin_top = 505.0
 margin_right = 565.0
 margin_bottom = 485.0
 text = "Nope, no proofs, just wanted to try this option"

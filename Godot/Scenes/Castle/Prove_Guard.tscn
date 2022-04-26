@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Buttons/Judgement.gd" type="Script" id=1]
 [ext_resource path="res://Buttons/Prove_Flask.gd" type="Script" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Buttons/Prove_Notes.gd" type="Script" id=8]
 
 [node name="Castle" instance=ExtResource( 5 )]
 
@@ -39,14 +40,22 @@ margin_top = 413.0
 text = "Also, I found a flask in the forest"
 script = ExtResource( 2 )
 
-[node name="Prove_Sus" parent="." index="8" instance=ExtResource( 7 )]
+[node name="Prove_Notes" parent="." index="8" instance=ExtResource( 7 )]
 margin_left = 36.0
 margin_top = 436.0
+margin_right = 521.0
+margin_bottom = 462.0
+text = "Also, he wrote weird notes about the plague"
+script = ExtResource( 8 )
+
+[node name="Prove_Sus" parent="." index="9" instance=ExtResource( 7 )]
+margin_left = 36.0
+margin_top = 459.0
 text = "Also, he is suspicious"
 script = ExtResource( 3 )
 
-[node name="Judgement" parent="." index="9" instance=ExtResource( 7 )]
+[node name="Judgement" parent="." index="10" instance=ExtResource( 7 )]
 margin_left = 36.0
-margin_top = 459.0
+margin_top = 482.0
 text = "Is what I said enough, my Queen?"
 script = ExtResource( 1 )

@@ -14,7 +14,7 @@ func patched():
 		return true
 	
 	#announcement at 18:00
-	if not General.sc_find(["Truth_Heard"]) and \
+	if not General.sc_find(["Alert_Success"]) and \
 	   not General.sc_find(["Announced"]) and \
 	   Time.h >= 18 and \
 	   General.sc_is_overwritable(get_tree().get_current_scene().filename):
