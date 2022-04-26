@@ -1,0 +1,63 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Buttons/Judgement.gd" type="Script" id=1]
+[ext_resource path="res://Buttons/Prove_Flask.gd" type="Script" id=2]
+[ext_resource path="res://Buttons/Prove_Guard.gd" type="Script" id=3]
+[ext_resource path="res://Buttons/Prove_Sus.gd" type="Script" id=4]
+[ext_resource path="res://Generic/sc_adder.gd" type="Script" id=5]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=8]
+
+[node name="Castle" instance=ExtResource( 8 )]
+
+[node name="Text" parent="." index="1"]
+text = "You inform the Queen about the weird notes you found in the Wizard's lab. 
+
+\"The wizard is a loyal subject and a renowned alchemist\", the Queen replies, \"He may have studied the not-translatable curse and found those facts on its own.\"
+
+For a second, she seems uncertain: \"sure, it is weird he hasn't shared his studies with the community...\""
+
+[node name="Image" parent="." index="2"]
+text = "
+
+               /\\      
+              /()\\
+           |\\/    \\/|
+          _|/ |^^| \\|_ 
+          \\|  ('')  |/
+           |  \\--/  |
+          _|_/ )( \\_|_
+         |@@|_(/\\)_|@@|
+   - ----|__|_/__\\_|__|---- -"
+
+[node name="Accuse" parent="." index="8" instance=ExtResource( 7 )]
+
+[node name="Flask_Proved" type="Node2D" parent="." index="9"]
+script = ExtResource( 5 )
+
+[node name="Prove_Guard" parent="." index="10" instance=ExtResource( 6 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "Also, I got the guard's testimony"
+script = ExtResource( 3 )
+
+[node name="Prove_Flask" parent="." index="11" instance=ExtResource( 6 )]
+margin_left = 36.0
+margin_top = 436.0
+margin_right = 433.0
+margin_bottom = 462.0
+text = "Also, I found a flask in the forest"
+script = ExtResource( 2 )
+
+[node name="Prove_Sus" parent="." index="12" instance=ExtResource( 6 )]
+margin_left = 36.0
+margin_top = 459.0
+text = "Also, he is suspicious"
+script = ExtResource( 4 )
+
+[node name="Judgement" parent="." index="13" instance=ExtResource( 6 )]
+margin_left = 36.0
+margin_top = 482.0
+text = "Is what I said enough, my Queen?"
+script = ExtResource( 1 )
