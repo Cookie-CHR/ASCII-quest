@@ -5,5 +5,4 @@ func re_init():
 	# Useful for destinations that require an updated curr_sc, or the button's name
 	
 	self.dest = "Scenes/Park/Fruit_2"
-	self.minutes = 30
-	self.money = 4
+	self.money = 1

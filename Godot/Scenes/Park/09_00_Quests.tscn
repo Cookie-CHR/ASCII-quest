@@ -14,7 +14,7 @@
 [node name="Text" parent="." index="1"]
 text = "You ask the quest guy what can be done today:
 
-\"There's one by those weird echology adepts: this seed here needs to be planted, and if it grows a fruit you'll get 4 gp. Not a bad deal, if you ask me.
+\"There's one by those weird echology adepts: this seed here needs to be planted, and if it grows a fruit you'll get 1 gp. Not much, but seems like an easy job.
 
 Also, the jesters have lost their cat. If you find it, bring it to the castle for 2 gp.
 

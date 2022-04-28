@@ -13,7 +13,7 @@ text = "Slowly and cautiously, you walk near the plant. Surprisingly, it doesn't
 
 You hold up your hand and stroke the Cloeria. It reacts with a slight purr of appreciation.
 
-Between its leaves, you find a round fruit. With the plant's permission, you take it and bring it to the quest guy."
+Between its leaves, you find a round fruit. With the plant's permission, you take it and bring it to the quest guy, which gives you your money."
 
 [node name="Image" parent="." index="2"]
 text = "
@@ -36,7 +36,7 @@ script = ExtResource( 1 )
 [node name="Undo" parent="." index="9" instance=ExtResource( 3 )]
 margin_left = 36.0
 margin_top = 413.0
-margin_right = 587.0
+margin_right = 93.0
 margin_bottom = 439.0
-text = "This subquest was lame! At least I have the money"
+text = "What a lame subquest!"
 script = ExtResource( 5 )
