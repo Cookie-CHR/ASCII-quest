@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Buttons/Undo.gd" type="Script" id=1]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=3]
+
+[node name="Lab" instance=ExtResource( 3 )]
+
+[node name="Text" parent="." index="1"]
+text = "You keep peeking the wizard's papers, but just as you were starting to get used to his calligraphy he notices you.
+
+\"Stop looking at my stuff!\", he snorts, taking his paperwork and putting it on a tall shelf.
+
+He seemed agitated, like he was hiding something..."
+
+[node name="Image" parent="." index="2"]
+text = "
+ 
+  _____          _
+  ====||     /(  H
+  |||\\||   _(__)[_]_
+  ====||   '''''''''  /\\
+  //(S||   __       _/__\\_ 
+  ====|| ,(' )       (--)
+   ( )|| \\_T_       /\\  /\\
+  ====||  |_/>     / |\\(|(
+  |\\\\|||  /_\\        /  \\
+  ====|| _\\.| ------/____\\----"
+
+[node name="Undo" parent="." index="8" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "I'll be back"
+script = ExtResource( 1 )
