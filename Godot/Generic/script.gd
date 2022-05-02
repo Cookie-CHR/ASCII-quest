@@ -47,7 +47,6 @@ func mute_unmute(button):
 		button.text = "On"
 
 func change_scn(button):
-	print(Time_Patch.patched())
 	if not Time_Patch.patched():
 		Time.time_sum(button.minutes);
 		Inventory.inv_add(button.inv_get)

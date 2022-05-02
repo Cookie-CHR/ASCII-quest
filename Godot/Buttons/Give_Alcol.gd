@@ -6,10 +6,10 @@ func re_init():
 	self.dest = "Scenes/Lab/Give_Alcol"
 	
 	# Need either wine or beer
-	if Inventory.inv_find(["Beer"]):
-		self.inv_required = ["Beer"]
+	if Inventory.inv_find(["beer"]):
+		self.inv_required = ["beer"]
 	else:
-		self.inv_required = ["Wine"]
+		self.inv_required = ["wine"]
 	# either one will be removed
 	self.inv_remove = self.inv_required
 	

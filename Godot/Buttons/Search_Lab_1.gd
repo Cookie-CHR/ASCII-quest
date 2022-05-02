@@ -15,4 +15,4 @@ func re_init():
 		self.text = "Investigate further        (+30m)"
 	
 	self.minutes = 30
-	self.sc_forbidden = ["Secret_Lab_Found"]
+	self.sc_forbidden = ["S_Room_Found"]
