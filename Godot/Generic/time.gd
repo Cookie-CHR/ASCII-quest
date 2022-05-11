@@ -26,3 +26,7 @@ func findClosest(dest_array, minutes):
 			closest_h = instance_h
 			closest_m = instance_m
 	return [closest_h, closest_m]
+
+func time_reset():
+	h = 8
+	m = 0

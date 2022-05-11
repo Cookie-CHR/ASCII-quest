@@ -33,3 +33,7 @@ func money_manage(new):
 
 func money_print():
 	return(money)
+
+func inv_reset():
+	money = 0
+	inv = []
