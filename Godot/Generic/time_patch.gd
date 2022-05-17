@@ -33,4 +33,21 @@ func patched(next_sc):
 				print("An error has occurred: could not change scene")
 		return true
 	
+	#good ending if quest concluded
+	if  General.sc_find(["Alcol_Given"]) and \
+		General.sc_find(["Glitch_Given"]) and \
+		General.sc_find(["Money_Given"]):
+			if get_tree().change_scene("res://Scenes/Endings/Good.tscn"):
+				print("An error has occurred: could not change scene")
+	
+	#half-good ending if not all ingredients gathered by 19:00
+	if "Lab" in next_sc and \
+		General.sc_find(["Truth_Heard"]) and \
+		not (General.sc_find(["Alcol_Given"]) and \
+			 General.sc_find(["Glitch_Given"]) and \
+			 General.sc_find(["Money_Given"]) ) and \
+		Time.h >=19:
+			if get_tree().change_scene("res://Scenes/Endings/Half_Good.tscn"):
+				print("An error has occurred: could not change scene")
+
 	return false
