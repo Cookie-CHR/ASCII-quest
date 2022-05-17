@@ -79,7 +79,7 @@ margin_left = 36.0
 margin_top = 413.0
 margin_right = 389.0
 margin_bottom = 439.0
-text = "Remind me the ingredients again"
+text = "Remind me of the ingredients again"
 script = ExtResource( 4 )
 
 [node name="Alcol" parent="." index="9" instance=ExtResource( 2 )]
