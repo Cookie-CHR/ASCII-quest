@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Buttons/H_Good_or_Good.gd" type="Script" id=2]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=3]
+
+[node name="Lab" instance=ExtResource( 3 )]
+
+[node name="Text" parent="." index="1"]
+text = "As you come back to the lab, you see the wizard hurrying towards you
+
+\"Quick! The potion is boiling! You must give me all the ingredients you have, or it will be too late to add them!\""
+
+[node name="Image" parent="." index="2"]
+text = "  _. _-'            '--__  . \\
+ 7 _/                    \\_ \\_ 
+  /                     _  \\  Y
+ /_   ._                H   | '
+  H  //H              _(_)__ \\
+ (_)//[_]_            ------- |
+ ---------    /\\       o   '   \\
+            _/__\\_    .  '  o
+     _       (--)__/  _______
+     H      /\\  /    (.-----.)
+    / \\ _   )|\\(|    /       \\
+ --(___)_Q-- /  \\ ---'._____.'-
+            /____\\            "
+
+[node name="H_Good_or_Good" parent="." index="8" instance=ExtResource( 1 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "Give everything you have"
+script = ExtResource( 2 )

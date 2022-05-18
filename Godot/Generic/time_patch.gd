@@ -26,7 +26,7 @@ func patched(next_sc):
 	if "Park" in next_sc and \
 	   General.sc_find(["Announced"]):
 		if  Time.h >= 19:
-			if get_tree().change_scene("res://Scenes/Ending/Default.tscn"):
+			if get_tree().change_scene("res://Scenes/X_Ending/Default.tscn"):
 				print("An error has occurred: could not change scene")
 		else:
 			if get_tree().change_scene("res://Scenes/Park/18_00.tscn"):
@@ -37,7 +37,7 @@ func patched(next_sc):
 	if  General.sc_find(["Alcol_Given"]) and \
 		General.sc_find(["Glitch_Given"]) and \
 		General.sc_find(["Money_Given"]):
-			if get_tree().change_scene("res://Scenes/Endings/Good.tscn"):
+			if get_tree().change_scene("res://Scenes/X_Ending/Good.tscn"):
 				print("An error has occurred: could not change scene")
 	
 	#half-good ending if not all ingredients gathered by 19:00
@@ -47,7 +47,7 @@ func patched(next_sc):
 			 General.sc_find(["Glitch_Given"]) and \
 			 General.sc_find(["Money_Given"]) ) and \
 		Time.h >=19:
-			if get_tree().change_scene("res://Scenes/Endings/Half_Good.tscn"):
+			if get_tree().change_scene("res://Scenes/Lab/To_End.tscn"):
 				print("An error has occurred: could not change scene")
 
 	return false
