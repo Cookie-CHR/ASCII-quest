@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Buttons/Continue.gd" type="Script" id=1]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=3]
+
+[node name="Lab" instance=ExtResource( 3 )]
+
+[node name="Text" parent="." index="1"]
+text = "You give the last ingredient to the wizard.
+
+\"Wonderful!\", he mutters, \"With these catalysts and the glitch sample, our potion will be even more effective than I planned for!\".
+
+The next half hour is entirely dedicated to the potion: the wizard directs the process, muttering complicated formulas, and you try to help by bringing ingredients to him.
+
+In the end, the wizard dips a vial in his cauldron and picks up a small sample."
+
+[node name="Image" parent="." index="2"]
+text = "  _. _-'            '--__  . \\
+ 7 _/                    \\_ \\_ 
+  /                     _  \\  Y
+ /_   ._                H   | '
+  H  //H              _(_)__ \\
+ (_)//[_]_      /\\    ------- |
+ ---------    _/__\\_   o   '  \\
+               (--)   .  '  o
+     _        /\\  /\\_________
+     H        )|\\(|  (.-----.)
+    / \\ _      /  \\  /       \\
+ --(___)_Q----/____\\-'._____.'-
+"
+
+[node name="Continue" parent="." index="8" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 413.0
+margin_right = 32.0
+margin_bottom = 51.0
+text = "Time to test the potion!"
+script = ExtResource( 1 )
