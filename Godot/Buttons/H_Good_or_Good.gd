@@ -25,5 +25,7 @@ func re_init():
 	#final check if all the ingredients have been given
 	if General.sc_find(["Alcol_Given"]) and General.sc_find(["Money_Given"]) and General.sc_find(["Glitch_Given"]):
 		self.dest = "Scenes/X_Ending/Good"
+		self.minutes = 30
 	else:
 		self.dest = "Scenes/X_Ending/Half_Good"
+		self.minutes = 30
