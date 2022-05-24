@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Buttons/Continue.gd" type="Script" id=1]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=3]
+
+[node name="Ending" instance=ExtResource( 3 )]
+
+[node name="Text" parent="." index="1"]
+text = "You give the wizard all the potion ingredients you have. You apologize for not getting every ingredient in time, but he doesn't answer: he is too busy taking care of his cauldron.
+
+About half an hour later, when the potion is ready, he finally rises his head from his work. 
+
+\"Some of the ingredients are still missing, but the potion will still work to some extent\", he says, relieved. He then dips a small vial in the cauldron and fills it with potion."
+
+[node name="Image" parent="." index="2"]
+text = "  _. _-'            '--__  . \\
+ 7 _/                    \\_ \\_ 
+  /                     _  \\  Y
+ /_   ._                H   | '
+  H  //H              _(_)__ \\
+ (_)//[_]_      /\\    ------- |
+ ---------    _/__\\_   o   '  \\
+               (--)   .  '  o
+     _        /\\  /\\_________
+     H        )|\\(|  (.-----.)
+    / \\ _      /  \\  /       \\
+ --(___)_Q----/____\\-'._____.'-
+"
+
+[node name="Continue" parent="." index="8" instance=ExtResource( 2 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "Time to test the potion!"
+script = ExtResource( 1 )
