@@ -9,6 +9,9 @@
                                                     |L.                      </code></pre> 
 Text-based (and ascii-based) adventure web game made with Godot.
 
+# Notices
+Exam Season is back again! I'll still try to make a small commit every day, but it's not granted.
+
 # The plot
 The story takes place in a typical medieval-fantasy village called **Txtown**. One morning, the Queen makes an announcemente to all of her subjects: a powerful magic curse is leading to the town, a curse that only ASCII worlds can have: slowly, but inexorably, everything is turning into **not-translatable characters** (Like � or ▭).
 
