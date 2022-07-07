@@ -9,6 +9,3 @@ margin_bottom = 20.0
 custom_fonts/font = ExtResource( 2 )
 flat = true
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}

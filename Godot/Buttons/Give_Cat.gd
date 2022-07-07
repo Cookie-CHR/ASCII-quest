@@ -2,6 +2,7 @@ extends "Improved_Button.gd"
 
 func re_init():
 	# Set the destination
+	self.sound = "Meow"
 	self.dest = "Scenes/"+General.curr_sc+"/09_00_Cat"
 	if Time.h >= 13 and Time.h <= 14:
 		# The scene is slightly different during lunch time

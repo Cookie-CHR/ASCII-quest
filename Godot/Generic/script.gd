@@ -48,7 +48,8 @@ func mute_unmute(button):
 
 func change_scn(button):
 	if not Time_Patch.patched(button.dest):
-		Time.time_sum(button.minutes);
+		AudioPlayer.change_sound(button.sound)
+		Time.time_sum(button.minutes)
 		Inventory.inv_add(button.inv_get)
 		Inventory.inv_remove(button.inv_remove)
 		Inventory.money_manage(button.money)

@@ -8,6 +8,7 @@ var inv_remove = []
 var inv_required = []
 var sc_required = []
 var sc_forbidden = ["This one mustn't be empty or the check will return true"]
+var sound = "Default"
 
 func re_init():
 	# Re-initialize the variables

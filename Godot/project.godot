@@ -25,6 +25,7 @@ Time="*res://Generic/time.gd"
 MusicPlayer="*res://Generic/MusicPlayer.tscn"
 Inventory="*res://Generic/inventory.gd"
 Time_Patch="*res://Generic/time_patch.gd"
+AudioPlayer="*res://Generic/AudioPlayer.tscn"
 
 [debug]
 
