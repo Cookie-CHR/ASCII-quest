@@ -10,3 +10,9 @@ text = "_  _   ___  _____     ___    ___   ____       _____   _  _   ____    _  
 | \\|  \\___/   |       |___) /   \\  |___/      |____   | \\|   |___/   |   | \\|   \\___)
 
    O=============================================================================O"
+
+[node name="Text" parent="." index="2"]
+text = "
+The wizard isn't alone in his battle anymore: even though you didn't manage to get all of the ingredients, the potion is still effective enough to draw away the plague for another while.
+
+Mary has re-opened her tavern, and is now back in business. Life is not great, since the plague is still spreading around and appearing from time to time, but with your help, all of Txtown lived to fight another day."
