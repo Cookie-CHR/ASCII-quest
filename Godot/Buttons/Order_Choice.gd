@@ -14,7 +14,11 @@ func re_init():
 	if (self.name in items.keys() and Inventory.money >= items[self.name]):
 		self.dest = "Scenes/Tavern/Order_"+self.name.capitalize()
 		self.money = -(items[self.name])
-		self.inv_get = [self.name]
+		if (self.name in ["tea", "beer", "wine"]):
+			self.inv_get = [self.name]
+			self.sound = "Drink"
+		else:
+			self.sound = "Eat"
 	else:
 		dest = "Scenes/Tavern/Order_Fail"
 	

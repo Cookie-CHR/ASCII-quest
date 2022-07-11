@@ -7,6 +7,7 @@ func re_init():
 	
 	if General.sc_find(["Truth_Heard"]):
 		self.dest = "Scenes/Lab/S_Room"
+		self.sound = "Walking"
 	elif General.sc_find(["Alert_Success"]):
 		self.dest = "Scenes/Lab/Truth"
 	else:

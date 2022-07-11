@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Magic_Miss.mp3-d4ca3a9c32cc363f1e9aca1d4c296306.mp3str"
+
+[deps]
+
+source_file="res://Sound/Magic_Miss.mp3"
+dest_files=[ "res://.import/Magic_Miss.mp3-d4ca3a9c32cc363f1e9aca1d4c296306.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

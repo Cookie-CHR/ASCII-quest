@@ -7,5 +7,7 @@ func re_init():
 	if General.sc_find([self.name]):
 		self.text += "<--(The word from the wizard's notes)"
 		self.dest = "Scenes/Lab/Alert_Success"
+		self.sound = "Magic_Miss"
 	else:
 		self.dest = "Scenes/Lab/Alert_Fail"
+		self.sound = "Magic_Hit"
