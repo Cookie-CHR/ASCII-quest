@@ -2,6 +2,7 @@ extends AudioStreamPlayer
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	volume_db = 2
 	if(not MusicPlayer.mute):
 		play()
 		stop()

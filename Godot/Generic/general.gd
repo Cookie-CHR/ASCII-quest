@@ -37,7 +37,7 @@ func guess_scn(dest, minutes):
 	elif dest == "Castle":
 		dest_array = ["08:00", "09:00", "13:00", "14:00", "18:00", "19:00"]
 	elif dest == "Lab":
-		dest_array = ["08:00", "09:00", "12:00", "14:00", "18:00"]
+		dest_array = ["08:00", "09:00", "12:00", "14:00"]
 	
 	var closest_time = Time.findClosest(dest_array, minutes)
 	return "Scenes/%s/%02d_%02d" % [dest, closest_time[0], closest_time[1]]
