@@ -112,9 +112,6 @@ margin_right = 922.0
 margin_bottom = 574.0
 custom_fonts/font = ExtResource( 1 )
 text = "Sound:"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Mute" type="Button" parent="."]
 margin_left = 927.0
@@ -125,6 +122,3 @@ custom_fonts/font = ExtResource( 1 )
 text = "On"
 flat = true
 align = 0
-__meta__ = {
-"_edit_use_anchors_": false
-}

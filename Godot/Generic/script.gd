@@ -3,12 +3,12 @@ extends Panel
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	General.update_prevs()
+	SoundPlayer.play()
 	var i = 0
 	
 	for child in get_children():
 		if child.name == "Mute":
-			if (MusicPlayer.mute):
-				child.text = "Off"
+			child.text = "Off" if MuteButton.mute else "On"
 			if get_node("Mute").connect("pressed", self, "mute_unmute", [child]):
 				print("An error has occurred: could not connect the mute button")
 		elif child is Button:
@@ -40,15 +40,11 @@ func manage(button, i):
 
 
 func mute_unmute(button):
-	MusicPlayer.mute_unmute()
-	if (MusicPlayer.mute):
-		button.text = "Off"
-	else:
-		button.text = "On"
+	MuteButton.mute_unmute()
+	button.text = "Off" if MuteButton.mute else "On"
 
 func change_scn(button):
 	if not Time_Patch.patched(button.dest):
-		AudioPlayer.change_sound(button.sound)
 		Time.time_sum(button.minutes)
 		Inventory.inv_add(button.inv_get)
 		Inventory.inv_remove(button.inv_remove)

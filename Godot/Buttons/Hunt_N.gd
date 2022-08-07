@@ -8,4 +8,3 @@ func re_init():
 		self.dest = "Scenes/Forest/Hunt_Cat"
 		self.minutes = 60
 		self.inv_get = ["cat"]
-		self.sound = "Meow"

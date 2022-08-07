@@ -16,9 +16,6 @@ func re_init():
 		self.money = -(items[self.name])
 		if (self.name in ["tea", "beer", "wine"]):
 			self.inv_get = [self.name]
-			self.sound = "Drink"
-		else:
-			self.sound = "Eat"
 	else:
 		dest = "Scenes/Tavern/Order_Fail"
 	
