@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Buttons/Go.gd" type="Script" id=1]
 [ext_resource path="res://Generic/sc_adder.gd" type="Script" id=2]
 [ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Generic/Sound_Changer.tscn" type="PackedScene" id=6]
 
 [node name="Forest" instance=ExtResource( 5 )]
 
@@ -45,3 +46,5 @@ script = ExtResource( 2 )
 
 [node name="Got_Cat" type="Node2D" parent="." index="8"]
 script = ExtResource( 2 )
+
+[node name="Meow" parent="." index="12" instance=ExtResource( 6 )]

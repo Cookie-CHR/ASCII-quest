@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Buttons/Travel_to.gd" type="Script" id=3]
 [ext_resource path="res://Buttons/Undo.gd" type="Script" id=4]
+[ext_resource path="res://Generic/Sound_Changer.tscn" type="PackedScene" id=5]
 
 [node name="Travel" instance=ExtResource( 2 )]
 
@@ -59,3 +60,5 @@ margin_left = 36.0
 margin_top = 528.0
 text = "Never mind, let's stay here"
 script = ExtResource( 4 )
+
+[node name="Walking" parent="." index="14" instance=ExtResource( 5 )]

@@ -9,7 +9,7 @@ func _ready():
 		play()
 	
 	if connect("finished", self, "reset_to_default"):
-		print("An error has occurred: could not connect the mute button")
+		print("An error has occurred: could not connect the sound")
 
 
 func change_sound (new_sound):
