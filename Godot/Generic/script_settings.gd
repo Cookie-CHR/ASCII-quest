@@ -42,4 +42,5 @@ func reset():
 		print("An error has occurred: could not reset the game")
 
 func back():
+	get_parent().settingsPanel = null
 	queue_free()

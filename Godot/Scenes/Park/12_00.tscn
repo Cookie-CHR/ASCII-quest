@@ -21,7 +21,6 @@ The quest guy is not here. He is probably out for lunch, quest guys eat too.
 "
 
 [node name="Timmy_text" type="Label" parent="Text" index="0"]
-modulate = Color( 1, 1, 1, 0.745098 )
 margin_top = 138.0
 margin_right = 548.0
 margin_bottom = 321.0
