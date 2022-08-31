@@ -5,7 +5,8 @@ var settingsPanel = null
 func _ready():
 	background_change()
 	General.update_prevs()
-	SoundPlayer.play()
+	if(not MuteButton.mute):
+		SoundPlayer.play()
 	var i = 0
 	
 	for child in get_children():
