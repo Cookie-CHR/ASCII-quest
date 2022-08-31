@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Generic/script_settings.gd" type="Script" id=3]
+
+[node name="SettingsPanel" type="Panel"]
+margin_left = 380.0
+margin_top = 176.0
+margin_right = 644.0
+margin_bottom = 470.0
+script = ExtResource( 3 )
+
+[node name="Background" type="Label" parent="."]
+modulate = Color( 1, 1, 1, 0.745098 )
+margin_right = 40.0
+margin_bottom = 14.0
+custom_fonts/font = ExtResource( 2 )
+text = "0======================0
+|       Settings       |
+|                      |
+| 0==================0 |
+| |                  | |
+| 0==================0 |
+| 0==================0 |
+| |                  | |
+| 0==================0 |
+| 0==================0 |
+| |                  | |
+| 0==================0 |
+0======================0"
+
+[node name="Mute" type="Button" parent="."]
+margin_left = 38.0
+margin_top = 79.0
+margin_right = 228.0
+margin_bottom = 125.0
+custom_fonts/font = ExtResource( 2 )
+text = "Sound: On"
+flat = true
+align = 0
+
+[node name="Reset" type="Button" parent="."]
+margin_left = 38.0
+margin_top = 148.0
+margin_right = 228.0
+margin_bottom = 194.0
+custom_fonts/font = ExtResource( 2 )
+text = "Reset che game"
+flat = true
+align = 0
+
+[node name="Back" type="Button" parent="."]
+margin_left = 38.0
+margin_top = 217.0
+margin_right = 228.0
+margin_bottom = 263.0
+custom_fonts/font = ExtResource( 2 )
+text = "Back to the game"
+flat = true
+align = 0

@@ -1,4 +1,5 @@
 extends Panel
+var settingsPanel = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -8,10 +9,9 @@ func _ready():
 	var i = 0
 	
 	for child in get_children():
-		if child.name == "Mute":
-			child.text = "Off" if MuteButton.mute else "On"
-			if get_node("Mute").connect("pressed", self, "mute_unmute", [child]):
-				print("An error has occurred: could not connect the mute button")
+		if child.name == "Settings":
+			if get_node("Settings").connect("pressed", self, "settings"):
+				print("An error has occurred: could not connect the settings button")
 		elif child is Button:
 			i = manage(child, i)
 
@@ -40,9 +40,13 @@ func manage(button, i):
 	return i
 
 
-func mute_unmute(button):
-	MuteButton.mute_unmute()
-	button.text = "Off" if MuteButton.mute else "On"
+func settings():
+	if settingsPanel == null:
+		settingsPanel = load("res://Generic/Settings.tscn").instance()
+		add_child(settingsPanel)
+	else:
+		remove_child(settingsPanel)
+		settingsPanel = null
 
 func change_scn(button):
 	if not Time_Patch.patched(button.dest):
