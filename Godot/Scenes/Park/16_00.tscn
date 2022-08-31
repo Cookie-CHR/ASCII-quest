@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Buttons/Clean.gd" type="Script" id=1]
 [ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=2]
@@ -10,30 +10,60 @@
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Buttons/Talk_Park_2.gd" type="Script" id=10]
+[ext_resource path="res://Generic/Timmy_Talk.gd" type="Script" id=11]
+[ext_resource path="res://Generic/mono_font.tres" type="DynamicFont" id=12]
 
 [node name="Park" instance=ExtResource( 9 )]
 
 [node name="Text" parent="." index="1"]
+rect_pivot_offset = Vector2( -185, 146 )
 text = "The park is often used as a city square, because of its central position.
 
 The quest guy is sitting behind its stall, and some passers-by are enjoying a walk in the sun.
+"
 
-Also, mr. Copper is standing on the sidewalk alone, apparently waiting for something."
+[node name="Timmy_text" type="Label" parent="Text" index="0"]
+margin_top = 138.0
+margin_right = 548.0
+margin_bottom = 321.0
+custom_fonts/font = ExtResource( 12 )
+text = "Also, you can see little Timmy having a discussion with his grandad, mr. Copper"
+autowrap = true
+script = ExtResource( 11 )
 
 [node name="Image" parent="." index="2"]
-text = "  
+text = "    
       
 TTTTTTTTTT|    
-----------/      ______________
-   _      |      |            |
---| '__ --|-.    |   QUESTS   |
-++'_/__\\_ C..3...|____________|.
-   “(--)\"         ||  ('')  ||
-   __/__         _||__/__\\__||_
-  / //  \\        |  |,,,,,,|  |
-oOo ) \\  T oOoOoO|____________|O
-			.. /_ /_ | ...oOo..............o
+----------/         ____________
+   _      |         |           
+--| '__ --|-.       |   QUESTS  
+++'_/__\\_ C.    ....|___________
+   “(--)\"            ||  ('')  |
+   __/__            _||__/__\\__|
+  / //  \\           |  |,,,,,,| 
+oOo ) \\  T        oO|___________
+			.. /_ /_ |        .............o
 			.o..O......oO...........o......."
+
+[node name="Timmy_image" type="Label" parent="Image" index="0"]
+margin_right = 353.0
+margin_bottom = 317.0
+custom_fonts/font = ExtResource( 12 )
+text = "
+
+
+
+
+  
+             '_ 
+           _/__\\_
+           '(\" )\"
+            .++.
+           /(__)\\
+           _/  \\_"
+autowrap = true
+script = ExtResource( 11 )
 
 [node name="Park" parent="." index="7" instance=ExtResource( 2 )]
 

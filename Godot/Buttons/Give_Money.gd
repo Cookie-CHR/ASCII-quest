@@ -8,3 +8,5 @@ func re_init():
 	else:
 		self.dest = "Scenes/Lab/Give_Money"
 		self.money = -12
+		self.sc_forbidden = ["Money_Given"]
+

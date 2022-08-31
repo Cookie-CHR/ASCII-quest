@@ -13,6 +13,15 @@ text = "Carefully, you sneak behind the counter and try to steal a bottle of win
 
 You slowly grab the bottle, you pull it out of its container... and find a huge glitch at one millimeter from your finger."
 
+[node name="Fine_or_Wine" type="Label" parent="Text" index="0"]
+margin_top = 161.0
+margin_right = 548.0
+margin_bottom = 317.0
+custom_fonts/font = ExtResource( 1 )
+text = "You"
+autowrap = true
+script = ExtResource( 2 )
+
 [node name="Image" parent="." index="2"]
 text = "
                      􏿾_
@@ -27,17 +36,7 @@ text = "
   􏿾    (_>.   _|_|􏿾_||_􏿾_
   -- _._| /_ |_􏿾􏿾____􏿾___| -􏿾􏿾-"
 
-[node name="Fine_or_Wine" type="Label" parent="." index="8"]
-margin_left = 42.0
-margin_top = 209.0
-margin_right = 590.0
-margin_bottom = 365.0
-custom_fonts/font = ExtResource( 1 )
-text = "You"
-autowrap = true
-script = ExtResource( 2 )
-
-[node name="Undo" parent="." index="9" instance=ExtResource( 5 )]
+[node name="Undo" parent="." index="8" instance=ExtResource( 5 )]
 margin_left = 36.0
 margin_top = 413.0
 text = "That was scary"

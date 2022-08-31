@@ -5,7 +5,7 @@
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=4]
 
-[node name="Ending" instance=ExtResource( 2 )]
+[node name="Ending" groups=["Park"] instance=ExtResource( 2 )]
 
 [node name="Text" parent="." index="1"]
 text = "When the time comes, the Queen makes her entrance, solemn as always.

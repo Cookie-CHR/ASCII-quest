@@ -4,6 +4,8 @@ func re_init():
 	# Re-initialize the variables
 	# Useful for destinations that require an updated curr_sc, or the button's name
 	self.dest = "Scenes/Lab/Give_Alcol"
+	self.sc_forbidden = ["Alcol_Given"]
+
 	
 	# Need either wine or beer
 	if Inventory.inv_find(["beer"]):

@@ -4,7 +4,7 @@
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Buttons/To_Epilogue_Default.gd" type="Script" id=3]
 
-[node name="Ending" instance=ExtResource( 1 )]
+[node name="Ending" groups=["Park"] instance=ExtResource( 1 )]
 
 [node name="Text" parent="." index="1"]
 text = "The Queen steps to the side and the wizard walks in proudly. With him, a tied up figure that looks just like... Is that Timmy, the artisan's son?

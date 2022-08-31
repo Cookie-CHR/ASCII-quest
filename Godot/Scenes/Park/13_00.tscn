@@ -22,6 +22,18 @@ text = "The park is often used as a city square, because of its central position
 The quest guy is sitting behind its stall, and some passers-by are enjoying a walk in the sun.
 "
 
+[node name="Timmy_text" type="Label" parent="Text" index="0"]
+margin_top = 138.0
+margin_right = 548.0
+margin_bottom = 317.0
+custom_fonts/font = ExtResource( 11 )
+text = "Also, you can see little Timmy having a discussion with his grandad, mr. Copper"
+autowrap = true
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Image" parent="." index="2"]
 text = "  
       
@@ -36,6 +48,24 @@ TTTTTTTTTT|
 oOo ) \\  T        oO|___________
 			.. /_ /_ |        .............o
 			.o..O......oO...........o......."
+
+[node name="Timmy_image" type="Label" parent="Image" index="0"]
+margin_right = 353.0
+margin_bottom = 317.0
+custom_fonts/font = ExtResource( 11 )
+text = "  
+
+
+
+
+  
+             '_ 
+           _/__\\_
+           '(\" )\"
+            .++.
+           /(__)\\
+           _/  \\_"
+script = ExtResource( 12 )
 
 [node name="Park" parent="." index="7" instance=ExtResource( 10 )]
 
@@ -81,39 +111,3 @@ margin_left = 36.0
 margin_top = 551.0
 text = "Go away"
 script = ExtResource( 2 )
-
-[node name="Timmy_text" type="Label" parent="." index="15"]
-margin_left = 42.0
-margin_top = 186.0
-margin_right = 590.0
-margin_bottom = 365.0
-custom_fonts/font = ExtResource( 11 )
-text = "Also, you can see little Timmy having a discussion with his grandad, mr. Copper"
-autowrap = true
-script = ExtResource( 12 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Timmy_image" type="Label" parent="." index="16"]
-margin_left = 635.0
-margin_top = 48.0
-margin_right = 988.0
-margin_bottom = 365.0
-custom_fonts/font = ExtResource( 11 )
-text = "  
-
-
-
-
-  
-             '_ 
-           _/__\\_
-           '(\" )\"
-            .++.
-           /(__)\\
-           _/  \\_"
-script = ExtResource( 12 )
-__meta__ = {
-"_edit_use_anchors_": false
-}

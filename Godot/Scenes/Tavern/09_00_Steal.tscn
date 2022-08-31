@@ -6,7 +6,7 @@
 [ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Generic/sc_adder.gd" type="Script" id=5]
 
-[node name="Generic_bg" instance=ExtResource( 3 )]
+[node name="Tavern" instance=ExtResource( 3 )]
 
 [node name="Text" parent="." index="1"]
 text = "You try to take advantage of the chaos to sneak behind the counter and grab some bottles of wine. You almost got to the bottles, when suddently the weight of a ton of iron lands on your head with a huge SDENG sound.

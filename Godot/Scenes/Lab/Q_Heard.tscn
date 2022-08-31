@@ -1,6 +1,5 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Generic/sc_adder.gd" type="Script" id=1]
 [ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Generic/Music_Changer.tscn" type="PackedScene" id=4]
@@ -37,6 +36,3 @@ margin_left = 36.0
 margin_top = 413.0
 text = "Onward!"
 script = ExtResource( 5 )
-
-[node name="Truth_Heard" type="Node2D" parent="." index="10"]
-script = ExtResource( 1 )

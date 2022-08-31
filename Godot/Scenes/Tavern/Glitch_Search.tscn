@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Buttons/Glitch_N.gd" type="Script" id=1]
 [ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Buttons/Glitch_Wine.gd" type="Script" id=4]
 [ext_resource path="res://Buttons/Glitch_Glass.gd" type="Script" id=5]
+[ext_resource path="res://Buttons/Undo.gd" type="Script" id=6]
 
 [node name="Tavern" instance=ExtResource( 2 )]
 
@@ -47,3 +48,9 @@ margin_left = 36.0
 margin_top = 459.0
 text = "Steal some wine                   (+10m)"
 script = ExtResource( 4 )
+
+[node name="Undo" parent="." index="11" instance=ExtResource( 3 )]
+margin_left = 36.0
+margin_top = 482.0
+text = "Get the hell out of here"
+script = ExtResource( 6 )

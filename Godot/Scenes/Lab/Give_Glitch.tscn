@@ -34,5 +34,5 @@ script = ExtResource( 1 )
 margin_left = 36.0
 margin_top = 413.0
 margin_bottom = 26.0
-text = "Careful with htis one!"
+text = "Careful with this one!"
 script = ExtResource( 2 )

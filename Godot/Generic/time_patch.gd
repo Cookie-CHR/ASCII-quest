@@ -13,6 +13,14 @@ func patched(next_sc):
 			print("An error has occurred: could not change scene")
 		return true
 	
+	# you got kicked out of the tavern
+	if General.sc_find(["Busted"]) and \
+	   get_tree().get_current_scene().filename == "res://Scenes/Tavern/09_00_Steal.tscn":
+		Time.time_sum(120)
+		if get_tree().change_scene("res://Scenes/X_Else/Travel.tscn"):
+			print("An error has occurred: could not change scene")
+		return true
+	
 	#announcement at 18:00
 	if not General.sc_find(["Alert_Success"]) and \
 	   not General.sc_find(["Announced"]) and \
@@ -39,6 +47,7 @@ func patched(next_sc):
 		General.sc_find(["Money_Given"]):
 			if get_tree().change_scene("res://Scenes/X_Ending/Good.tscn"):
 				print("An error has occurred: could not change scene")
+			return true
 	
 	#half-good ending if not all ingredients gathered by 19:00
 	if "Lab" in next_sc and \
@@ -49,5 +58,6 @@ func patched(next_sc):
 		Time.h >=19:
 			if get_tree().change_scene("res://Scenes/Lab/To_End.tscn"):
 				print("An error has occurred: could not change scene")
+			return true
 
 	return false

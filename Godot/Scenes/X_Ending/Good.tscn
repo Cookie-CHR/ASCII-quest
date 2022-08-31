@@ -4,7 +4,7 @@
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=3]
 
-[node name="Ending" instance=ExtResource( 3 )]
+[node name="Ending" groups=["Lab"] instance=ExtResource( 3 )]
 
 [node name="Text" parent="." index="1"]
 text = "You give the last ingredient to the wizard.
