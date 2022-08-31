@@ -32,6 +32,10 @@ MuteButton="*res://Generic/mute_button.gd"
 
 gdscript/warnings/integer_division=false
 
+[display]
+
+window/size/resizable=false
+
 [rendering]
 
 quality/driver/driver_name="GLES2"
