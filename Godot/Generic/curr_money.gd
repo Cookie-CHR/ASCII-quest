@@ -8,8 +8,12 @@ extends Label
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	text = "Money: " + str(Inventory.money_print()) + " gp"
-
+	var label = Label.new()
+	add_child(label)
+	label.add_font_override("font", load("res://Generic/mono_font.tres"))
+	label.set_position(Vector2(77,0))
+	label.text = str(Inventory.money_print()) + " gp"
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

@@ -2,6 +2,7 @@ extends Label
 
 
 func _ready():
+	self_modulate = Color(1,1,1,0.6)
 	_inv_print()
 
 func _inv_print():

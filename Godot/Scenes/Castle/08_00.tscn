@@ -5,7 +5,7 @@
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=4]
 
-[node name="Generic_bg" instance=ExtResource( 4 )]
+[node name="Castle" instance=ExtResource( 4 )]
 
 [node name="Text" parent="." index="1"]
 text = "The castle is closed. Of course, since the Queen is about to give her speech in the park..."

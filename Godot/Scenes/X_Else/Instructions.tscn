@@ -7,9 +7,7 @@
 [ext_resource path="res://Generic/script.gd" type="Script" id=5]
 [ext_resource path="res://Generic/Music_Changer.gd" type="Script" id=6]
 
-[node name="Instructions" type="Panel" groups=[
-"Big_Screen_Scene",
-]]
+[node name="Instructions" type="Panel" groups=["Big_Screen_Scene"]]
 margin_right = 1024.0
 margin_bottom = 600.0
 script = ExtResource( 5 )
@@ -18,6 +16,7 @@ __meta__ = {
 }
 
 [node name="Background" type="Label" parent="."]
+self_modulate = Color( 1, 1, 1, 0.745098 )
 margin_left = 20.0
 margin_top = 25.0
 margin_right = 1004.0
@@ -52,6 +51,7 @@ __meta__ = {
 }
 
 [node name="Text" type="Label" parent="."]
+self_modulate = Color( 1, 1, 1, 0.745098 )
 margin_left = 42.0
 margin_top = 48.0
 margin_right = 981.0
@@ -67,9 +67,25 @@ In this example, option 1 would take 10 minutes to be completed, while option 2 
  
 IMPORTANT: certain actions may lie about the time they take, so that you won't be able to assume their outcome."
 autowrap = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
+
+[node name="Bold" type="Label" parent="Text"]
+margin_right = 939.0
+margin_bottom = 367.0
+custom_fonts/font = ExtResource( 2 )
+text = "                           text adventure,           click
+                           time factor           the game world reacts to the game time
+						
+                  require time
+
+
+Do option 1                (+10m)
+Do option 2 instead        (+30m)
+
+
+
+
+IMPORTANT:                     lie about the time they take                                                    "
+autowrap = true
 
 [node name="To_Title" parent="." instance=ExtResource( 4 )]
 margin_left = 36.0

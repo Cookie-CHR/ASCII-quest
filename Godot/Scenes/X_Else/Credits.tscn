@@ -6,9 +6,7 @@
 [ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Generic/Music_Changer.gd" type="Script" id=5]
 
-[node name="Credits" type="Panel" groups=[
-"Big_Screen_Scene",
-]]
+[node name="Credits" type="Panel" groups=["Big_Screen_Scene"]]
 margin_right = 1024.0
 margin_bottom = 600.0
 script = ExtResource( 2 )
@@ -17,6 +15,7 @@ __meta__ = {
 }
 
 [node name="Background" type="Label" parent="."]
+self_modulate = Color( 1, 1, 1, 0.745098 )
 margin_left = 20.0
 margin_top = 25.0
 margin_right = 999.0
@@ -51,6 +50,7 @@ __meta__ = {
 }
 
 [node name="Text" type="Label" parent="."]
+self_modulate = Color( 1, 1, 1, 0.745098 )
 margin_left = 42.0
 margin_top = 48.0
 margin_right = 981.0
@@ -58,11 +58,11 @@ margin_bottom = 415.0
 custom_fonts/font = ExtResource( 1 )
 text = "Idea by Cookie
 ASCII arts by Cookie
-Coded by Cookie with GDScript
-Tested by:                        Musics by Kevin MacLeod (incompetech.com):
-                                      Castle..................Angevin B
-                                      Forest..................Midnight Tale
-                                      Magician's lab..........Kramus Workshop
+Coded by Cookie with GDScript     Sounds by 
+Tested by:                        Music by Kevin MacLeod (incompetech.com):
+-                                     Castle..................Angevin B
+-                                     Forest..................Midnight Tale
+-                                     Magician's lab..........Kramus Workshop
                                       Park....................The Forest and the Trees
                                       Tavern..................Thatched Villagers
                                       Mouse in the tavern.....Galway
@@ -75,6 +75,18 @@ Tested by:                        Musics by Kevin MacLeod (incompetech.com):
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Bold" type="Label" parent="Text"]
+margin_right = 946.0
+margin_bottom = 367.0
+custom_fonts/font = ExtResource( 1 )
+text = "        Cookie
+              Cookie
+         Cookie      GDScript               freesound.org
+                                           Kevin MacLeod  incompetech.com  
+  Cookie
+  Raffee
+  Steffo"
 
 [node name="To_Title" parent="." instance=ExtResource( 4 )]
 margin_left = 42.0

@@ -6,9 +6,7 @@
 [ext_resource path="res://Generic/script.gd" type="Script" id=4]
 [ext_resource path="res://Generic/Music_Changer.gd" type="Script" id=5]
 
-[node name="Instructions" type="Panel" groups=[
-"Big_Screen_Scene",
-]]
+[node name="Instructions" type="Panel" groups=["Big_Screen_Scene"]]
 margin_right = 1024.0
 margin_bottom = 600.0
 rect_pivot_offset = Vector2( 85.029, -286.098 )
@@ -18,6 +16,7 @@ __meta__ = {
 }
 
 [node name="Background" type="Label" parent="."]
+modulate = Color( 1, 1, 1, 0.745098 )
 margin_left = 20.0
 margin_top = 25.0
 margin_right = 40.0
@@ -49,6 +48,7 @@ text = "0=======================================================================
 0=======================================================================================0"
 
 [node name="Text" type="Label" parent="."]
+self_modulate = Color( 1, 1, 1, 0.745098 )
 margin_left = 42.0
 margin_top = 48.0
 margin_right = 981.0
@@ -64,9 +64,24 @@ Drink potion 3             (+several hours)
 ---
 You (the player) know potion 1 is the safe one, because of those time labels. This is \"guessing the outcome\" and, while making the game easier, it's also rather anticlimatic. For that reason, in the game, potions 2 and 3 won't have \"+ several hours\" in their label, but \"+10m\", like potion 1, even if they WILL actually take several hours."
 autowrap = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
+
+[node name="Bold" type="Label" parent="Text"]
+margin_right = 939.0
+margin_bottom = 367.0
+custom_fonts/font = ExtResource( 1 )
+text = "
+---
+
+
+
+Drink potion 1             (+10m)
+Drink potion 2             (+several hours)
+Drink potion 3             (+several hours)
+---
+
+\"guessing the outcome\"    
+                                                                       \"+ several hours\"                     \"+10m\"                         they WILL actually take several hours"
+autowrap = true
 
 [node name="To_Title" parent="." instance=ExtResource( 3 )]
 margin_left = 36.0

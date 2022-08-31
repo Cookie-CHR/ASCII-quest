@@ -2,6 +2,7 @@ extends Panel
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	background_change()
 	General.update_prevs()
 	SoundPlayer.play()
 	var i = 0
@@ -52,3 +53,17 @@ func change_scn(button):
 		var error = get_tree().change_scene(button.dest+".tscn")
 		if error:
 			General.guess_scn(button.dest, button.minutes)
+
+func background_change():
+	if self.name == "Tavern" or self.is_in_group("Tavern"):
+		self_modulate = Color(1,0.5,0.5)
+	elif self.name == "Castle" or self.is_in_group("Castle"):
+		self_modulate = Color(1.3,1.3,1.3)
+	elif self.name == "Park" or self.is_in_group("Park"):
+		self_modulate = Color(0.9,1,0.5)
+	elif self.name == "Forest" or self.is_in_group("Forest"):
+		self_modulate = Color(0.5,1,0.7)
+	elif self.name == "Lab" or self.is_in_group("Lab"):
+		self_modulate = Color(0.9,0.6,1)
+	
+	

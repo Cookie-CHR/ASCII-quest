@@ -14,6 +14,7 @@ margin_bottom = 600.0
 script = ExtResource( 3 )
 
 [node name="Background" type="Label" parent="."]
+self_modulate = Color( 1, 1, 1, 0.745098 )
 margin_left = 20.0
 margin_top = 25.0
 margin_right = 999.0
@@ -55,6 +56,7 @@ margin_bottom = 163.0
 custom_fonts/font = ExtResource( 6 )
 
 [node name="Text" type="Label" parent="."]
+modulate = Color( 1, 1, 1, 0.745098 )
 margin_left = 42.0
 margin_top = 163.0
 margin_right = 979.0

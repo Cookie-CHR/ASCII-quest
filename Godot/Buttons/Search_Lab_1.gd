@@ -1,12 +1,15 @@
 extends "Improved_Button.gd"
 
 func re_init():
-	
 	#Have we found the password?
 	if not ( General.sc_find(["Zashamez"]) or \
 			 General.sc_find(["Bouborus"]) or \
 			 General.sc_find(["Kickrix"]) ):
 		self.dest = "Scenes/Lab/Search"
+	#Is the wizard here?
+	elif Time.h<12:
+		self.dest = "Scenes/Lab/Search_fail"
+	
 	elif not General.sc_find(["Notes_Found"]) :
 		self.dest = "Scenes/Lab/Search_2"
 		self.text = "Investigate further        (+30m)"

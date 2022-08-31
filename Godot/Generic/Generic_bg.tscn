@@ -12,6 +12,7 @@ margin_bottom = 600.0
 script = ExtResource( 3 )
 
 [node name="Background" type="Label" parent="."]
+self_modulate = Color( 1, 1, 1, 0.745098 )
 margin_left = 20.0
 margin_top = 25.0
 margin_right = 1004.0
@@ -42,20 +43,15 @@ text = "0====================================================0 0================
 |                                                    | |                                |
 0====================================================0 0==================|           |=0"
 autowrap = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Text" type="Label" parent="."]
+modulate = Color( 1, 1, 1, 0.745098 )
 margin_left = 42.0
 margin_top = 48.0
 margin_right = 590.0
 margin_bottom = 365.0
 custom_fonts/font = ExtResource( 1 )
 autowrap = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Image" type="Label" parent="."]
 margin_left = 635.0
@@ -69,18 +65,17 @@ __meta__ = {
 }
 
 [node name="curr_time" type="Label" parent="."]
+self_modulate = Color( 1, 1, 1, 0.745098 )
 margin_left = 647.0
 margin_top = 416.0
 margin_right = 980.0
 margin_bottom = 436.0
 custom_fonts/font = ExtResource( 1 )
-text = "Current time: 0:00"
+text = "Current time:"
 script = ExtResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="curr_inv" type="Label" parent="."]
+self_modulate = Color( 1, 1, 1, 0.745098 )
 margin_left = 647.0
 margin_top = 462.0
 margin_right = 980.0
@@ -89,21 +84,16 @@ custom_fonts/font = ExtResource( 1 )
 text = "Inventory:"
 autowrap = true
 script = ExtResource( 5 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="curr_money" type="Label" parent="."]
-margin_left = 649.0
+self_modulate = Color( 1, 1, 1, 0.745098 )
+margin_left = 647.0
 margin_top = 439.0
 margin_right = 986.0
 margin_bottom = 459.0
 custom_fonts/font = ExtResource( 1 )
-text = "Money: 0 gp"
+text = "Money:"
 script = ExtResource( 4 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Sound" type="Label" parent="."]
 margin_left = 856.0
