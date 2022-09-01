@@ -3,6 +3,11 @@ extends Node
 var prev_sc = "Null"
 var curr_sc = "Null"
 var visited_sc = []
+var buttons_pressed = []
+
+func pressed_add(button):
+	buttons_pressed.append(button)
+
 
 func sc_add(array):
 	for scene in array:

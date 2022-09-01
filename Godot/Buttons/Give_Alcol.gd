@@ -15,3 +15,4 @@ func re_init():
 	# either one will be removed
 	self.inv_remove = self.inv_required
 	
+	self.unreadable = true

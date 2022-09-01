@@ -15,3 +15,4 @@ func re_init():
 	
 	#now, we combine the basic scene name with a "_" and our new index
 	self.dest = scene+"_"+str(lastNum)
+	self.unreadable = true

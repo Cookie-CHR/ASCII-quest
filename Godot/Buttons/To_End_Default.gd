@@ -6,3 +6,4 @@ func re_init():
 	self.dest = "Scenes/X_Ending/Default"
 	# time must be 19:00
 	self.minutes = 19
+	self.unreadable = true

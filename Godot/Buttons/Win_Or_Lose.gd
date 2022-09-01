@@ -7,4 +7,4 @@ func re_init():
 		self.dest = "Scenes/Lab/Fail"
 	else:
 		self.dest = "Scenes/Lab/Secret_Find"
-	
+	self.unreadable = true

@@ -6,3 +6,4 @@ func re_init():
 	self.dest = "Scenes/X_Ending/Wizard"
 	self.money = 100
 	self.minutes = 60
+	self.unreadable = true

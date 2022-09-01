@@ -6,3 +6,4 @@ func re_init():
 	self.dest = "Scenes/Castle/Prove_Guard"
 	self.sc_required = ["Guard_Heard"]
 	self.sc_forbidden = ["Guard_Proved"]
+	self.unreadable = true

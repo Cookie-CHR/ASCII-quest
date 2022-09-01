@@ -7,4 +7,3 @@ func re_init():
 	self.minutes = 10
 	self.inv_get = ["seed"]
 	self.sc_forbidden = ["Seed_Accepted"]
-

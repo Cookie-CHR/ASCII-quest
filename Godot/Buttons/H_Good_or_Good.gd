@@ -29,3 +29,5 @@ func re_init():
 	else:
 		self.dest = "Scenes/X_Ending/Half_Good"
 		self.minutes = 30
+	
+	self.unreadable = true
