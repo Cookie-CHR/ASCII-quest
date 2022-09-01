@@ -5,3 +5,4 @@ func re_init():
 	# Useful for destinations that require an updated curr_sc, or the button's name
 	self.dest = "Scenes/X_Epilogue/Default"
 	self.unreadable = true
+	General.endings_add("Default")

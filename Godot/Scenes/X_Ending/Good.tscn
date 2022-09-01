@@ -30,7 +30,7 @@ text = "  _. _-'            '--__  . \\
  --(___)_Q----/____\\-'._____.'-
 "
 
-[node name="Continue" parent="." index="8" instance=ExtResource( 2 )]
+[node name="Continue" parent="." index="7" instance=ExtResource( 2 )]
 margin_left = 36.0
 margin_top = 413.0
 margin_right = 32.0

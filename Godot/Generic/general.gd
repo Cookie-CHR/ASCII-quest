@@ -4,10 +4,13 @@ var prev_sc = "Null"
 var curr_sc = "Null"
 var visited_sc = []
 var buttons_pressed = []
+var endings_unlocked = []
 
 func pressed_add(button):
 	buttons_pressed.append(button)
 
+func endings_add(ending):
+	endings_unlocked.append(ending)
 
 func sc_add(array):
 	for scene in array:
