@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Buttons/Go.gd" type="Script" id=1]
+[ext_resource path="res://Generic/Generic_bg.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Buttons/Improved_button.tscn" type="PackedScene" id=3]
+
+[node name="Lab" instance=ExtResource( 2 )]
+
+[node name="Text" parent="." index="1"]
+text = "...And nothing happens. No magic ray turning you into a frog, no secret door opening, no pink unicorns dancing in the sky, nothing.
+
+You remind of the Queen's announcement in the park. You probably should go..."
+
+[node name="Image" parent="." index="2"]
+text = " _  H   _  __ ||
+ H / \\  H  /( ||              _
+(_(___)[_](__)||          _   H
+--------------||          H  / \\
+--_ ===  .----||        _(_)(___
+||\\\\||||//||||||        --------
+--------------||   
+H H    /(  H  ||       o   '
+ )_\\  (  )[ ] ||      .  '  o 
+--------------||      _______
+-  .---- --.  ||     (.-----.)
+| //|||| ||\\\\ ||     /       \\
+--------------||-----'._____.'--"
+
+[node name="Go" parent="." index="7" instance=ExtResource( 3 )]
+margin_left = 36.0
+margin_top = 413.0
+text = "Go away"
+script = ExtResource( 1 )

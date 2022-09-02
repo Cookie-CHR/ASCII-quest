@@ -96,7 +96,7 @@ custom_fonts/font = ExtResource( 5 )
 text = "Ending 2: Good Ending"
 script = ExtResource( 6 )
 
-[node name="Half_good" type="Label" parent="Text"]
+[node name="Half_Good" type="Label" parent="Text"]
 margin_left = 42.0
 margin_top = 46.0
 margin_right = 899.0

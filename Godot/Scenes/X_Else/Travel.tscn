@@ -61,4 +61,4 @@ margin_top = 528.0
 text = "Never mind, let's stay here"
 script = ExtResource( 4 )
 
-[node name="Walking" parent="." index="14" instance=ExtResource( 5 )]
+[node name="Walking" parent="." index="13" instance=ExtResource( 5 )]

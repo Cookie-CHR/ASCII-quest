@@ -44,7 +44,8 @@ func patched(next_sc):
 	#good ending if quest concluded
 	if  General.sc_find(["Alcol_Given"]) and \
 		General.sc_find(["Glitch_Given"]) and \
-		General.sc_find(["Money_Given"]):
+		General.sc_find(["Money_Given"]) and \
+		not General.sc_find(["Everything_Given"]):
 			if get_tree().change_scene("res://Scenes/X_Ending/Good.tscn"):
 				print("An error has occurred: could not change scene")
 			return true
