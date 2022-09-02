@@ -27,6 +27,7 @@ Inventory="*res://Generic/inventory.gd"
 Time_Patch="*res://Generic/time_patch.gd"
 SoundPlayer="*res://Generic/AudioPlayer.tscn"
 MuteButton="*res://Generic/mute_button.gd"
+Save="*res://Generic/saving.gd"
 
 [debug]
 

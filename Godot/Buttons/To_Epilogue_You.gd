@@ -6,3 +6,4 @@ func re_init():
 	self.dest = "Scenes/X_Epilogue/You"
 	self.unreadable = true
 	General.endings_add("You")
+	Save.save_end()

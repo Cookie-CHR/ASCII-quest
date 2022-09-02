@@ -10,3 +10,5 @@ func re_init():
 	Inventory.inv_reset()
 	Time.time_reset()
 	self.unreadable = true
+	
+	Save.load_end()

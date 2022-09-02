@@ -14,6 +14,16 @@ func _ready():
 		elif child.name == "Back":
 			if get_node("Back").connect("pressed", self, "back"):
 				print("An error has occurred: could not connect the back button")
+		elif child.name == "Save":
+			if General.curr_sc in ["Credits", "Instructions", "Title", "Null"]:
+				child.set_disabled(true)
+			if get_node("Save").connect("pressed", self, "save_sc"):
+				print("An error has occurred: could not connect the save button")
+		elif child.name == "Load":
+			if not File.new().file_exists("user://savesc.save"):
+				child.set_disabled(true)
+			if get_node("Load").connect("pressed", self, "load_sc"):
+				print("An error has occurred: could not connect the load button")
 
 func background_change():
 	var obj = get_tree().get_current_scene()
@@ -44,3 +54,9 @@ func reset():
 func back():
 	get_parent().settingsPanel = null
 	queue_free()
+
+func save_sc():
+	Save.save_sc()
+
+func load_sc():
+	Save.load_sc()
