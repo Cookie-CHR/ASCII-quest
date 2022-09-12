@@ -10,7 +10,7 @@
 [node name="Text" parent="." index="1"]
 text = "You pick up the magic glass and show it to the wizard. The glitch rattles a bit inside its container.
 
-The wirard takes the glass with cautious hands: \"Great job\", he just says. Then, with incredibly slow movements, puts the glass on a nearby shelf, assuring it's stable and doesn't hit anything."
+The wizard takes the glass with cautious hands: \"Great job\", he just says. Then, with incredibly slow movements, puts the glass on a nearby shelf, assuring it's stable and doesn't hit anything."
 
 [node name="Image" parent="." index="2"]
 text = "  _. _-'            '--__  . \\
@@ -27,10 +27,10 @@ text = "  _. _-'            '--__  . \\
      / \\ _    /  \\   /       \\
  ---(___)_Q--/____\\--'._____.'-"
 
-[node name="Glitch_Given" type="Node2D" parent="." index="8"]
+[node name="Glitch_Given" type="Node2D" parent="." index="7"]
 script = ExtResource( 1 )
 
-[node name="To_S_Room" parent="." index="9" instance=ExtResource( 4 )]
+[node name="To_S_Room" parent="." index="8" instance=ExtResource( 4 )]
 margin_left = 36.0
 margin_top = 413.0
 margin_bottom = 26.0

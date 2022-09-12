@@ -9,7 +9,7 @@
 [node name="Forest" instance=ExtResource( 3 )]
 
 [node name="Text" parent="." index="1"]
-text = "\"Yeah, I was sent by the queen some hours ago, you kow, to check the border and make sure nobody goes into the forest. I was standing right here, and suddently - puff! The curse was gone, like, all those little characters disappeared.\"
+text = "\"Yeah, I was sent by the queen some hours ago, you know, to check the border and make sure nobody goes into the forest. I was standing right here, and suddently - puff! The curse was gone, like, all those little characters disappeared.\"
 
 You ask him if he noticed anything suspicious:
 

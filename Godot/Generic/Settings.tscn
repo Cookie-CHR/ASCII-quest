@@ -45,7 +45,7 @@ margin_top = 148.0
 margin_right = 204.0
 margin_bottom = 194.0
 custom_fonts/font = ExtResource( 2 )
-text = "Reset che game"
+text = "Reset the game"
 flat = true
 align = 0
 

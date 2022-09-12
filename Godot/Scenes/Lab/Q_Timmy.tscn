@@ -11,7 +11,7 @@
 [node name="Text" parent="." index="1"]
 text = "For the last few seconds, little Timmy has been jumping around like crazy, trying to get your attention.
 
-\"I- I have some of that glass!\", he exclaims excitedly, \"It's part of the stuff i m-misdelivered this morning!\". He shivers nervously, retinking about his past error, but the wizard is too focused on the glass to pay attention to the rest of the sentence.
+\"I- I have some of that glass!\", he exclaims excitedly, \"It's part of the stuff i m-misdelivered this morning!\". He shivers nervously, rethinking about his past error, but the wizard is too focused on the glass to pay attention to the rest of the sentence.
 
 \"Splendid!\" He answers, in fact, \"now we have a way to sample the glitches!\" "
 
@@ -31,13 +31,13 @@ text = "  _. _-'            '--__  . \\
       .==.  /(__)       H _
  -Oo--|__|--_/--\\_-----[_]_Q--"
 
-[node name="To_Q_Heard" parent="." index="8" instance=ExtResource( 3 )]
+[node name="To_Q_Heard" parent="." index="7" instance=ExtResource( 3 )]
 margin_left = 36.0
 margin_top = 413.0
 text = "Great!"
 script = ExtResource( 2 )
 
-[node name="Lab" parent="." index="9" instance=ExtResource( 4 )]
+[node name="Lab" parent="." index="8" instance=ExtResource( 4 )]
 
-[node name="Glass_Got" type="Node2D" parent="." index="10"]
+[node name="Glass_Got" type="Node2D" parent="." index="9"]
 script = ExtResource( 5 )
