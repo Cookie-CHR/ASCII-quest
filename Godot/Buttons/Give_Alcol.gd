@@ -14,5 +14,3 @@ func re_init():
 		self.inv_required = ["wine"]
 	# either one will be removed
 	self.inv_remove = self.inv_required
-	
-	self.unreadable = true

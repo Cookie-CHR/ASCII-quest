@@ -9,4 +9,3 @@ func re_init():
 	self.inv_remove = ["empty glass"]
 	self.inv_get = ["glitch"]
 	self.sc_forbidden = ["Got_Glitch"]
-	self.unreadable = true

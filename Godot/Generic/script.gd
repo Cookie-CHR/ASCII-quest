@@ -58,9 +58,6 @@ func change_scn(button):
 		Inventory.inv_remove(button.inv_remove)
 		Inventory.money_manage(button.money)
 		
-		if not (currentPath+button.name in General.buttons_pressed) and not button.unreadable:
-			General.pressed_add(currentPath+button.name)
-		
 		var error = get_tree().change_scene(button.dest+".tscn")
 		if error:
 			General.guess_scn(button.dest, button.minutes)

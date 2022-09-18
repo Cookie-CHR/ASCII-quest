@@ -8,4 +8,3 @@ func re_init():
 
 	self.inv_required = ["glitch"]
 	self.inv_remove = ["glitch"]
-	self.unreadable = true

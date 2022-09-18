@@ -8,4 +8,3 @@ func re_init():
 	else:
 		self.dest = "Scenes/Castle/Judge_Innocent"
 	
-	self.unreadable = true

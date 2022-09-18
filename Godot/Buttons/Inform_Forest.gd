@@ -8,4 +8,3 @@ func re_init():
 	self.sc_required = ["Plague_Forest"]
 	self.sc_forbidden = ["Informed_Forest"]
 	self.money = 5
-	self.unreadable = true

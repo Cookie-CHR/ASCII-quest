@@ -6,4 +6,3 @@ func re_init():
 	self.dest = "Scenes/Castle/Prove_Notes"
 	self.sc_required = ["Notes_Found"]
 	self.sc_forbidden = ["Notes_Proved"]
-	self.unreadable = true

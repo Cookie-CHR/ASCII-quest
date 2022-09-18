@@ -9,4 +9,3 @@ func re_init():
 		self.dest = "Scenes/Lab/Give_Money"
 		self.money = -12
 		self.sc_forbidden = ["Money_Given"]
-	self.unreadable = true

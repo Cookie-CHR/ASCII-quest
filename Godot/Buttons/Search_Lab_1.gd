@@ -1,7 +1,6 @@
 extends "Improved_Button.gd"
 
 func re_init():
-	self.unreadable = true
 	#Have we found the password?
 	if not ( General.sc_find(["Zashamez"]) or \
 			 General.sc_find(["Bouborus"]) or \

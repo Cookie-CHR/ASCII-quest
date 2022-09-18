@@ -8,4 +8,3 @@ func re_init():
 	self.sc_required = ["Plague_Tavern"]
 	self.sc_forbidden = ["Informed_Tavern"]
 	self.money = 5
-	self.unreadable = true

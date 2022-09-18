@@ -7,4 +7,3 @@ func re_init():
 		self.dest = "Scenes/Lab/S_Room"
 	else:
 		self.dest = "Scenes/Lab/Q_Heard"
-	self.unreadable = true
