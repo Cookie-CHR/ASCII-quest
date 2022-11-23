@@ -10,8 +10,9 @@
 Text-based (and ascii-based) adventure web game made with Godot.
 
 # Released
-The game has finally been released! Yay! You can play it on:  
-Itch: [https://cookie-chr.itch.io/ascii-quest](https://cookie-chr.itch.io/ascii-quest)
+The game has finally been released! Yay! You can play it on:
+
+Itch: [https://cookie-chr.itch.io/ascii-quest](https://cookie-chr.itch.io/ascii-quest)  
 Newgrounds: [https://www.newgrounds.com/portal/view/864652](https://www.newgrounds.com/portal/view/864652)
 
 # The plot
