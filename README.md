@@ -9,8 +9,10 @@
                                                     |L.                      </code></pre> 
 Text-based (and ascii-based) adventure web game made with Godot.
 
-# Notices
-Exam Season is back again! I'll still try to make a small commit every day, but it's not granted.
+# Released
+The game has finally been released! Yay! You can play it on:  
+Itch: [https://cookie-chr.itch.io/ascii-quest](https://cookie-chr.itch.io/ascii-quest)
+Newgrounds: [https://www.newgrounds.com/portal/view/864652](https://www.newgrounds.com/portal/view/864652)
 
 # The plot
 The story takes place in a typical medieval-fantasy village called **Txtown**. One morning, the Queen makes an announcemente to all of her subjects: a powerful magic curse is leading to the town, a curse that only ASCII worlds can have: slowly, but inexorably, everything is turning into **not-translatable characters** (Like � or ▭).
